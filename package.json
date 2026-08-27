@@ -1,0 +1,40 @@
+{
+  "name": "turtlemint-automation",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation framework for Turtlemint Insurance",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:ci": "playwright test --reporter=html,allure-playwright,json",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit",
+    "report:html": "playwright show-report",
+    "report:allure": "allure serve allure-results",
+    "generate:tests": "ts-node src/utils/test-case-generator.ts",
+    "parse:excel": "ts-node src/utils/excel-reader.ts",
+    "dedupe": "ts-node src/utils/dedupe.ts"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.3.1",
+    "xlsx": "^0.18.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

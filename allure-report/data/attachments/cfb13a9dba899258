@@ -1,0 +1,136 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generated/shared-flows.test.ts >> Bike - Shared Flows - @regression @advisor >> Find Advisor Popup Flow >> Verify that the user is able to enter Pincode - TC_035
+- Location: src/tests/generated/shared-flows.test.ts:95:9
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'HEADER')
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, expect } from '@playwright/test';
+  2   | import { BasePage } from '@pages/base/BasePage';
+  3   | import { SELECTORS, DROPDOWN_SECTIONS, INSURERS } from '@config/test-data';
+  4   | import { TIMEOUTS } from '@config/constants';
+  5   | 
+  6   | export class Header extends BasePage {
+  7   |   readonly carDropdown: Locator;
+  8   |   readonly bikeDropdown: Locator;
+  9   |   readonly healthDropdown: Locator;
+  10  |   readonly lifeDropdown: Locator;
+  11  | 
+  12  |   constructor(page: Page) {
+  13  |     super(page);
+> 14  |     this.carDropdown = page.locator(SELECTORS.HEADER.CAR_DROPDOWN);
+      |                                               ^ TypeError: Cannot read properties of undefined (reading 'HEADER')
+  15  |     this.bikeDropdown = page.locator(SELECTORS.HEADER.BIKE_DROPDOWN);
+  16  |     this.healthDropdown = page.locator(SELECTORS.HEADER.HEALTH_DROPDOWN);
+  17  |     this.lifeDropdown = page.locator(SELECTORS.HEADER.LIFE_DROPDOWN);
+  18  |   }
+  19  | 
+  20  |   async waitForLoad() {
+  21  |     await this.waitForElement(this.carDropdown);
+  22  |     await this.waitForElement(this.bikeDropdown);
+  23  |     await this.waitForElement(this.healthDropdown);
+  24  |     await this.waitForElement(this.lifeDropdown);
+  25  |   }
+  26  | 
+  27  |   async openDropdown(module: 'Car' | 'Bike' | 'Health' | 'Life') {
+  28  |     const dropdown = this.getDropdownLocator(module);
+  29  |     await this.hover(dropdown);
+  30  |     await this.page.waitForTimeout(500);
+  31  |   }
+  32  | 
+  33  |   async clickDropdown(module: 'Car' | 'Bike' | 'Health' | 'Life') {
+  34  |     const dropdown = this.getDropdownLocator(module);
+  35  |     await this.click(dropdown);
+  36  |     await this.page.waitForTimeout(500);
+  37  |   }
+  38  | 
+  39  |   private getDropdownLocator(module: 'Car' | 'Bike' | 'Health' | 'Life'): Locator {
+  40  |     switch (module) {
+  41  |       case 'Car': return this.carDropdown;
+  42  |       case 'Bike': return this.bikeDropdown;
+  43  |       case 'Health': return this.healthDropdown;
+  44  |       case 'Life': return this.lifeDropdown;
+  45  |     }
+  46  |   }
+  47  | 
+  48  |   async getDropdownMenu(module: 'Car' | 'Bike' | 'Health' | 'Life'): Promise<Locator> {
+  49  |     await this.openDropdown(module);
+  50  |     return this.page.locator(SELECTORS.DROPDOWN.CONTAINER);
+  51  |   }
+  52  | 
+  53  |   async getDropdownSections(module: 'Car' | 'Bike' | 'Health' | 'Life'): Promise<string[]> {
+  54  |     const menu = await this.getDropdownMenu(module);
+  55  |     const sections = menu.locator(SELECTORS.DROPDOWN.SECTION);
+  56  |     return await this.getAllTexts(sections);
+  57  |   }
+  58  | 
+  59  |   async verifyDropdownSections(module: 'Car' | 'Bike' | 'Health' | 'Life') {
+  60  |     const actualSections = await this.getDropdownSections(module);
+  61  |     const expectedSections = DROPDOWN_SECTIONS[module];
+  62  |     
+  63  |     for (const expected of expectedSections) {
+  64  |       const found = actualSections.some(actual => 
+  65  |         actual.toLowerCase().includes(expected.toLowerCase())
+  66  |       );
+  67  |       if (!found) {
+  68  |         throw new Error(`Section "${expected}" not found in ${module} dropdown. Found: ${actualSections.join(', ')}`);
+  69  |       }
+  70  |     }
+  71  |     return actualSections;
+  72  |   }
+  73  | 
+  74  |   async openInsurerCompanies(module: 'Car' | 'Bike' | 'Health' | 'Life') {
+  75  |     const menu = await this.getDropdownMenu(module);
+  76  |     const sectionName = module === 'Life' ? 'Life Insurance Companies' : `${module} Insurance Companies`;
+  77  |     const section = menu.locator(SELECTORS.DROPDOWN.SECTION).filter({ hasText: sectionName });
+  78  |     await this.waitForElement(section);
+  79  |     return section;
+  80  |   }
+  81  | 
+  82  |   async getInsurerLinks(module: 'Car' | 'Bike' | 'Health' | 'Life'): Promise<string[]> {
+  83  |     const section = await this.openInsurerCompanies(module);
+  84  |     const links = section.locator(SELECTORS.DROPDOWN.INSURER_LINK);
+  85  |     return await this.getAllTexts(links);
+  86  |   }
+  87  | 
+  88  |   async verifyInsurerLinks(module: 'Car' | 'Bike' | 'Health' | 'Life') {
+  89  |     const actualInsurers = await this.getInsurerLinks(module);
+  90  |     const expectedInsurers = INSURERS[module].COMPANIES;
+  91  |     
+  92  |     for (const expected of expectedInsurers) {
+  93  |       const found = actualInsurers.some(actual => 
+  94  |         actual.toLowerCase().includes(expected.toLowerCase())
+  95  |       );
+  96  |       if (!found) {
+  97  |         throw new Error(`Insurer "${expected}" not found in ${module} dropdown. Found: ${actualInsurers.join(', ')}`);
+  98  |       }
+  99  |     }
+  100 |     return actualInsurers;
+  101 |   }
+  102 | 
+  103 |   async clickInsurerLink(module: 'Car' | 'Bike' | 'Health' | 'Life', insurerName: string) {
+  104 |     const section = await this.openInsurerCompanies(module);
+  105 |     const link = section.locator(SELECTORS.DROPDOWN.INSURER_LINK).filter({ hasText: insurerName });
+  106 |     await this.click(link);
+  107 |     await this.waitForLoad();
+  108 |   }
+  109 | 
+  110 |   async clickCashlessGarageLink(module: 'Car', garageName: string) {
+  111 |     await this.openDropdown('Car');
+  112 |     const menu = this.page.locator(SELECTORS.DROPDOWN.CONTAINER);
+  113 |     const section = menu.locator(SELECTORS.DROPDOWN.SECTION).filter({ hasText: 'Cashless Garage' });
+  114 |     const link = section.locator(SELECTORS.DROPDOWN.CASHLESS_GARAGE_LINK).filter({ hasText: garageName });
+```

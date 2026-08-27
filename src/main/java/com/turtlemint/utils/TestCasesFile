@@ -1,0 +1,1185 @@
+"1.
+ Test Case ID"	"2
+HomePage"		"3
+Find Advisor Popup"	"4
+Advisor Listing Page"	"5
+Life Landing Page"	"6
+Bike IC Page"
+TC_01	Health	User should able to select insurance type
+TC_02		User should able to click on Find Advisor CTA
+TC_03		User should able to click on Get a Quote CTA
+TC_04		User should get this "Please select type of insurance to proceed to the next step"  message when user click on get a Quote cta without selecting Insurer
+TC_05		User should get this "Please select type of insurance to proceed to the next step"  message when user click on Find Advisor cta without selecting Insurer
+TC_06		User should redirect to healh profile page on clicking Get a Qote cta
+TC_07		User should able to select insurer type and click on Find Advisor should land on Find advisor Popup	"1.user should able to get Find Advisor Popup
+2. user should able to enter Pincode
+3. To check Submit cta is disable for blank Pincode
+4. To check once user enters Pincode then Submit Cta should enable
+5. To check with invalid Pincode
+6. To check user should get this ""Pincode not found""  for invalid Pincode
+7. To check user should not allow to enter aplhabates.
+8. To check after entering valid pincode click on Submit should land on Advisor Listing Page."	"1. To check selected insurer is present on top of the page.
+2. To check selected Pincode is present on top of the page.
+3. To check user can select different insurer from dropdown.
+4. To check Home functionality is redirecting to Homepage or not.
+5. To check the Advisor list are relevent to selected insurer or not.
+6. To check advisor profile picture is visible.
+7. To check Advisor experience count is visible.
+8. To check Advisor policy sold count is visible.
+9. To check Advisor distance is visible.
+10. To check Visit wbsite cta is visible on all advisor.
+11. To check Get In Touch CTA is clickable.
+"
+TC_08
+TC_09	Bike	User should able to select insurance type
+TC_10		User should able to click on Find Advisor CTA
+TC_11		User should able to click on Get a Quote CTA
+TC_12		User should get this "Please select type of insurance to proceed to the next step"  message when user click on get a Quote cta without selecting Insurer
+TC_13		User should get this "Please select type of insurance to proceed to the next step"  message when user click on Find Advisor cta without selecting Insurer
+TC_14		User should redirect to Bike profile page on clicking Get a Qote cta
+TC_15		User should able to select insurer type and click on Find Advisor should land on Find advisor Popup	"1.user should able to get Find Advisor Popup
+2. user should able to enter Pincode
+3. To check Submit cta is disable for blank Pincode
+4. To check once user enters Pincode then Submit Cta should enable
+5. To check with invalid Pincode
+6. To check user should get this ""Pincode not found""  for invalid Pincode
+7. To check user should not allow to enter aplhabates.
+8. To check after entering valid pincode click on Submit should land on Advisor Listing Page."	"1. To check selected insurer is present on top of the page.
+2. To check selected Pincode is present on top of the page.
+3. To check user can select different insurer from dropdown.
+4. To check Home functionality is redirecting to Homepage or not.
+5. To check the Advisor list are relevent to selected insurer or not.
+6. To check advisor profile picture is visible.
+7. To check Advisor experience count is visible.
+8. To check Advisor policy sold count is visible.
+9. To check Advisor distance is visible.
+10. To check Visit wbsite cta is visible on all advisor.
+11. To check Get In Touch CTA is clickable.
+"
+TC_16
+TC_17	Car	User should able to select insurance type
+TC_18		User should able to click on Find Advisor CTA
+TC_19		User should able to click on Get a Quote CTA
+TC_20		User should get this "Please select type of insurance to proceed to the next step"  message when user click on get a Quote cta without selecting Insurer
+TC_21		User should get this "Please select type of insurance to proceed to the next step"  message when user click on Find Advisor cta without selecting Insurer
+TC_22		User should redirect to Car profile page on clicking Get a Qote cta
+TC_23		User should able to select insurer type and click on Find Advisor should land on Find advisor Popup	"1.user should able to get Find Advisor Popup
+2. user should able to enter Pincode
+3. To check Submit cta is disable for blank Pincode
+4. To check once user enters Pincode then Submit Cta should enable
+5. To check with invalid Pincode
+6. To check user should get this ""Pincode not found""  for invalid Pincode
+7. To check user should not allow to enter aplhabates.
+8. To check after entering valid pincode click on Submit should land on Advisor Listing Page."	"1. To check selected insurer is present on top of the page.
+2. To check selected Pincode is present on top of the page.
+3. To check user can select different insurer from dropdown.
+4. To check Home functionality is redirecting to Homepage or not.
+5. To check the Advisor list are relevent to selected insurer or not.
+6. To check advisor profile picture is visible.
+7. To check Advisor experience count is visible.
+8. To check Advisor policy sold count is visible.
+9. To check Advisor distance is visible.
+10. To check Visit wbsite cta is visible on all advisor.
+11. To check Get In Touch CTA is clickable.
+"
+TC_24
+TC_25	Life	User should able to select insurance type
+TC_26		User should able to click on Find Advisor CTA
+TC_27		User should able to click on Get a Quote CTA
+TC_28		User should get this "Please select type of insurance to proceed to the next step"  message when user click on get a Quote cta without selecting Insurer
+TC_29		User should get this "Please select type of insurance to proceed to the next step"  message when user click on Find Advisor cta without selecting Insurer
+TC_30		User should able to select insurer type and click on Find Advisor should land on Find advisor Popup	"1.user should able to get Find Advisor Popup
+2. user should able to enter Pincode
+3. To check Submit cta is disable for blank Pincode
+4. To check once user enters Pincode then Submit Cta should enable
+5. To check with invalid Pincode
+6. To check user should get this ""Pincode not found""  for invalid Pincode
+7. To check user should not allow to enter aplhabates.
+8. To check after entering valid pincode click on Submit should land on Advisor Listing Page."	"1. To check selected insurer is present on top of the page.
+2. To check selected Pincode is present on top of the page.
+3. To check user can select different insurer from dropdown.
+4. To check Home functionality is redirecting to Homepage or not.
+5. To check the Advisor list are relevent to selected insurer or not.
+6. To check advisor profile picture is visible.
+7. To check Advisor experience count is visible.
+8. To check Advisor policy sold count is visible.
+9. To check Advisor distance is visible.
+10. To check Visit wbsite cta is visible on all advisor.
+11. To check Get In Touch CTA is clickable.
+"
+TC_31		User should redirect to Life landing page on clicking Get a Quote cta			 To check plans are vsisible on page.
+TC_32					To check Term Life Plans is clickable.
+TC_33					To check Investment & Tax planning is clickable.
+TC_34					 To check Saving For Child is clickable.
+TC_35					 To check Pention & retirement is clickable.
+TC_36					To check clicking on Plans it redirect to life Profile page.
+TC_37					To check this "Please enter the pincode" error message should come if user not enters pincode
+TC_38					To check user is able to enter pincode
+TC_39					To check user is able to click on Find Advisor cta.
+TC_40					To check after clicking Find Advisor user should redirect to Advisor listing page
+	Header (CAR)	"1. To check user should able to click on CAR cta.
+2. To check user should able to click on Know about car insurance.
+3. To check user should able to click on Compare Car Insurance.
+4. To check user should able to click on Read our Blogs.
+5. To check user should able to click on Find advisor
+6. To check user able click on following offers under Know about Car Insurance.
+     a. Third Party Car Insurance
+     b. Comprehensive Car Insurance
+     c. Standalone Own Damage Car Insurance
+     d. Zero Depreciation Car Insurance
+     e. Taxi Car Insurance
+     f.  Used Car Insurance
+7. To check user should get these offers under Insurance Knowledge
+     a. Car Insurance Companies
+     b. Car Insurance Premium Calculator
+     c. Car Insurance Claim Process
+     d. Buy, Compare or Renew Car Insurance
+     e. Cashless Garage
+     f. Car Insurance Blogs"
+	Header (BIKE)	"1. To check user should able to click on Bike cta.
+2. To check user should able to click on Know about Bike insurance.
+3. To check user should able to click on Compare Bike Insurance.
+4. To check user should able to click on Read our Blogs.
+5. To check user should able to click on Find advisor
+6. To check user able click on following offers under Know about Bike Insurance.
+     a. Third Party Bike Insurance
+     b. Comprehensive Bike Insurance
+     c. Standalone Own Damage
+     d. Zero Depreciation Bike Insurance
+     e. Add On Cover
+7. To check user should get these offers under Insurance Knowledge
+     a. Bike Insurance Companies
+     b. Bike Insurance Premium Calculator
+     c. Bike Insurance Claim Process
+     d. Buy, Compare or Renew Bike Insurance
+     e. Bike Insurance Blogs"
+	Header (HEALTH)	"1. To check user should able to click on Health cta.
+2. To check user should able to click on Know about Health insurance.
+3. To check user should able to click on Compare Health Insurance.
+4. To check user should able to click on Read our Blogs.
+5. To check user should able to click on Find advisor
+6. To check user able click on following offers under Know about Health Insurance.
+     a. Health Insurance Plans
+     b. Family Health Insurance Plans
+     c. Senior Citizen Health Insurance
+     d. Critical Illness Insurance
+     e. Mediclaim Policy
+     f. Coronavirus Health Insurance
+     g. Health Insurance Tax Benefit
+     e. Add On Cover
+7. To check user should get these offers under Insurance Knowledge
+     a. Health Insurance Companies
+     b. Health Insurance Claim Process
+     c. Buy, Compare or Renew Health Insurance
+     d. Health Insurance Blogs
+     "
+	Header (LIFE)	"1. To check user should able to click on Life cta.
+2. To check user should able to click on Know about Life insurance.
+3. To check user should able to click on Compare Life Insurance.
+4. To check user should able to click on Read our Blogs.
+5. To check user should able to click on Find advisor
+6. To check user able click on following offers under Know about Health Insurance.
+     a. Term Insurance Policy
+     b. Money Back Policy
+     c. Endowment Policy
+     d. Term Insurance Policy
+7. To check user should get these offers under Insurance Knowledge
+     a. Health Insurance Companies
+     b. Life Insurance Premium Calculator
+     c. Compare & Buy Life Insurance plan
+     d. Human Life Value Calculator
+     e. Life Insurance Riders
+     f.  Health Insurance Blogs
+     "
+	Header (Raise A Claim)	 To. check user should able to click on Raise A claim.
+	Header (Become A PoSP With Us)	 To. check user should able to click on Become A PoSP With Us.
+	Our Partners(BIKE)	1. To. check user should able to see 10 insurer in Our Patner section
+		2. To check user should able to click on all insurer
+		3. To check on clicking any insurer it should redirect on Bike IC Page				"1. To check correct insurer logo is visible.
+2. To check following fields is present on right side page.
+    a. Year of Inception
+    b. No. of Branches
+    c. Cashless Garages
+3. To check following links are present on below the insurer name.
+    a. Third Party Bike Insurance
+    b. Comprehensive Bike Insurance
+    c. Own Damage Bike Insurance
+4. To check user should able enter Bike number.
+5. To check user should able to click on Get Quotes
+6. To check user should get error message when user clicks on Get Quotes  without entering Bike Number
+7. To check user should redirect to Bike Profile page on clicking Get Quotes
+8. To check user should able to click on Get Quotes Without Bike Number.
+9. To check user should land Bike Profile Journey Page on clicking Get Quotes Without Bike Number.
+10. To check user should click Bajaj Allianz Tab.
+11. To check user should able to click on Plans tab.
+12. To check user should redirect to Plans section on clicking Plans tab.
+13. To check user should able to click on Premium Calculator tab.
+14. To check user should redirect to Premium Calculator section on clicking Premium Calculator tab.
+15. To check user should able to click on Features tab.
+16. To check user should redirect to features section on clicking Features tab.
+17. To check user should able to click on Exlusions tab.
+18. To check user should redirect to Exlusions section on clicking Exclusions tab.
+19. To check user should able to click on Renewal tab.
+20. To check user should redirect to Renewal section on clicking Renewal tab.
+21. To check user should able to click on Claims tab.
+22. To check user should redirect to Claims section on clicking Claims tab.
+23. To check user should able to click on Customer care tab.
+24. To check user should redirect to Customr Care section on clicking Customer Care tab.
+25. To check user should able to click on More tab.
+26. To check user should able to click on Claim settlement Ratio tab.
+27. To check user should redirect to Claim settlement Ratio on clicking Claim settlement Ration under More tab.
+28. To check user should able to click on FAQ tab.
+29. To check user should redirect to FAQ on clicking FAQ under More tab.
+30. To check user should able to click on Add-Ons tab.
+31. To check user should redirect to Add-Ons section on clicking Add-Ons under More tab.
+32. To check user should able to click on Articles tab.
+33. To check user should redirect to Articles on clicking Articles under More tab."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

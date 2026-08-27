@@ -1,0 +1,3792 @@
+{
+  "summary": {
+    "totalTests": 630,
+    "uniqueTests": 630,
+    "duplicateTests": 0,
+    "reductionPercentage": "0.0",
+    "generatedAt": "2026-08-14T09:21:27.224Z"
+  },
+  "duplicates": [],
+  "uniqueTests": [
+    {
+      "id": "TC_001",
+      "module": "Car",
+      "subModule": "Car Dropdown",
+      "testScenario": "Verify that the Car dropdown is displayed."
+    },
+    {
+      "id": "TC_002",
+      "module": "Car",
+      "subModule": "Car Dropdown",
+      "testScenario": "Verify that all sections are displayed in the Car dropdown."
+    },
+    {
+      "id": "TC_003",
+      "module": "Car",
+      "subModule": "Car Insurance Companies",
+      "testScenario": "Verify that all insurer options are displayed under Car Insurance Companies."
+    },
+    {
+      "id": "TC_004",
+      "module": "Car",
+      "subModule": "Car Insurance Companies",
+      "testScenario": "Verify that an insurer link is clickable."
+    },
+    {
+      "id": "TC_005",
+      "module": "Car",
+      "subModule": "Cashless Garage",
+      "testScenario": "Verify that all garage insurer options are displayed under Cashless Garage."
+    },
+    {
+      "id": "TC_006",
+      "module": "Car",
+      "subModule": "Cashless Garage",
+      "testScenario": "Verify that a cashless garage insurer link is clickable."
+    },
+    {
+      "id": "TC_007",
+      "module": "Bike",
+      "subModule": "Bike Dropdown",
+      "testScenario": "Verify that the Bike dropdown is displayed."
+    },
+    {
+      "id": "TC_008",
+      "module": "Bike",
+      "subModule": "Bike Dropdown",
+      "testScenario": "Verify that all sections are displayed in the Bike dropdown."
+    },
+    {
+      "id": "TC_009",
+      "module": "Bike",
+      "subModule": "Bike Insurance Companies",
+      "testScenario": "Verify that all insurer options are displayed under Bike Insurance Companies."
+    },
+    {
+      "id": "TC_010",
+      "module": "Bike",
+      "subModule": "Bike Insurance Companies",
+      "testScenario": "Verify that an insurer link is clickable."
+    },
+    {
+      "id": "TC_011",
+      "module": "Health",
+      "subModule": "Health Dropdown",
+      "testScenario": "Verify that the Health dropdown is displayed."
+    },
+    {
+      "id": "TC_012",
+      "module": "Health",
+      "subModule": "Health Dropdown",
+      "testScenario": "Verify that all sections are displayed in the Health dropdown."
+    },
+    {
+      "id": "TC_013",
+      "module": "Health",
+      "subModule": "Health Insurance Companies",
+      "testScenario": "Verify that all insurer options are displayed under Health Insurance Companies."
+    },
+    {
+      "id": "TC_014",
+      "module": "Health",
+      "subModule": "Health Insurance Companies",
+      "testScenario": "Verify that an insurer link is clickable."
+    },
+    {
+      "id": "TC_015",
+      "module": "Health",
+      "subModule": "Network Hospitals",
+      "testScenario": "Verify that all network hospital options are displayed under Network Hospitals."
+    },
+    {
+      "id": "TC_016",
+      "module": "Health",
+      "subModule": "Network Hospitals",
+      "testScenario": "Verify that a network hospital link is clickable."
+    },
+    {
+      "id": "TC_017",
+      "module": "Life",
+      "subModule": "Life Dropdown",
+      "testScenario": "Verify that the Life dropdown is displayed."
+    },
+    {
+      "id": "TC_018",
+      "module": "Life",
+      "subModule": "Life Dropdown",
+      "testScenario": "Verify that all sections are displayed in the Life dropdown."
+    },
+    {
+      "id": "TC_019",
+      "module": "Life",
+      "subModule": "Life Insurance Companies",
+      "testScenario": "Verify that all insurer options are displayed under Life Insurance Companies."
+    },
+    {
+      "id": "TC_020",
+      "module": "Life",
+      "subModule": "Life Insurance Companies",
+      "testScenario": "Verify that an insurer link is clickable."
+    },
+    {
+      "id": "TC_021",
+      "module": "Raise a Claim",
+      "subModule": "Raise a Claim Flow",
+      "testScenario": "Verify that the user is able to click on the \"Raise a Claim\" CTA."
+    },
+    {
+      "id": "TC_022",
+      "module": "Raise a Claim",
+      "subModule": "Raise a Claim Flow",
+      "testScenario": "Verify that the \"Download Now\" CTA is displayed on the Raise a Claim page."
+    },
+    {
+      "id": "TC_023",
+      "module": "Raise a Claim",
+      "subModule": "Raise a Claim Flow",
+      "testScenario": "Verify that the user is able to click on the \"Download Now\" CTA."
+    },
+    {
+      "id": "TC_024",
+      "module": "Raise a Claim",
+      "subModule": "Contact Support",
+      "testScenario": "Verify that the customer contact number is displayed on the Raise a Claim page."
+    },
+    {
+      "id": "TC_025",
+      "module": "Raise a Claim",
+      "subModule": "Contact Support",
+      "testScenario": "Verify that the customer support email is displayed on the Raise a Claim page."
+    },
+    {
+      "id": "TC_026",
+      "module": "Raise a Claim",
+      "subModule": "Contact Support",
+      "testScenario": "Verify that the customer is able to interact with the customer support contact number."
+    },
+    {
+      "id": "TC_027",
+      "module": "Raise a Claim",
+      "subModule": "Contact Support",
+      "testScenario": "Verify that the customer is able to interact with the support email."
+    },
+    {
+      "id": "TC_028",
+      "module": "Raise a Claim",
+      "subModule": "How it works",
+      "testScenario": "Verify that the \"How it works?\" section is displayed."
+    },
+    {
+      "id": "TC_029",
+      "module": "Raise a Claim",
+      "subModule": "Claims Settlement Benefits",
+      "testScenario": "Verify that the \"Why Turtlemint Insurance for claims settlement\" section is displayed."
+    },
+    {
+      "id": "TC_030",
+      "module": "Raise a Claim",
+      "subModule": "Customer Testimonials",
+      "testScenario": "Verify that customer testimonials are displayed on the Raise A Claim page."
+    },
+    {
+      "id": "TC_031",
+      "module": "Become a POSP",
+      "subModule": "POSP Navigation",
+      "testScenario": "Verify that the user is able to click on the \"Become A POSP\" CTA."
+    },
+    {
+      "id": "TC_032",
+      "module": "Become a POSP",
+      "subModule": "TurtlemintPro Landing Page",
+      "testScenario": "Verify that the TurtlemintPro introduction section is displayed."
+    },
+    {
+      "id": "TC_033",
+      "module": "Become a POSP",
+      "subModule": "Why Join TurtlemintPro",
+      "testScenario": "Verify that the \"Why Join TurtlemintPro?\" section is displayed."
+    },
+    {
+      "id": "TC_034",
+      "module": "Become a POSP",
+      "subModule": "Insurance Business Features",
+      "testScenario": "Verify that the insurance business features are displayed."
+    },
+    {
+      "id": "TC_035",
+      "module": "Become a POSP",
+      "subModule": "Partner Testimonials",
+      "testScenario": "Verify that partner testimonials are displayed."
+    },
+    {
+      "id": "TC_036",
+      "module": "Become a POSP",
+      "subModule": "POSP Navigation",
+      "testScenario": "Verify that the user is redirected to the Turtlemint Pro platform after clicking \"Become a POSP\"."
+    },
+    {
+      "id": "TC_037",
+      "module": "Become a POSP",
+      "subModule": "POSP Navigation",
+      "testScenario": "Verify that the user is able to click on the \"SIGN UP\" CTA."
+    },
+    {
+      "id": "TC_038",
+      "module": "Become a POSP",
+      "subModule": "POSP Navigation",
+      "testScenario": "Verify that the user is able to click on the \"LOGIN\" CTA."
+    },
+    {
+      "id": "TC_039",
+      "module": "Become a POSP",
+      "subModule": "Mobile App Navigation",
+      "testScenario": "Verify that the user is able to click on the Play Store/App download link."
+    },
+    {
+      "id": "TC_040",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the user is navigated to the National Car Insurance page."
+    },
+    {
+      "id": "TC_041",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the breadcrumb is displayed on the National Car Insurance page."
+    },
+    {
+      "id": "TC_042",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the National insurer logo/header is displayed."
+    },
+    {
+      "id": "TC_043",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the car number input field is displayed."
+    },
+    {
+      "id": "TC_044",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the user is able to enter a car number."
+    },
+    {
+      "id": "TC_045",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"Get Quote\" CTA is displayed/available for the car number flow."
+    },
+    {
+      "id": "TC_046",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"Get Quote Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_047",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"Year of Inception\" information card is displayed."
+    },
+    {
+      "id": "TC_048",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"No. of Branches\" information card is displayed."
+    },
+    {
+      "id": "TC_049",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"Cashless Garages\" information card is displayed."
+    },
+    {
+      "id": "TC_050",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the insurance type links are displayed below the National Car Insurance heading."
+    },
+    {
+      "id": "TC_051",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the user is able to click on the \"Third Party Car Insurance\" link."
+    },
+    {
+      "id": "TC_052",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the user is able to click on the \"Comprehensive Car Insurance\" link."
+    },
+    {
+      "id": "TC_053",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the user is able to click on the \"Own Damage Car Insurance\" link."
+    },
+    {
+      "id": "TC_054",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the National navigation menu is displayed."
+    },
+    {
+      "id": "TC_055",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"National\" navigation option is clickable."
+    },
+    {
+      "id": "TC_056",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Plans\" navigation option is clickable."
+    },
+    {
+      "id": "TC_057",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Premium Calculator\" navigation option is clickable."
+    },
+    {
+      "id": "TC_058",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Features\" navigation option is clickable."
+    },
+    {
+      "id": "TC_059",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Exclusions\" navigation option is clickable."
+    },
+    {
+      "id": "TC_060",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Renewal\" navigation option is clickable."
+    },
+    {
+      "id": "TC_061",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Claims\" navigation option is clickable."
+    },
+    {
+      "id": "TC_062",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Customer Care\" navigation option is clickable."
+    },
+    {
+      "id": "TC_063",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"Cashless Garages\" navigation option is clickable."
+    },
+    {
+      "id": "TC_064",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that the \"More\" navigation option is displayed and clickable."
+    },
+    {
+      "id": "TC_065",
+      "module": "Car",
+      "subModule": "National Car Insurance Navigation",
+      "testScenario": "Verify that all options under the \"More\" dropdown are displayed."
+    },
+    {
+      "id": "TC_066",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the \"Starting Premium\" section is displayed."
+    },
+    {
+      "id": "TC_067",
+      "module": "Car",
+      "subModule": "National Car Insurance",
+      "testScenario": "Verify that the National Claim Settlement Ratio section is displayed."
+    },
+    {
+      "id": "TC_068",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the National Car Insurance Plans Overview section is displayed."
+    },
+    {
+      "id": "TC_069",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the Comprehensive plan is displayed."
+    },
+    {
+      "id": "TC_070",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the Third Party plan is displayed."
+    },
+    {
+      "id": "TC_071",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed for the Comprehensive plan."
+    },
+    {
+      "id": "TC_072",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed for the Third Party plan."
+    },
+    {
+      "id": "TC_073",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the \"Buy Now\" CTA is displayed for the Comprehensive plan."
+    },
+    {
+      "id": "TC_074",
+      "module": "Car",
+      "subModule": "National Car Insurance Plans",
+      "testScenario": "Verify that the \"Buy Now\" CTA is displayed for the Third Party plan."
+    },
+    {
+      "id": "TC_075",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the National Premium Calculator section is displayed."
+    },
+    {
+      "id": "TC_076",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the car number input field is displayed in the Premium Calculator section."
+    },
+    {
+      "id": "TC_077",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the user is able to enter a car number in the Premium Calculator."
+    },
+    {
+      "id": "TC_078",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the \"Check Premium\" CTA is displayed."
+    },
+    {
+      "id": "TC_079",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_080",
+      "module": "Car",
+      "subModule": "National Premium Calculator",
+      "testScenario": "Verify that the Premium Calculator provides the expected information/instructions to the user."
+    },
+    {
+      "id": "TC_081",
+      "module": "Car",
+      "subModule": "National Cashless Garages",
+      "testScenario": "Verify that the National Cashless Garages section is displayed."
+    },
+    {
+      "id": "TC_082",
+      "module": "Car",
+      "subModule": "National Cashless Garages",
+      "testScenario": "Verify that the cashless garage information is displayed."
+    },
+    {
+      "id": "TC_083",
+      "module": "Car",
+      "subModule": "National Cashless Garages",
+      "testScenario": "Verify that the cashless garage CTA/link is displayed."
+    },
+    {
+      "id": "TC_084",
+      "module": "Car",
+      "subModule": "National Car Insurance Add-ons",
+      "testScenario": "Verify that the National Car Insurance Add-ons section is displayed."
+    },
+    {
+      "id": "TC_085",
+      "module": "Car",
+      "subModule": "National Car Insurance Add-ons",
+      "testScenario": "Verify that the available add-ons are displayed."
+    },
+    {
+      "id": "TC_086",
+      "module": "Car",
+      "subModule": "National Car Insurance Add-ons",
+      "testScenario": "Verify that the Add-ons section provides the expected information."
+    },
+    {
+      "id": "TC_087",
+      "module": "Car",
+      "subModule": "National Car Insurance Features",
+      "testScenario": "Verify that the National Car Insurance Features section is displayed."
+    },
+    {
+      "id": "TC_088",
+      "module": "Car",
+      "subModule": "National Car Insurance Features",
+      "testScenario": "Verify that all available features are displayed."
+    },
+    {
+      "id": "TC_089",
+      "module": "Car",
+      "subModule": "National Car Insurance Features",
+      "testScenario": "Verify that the information provided for each feature is displayed correctly."
+    },
+    {
+      "id": "TC_090",
+      "module": "Car",
+      "subModule": "National Car Insurance Exclusions",
+      "testScenario": "Verify that the National Car Insurance Exclusions section is displayed."
+    },
+    {
+      "id": "TC_091",
+      "module": "Car",
+      "subModule": "National Car Insurance Exclusions",
+      "testScenario": "Verify that all available exclusions are displayed."
+    },
+    {
+      "id": "TC_092",
+      "module": "Car",
+      "subModule": "National Car Insurance Exclusions",
+      "testScenario": "Verify that the information provided for each exclusion is displayed correctly."
+    },
+    {
+      "id": "TC_093",
+      "module": "Car",
+      "subModule": "National Car Insurance Renewal",
+      "testScenario": "Verify that the National Car Insurance Renewal section is displayed."
+    },
+    {
+      "id": "TC_094",
+      "module": "Car",
+      "subModule": "National Car Insurance Renewal",
+      "testScenario": "Verify that the renewal process information is displayed."
+    },
+    {
+      "id": "TC_095",
+      "module": "Car",
+      "subModule": "National Car Insurance Renewal",
+      "testScenario": "Verify that the renewal-related CTA/link is displayed."
+    },
+    {
+      "id": "TC_096",
+      "module": "Car",
+      "subModule": "National Car Insurance Claims",
+      "testScenario": "Verify that the National Car Insurance Claims section is displayed."
+    },
+    {
+      "id": "TC_097",
+      "module": "Car",
+      "subModule": "National Car Insurance Claims",
+      "testScenario": "Verify that the claim process information is displayed."
+    },
+    {
+      "id": "TC_098",
+      "module": "Car",
+      "subModule": "National Car Insurance Claims",
+      "testScenario": "Verify that the available claim-related information is displayed."
+    },
+    {
+      "id": "TC_099",
+      "module": "Car",
+      "subModule": "National Car Insurance Claims",
+      "testScenario": "Verify that the claim-related CTA/link is displayed."
+    },
+    {
+      "id": "TC_100",
+      "module": "Car",
+      "subModule": "National Car Insurance Documents",
+      "testScenario": "Verify that the Documents Required section is displayed."
+    },
+    {
+      "id": "TC_101",
+      "module": "Car",
+      "subModule": "National Car Insurance Documents",
+      "testScenario": "Verify that all required documents are displayed."
+    },
+    {
+      "id": "TC_102",
+      "module": "Car",
+      "subModule": "National Car Insurance Documents",
+      "testScenario": "Verify that the information provided for the required documents is displayed correctly."
+    },
+    {
+      "id": "TC_103",
+      "module": "Car",
+      "subModule": "National Car Insurance Customer Care",
+      "testScenario": "Verify that the Customer Care section is displayed."
+    },
+    {
+      "id": "TC_104",
+      "module": "Car",
+      "subModule": "National Car Insurance Customer Care",
+      "testScenario": "Verify that the National Car Insurance customer care information is displayed."
+    },
+    {
+      "id": "TC_105",
+      "module": "Car",
+      "subModule": "National Car Insurance Customer Care",
+      "testScenario": "Verify that the customer care contact details are displayed."
+    },
+    {
+      "id": "TC_106",
+      "module": "Car",
+      "subModule": "National Car Insurance - More",
+      "testScenario": "Verify that the More dropdown is displayed."
+    },
+    {
+      "id": "TC_107",
+      "module": "Car",
+      "subModule": "National Car Insurance - More",
+      "testScenario": "Verify that the \"Claim Settlement Ratio\" option is clickable."
+    },
+    {
+      "id": "TC_108",
+      "module": "Car",
+      "subModule": "National Car Insurance - More",
+      "testScenario": "Verify that the \"FAQs\" option is clickable."
+    },
+    {
+      "id": "TC_109",
+      "module": "Car",
+      "subModule": "National Car Insurance - More",
+      "testScenario": "Verify that the \"Add-ons\" option is clickable."
+    },
+    {
+      "id": "TC_110",
+      "module": "Car",
+      "subModule": "National Car Insurance - More",
+      "testScenario": "Verify that the \"Articles\" option is clickable."
+    },
+    {
+      "id": "TC_111",
+      "module": "Car",
+      "subModule": "National Car Insurance FAQs",
+      "testScenario": "Verify that the FAQs section is displayed."
+    },
+    {
+      "id": "TC_112",
+      "module": "Car",
+      "subModule": "National Car Insurance FAQs",
+      "testScenario": "Verify that the user is able to expand an FAQ question."
+    },
+    {
+      "id": "TC_113",
+      "module": "Car",
+      "subModule": "National Car Insurance FAQs",
+      "testScenario": "Verify that the FAQ answer is displayed correctly."
+    },
+    {
+      "id": "TC_114",
+      "module": "Car",
+      "subModule": "National Car Insurance FAQs",
+      "testScenario": "Verify that the \"View More\" option is displayed in the FAQs section."
+    },
+    {
+      "id": "TC_115",
+      "module": "Car",
+      "subModule": "National Car Insurance Articles",
+      "testScenario": "Verify that the Latest Articles section is displayed."
+    },
+    {
+      "id": "TC_116",
+      "module": "Car",
+      "subModule": "National Car Insurance Articles",
+      "testScenario": "Verify that the article cards are displayed."
+    },
+    {
+      "id": "TC_117",
+      "module": "Car",
+      "subModule": "National Car Insurance Articles",
+      "testScenario": "Verify that the user is able to click on an article."
+    },
+    {
+      "id": "TC_118",
+      "module": "Car",
+      "subModule": "National Car Insurance Articles",
+      "testScenario": "Verify that the \"View All Articles\" CTA is displayed."
+    },
+    {
+      "id": "TC_119",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the user is navigated to the Third Party Car Insurance page."
+    },
+    {
+      "id": "TC_120",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the breadcrumb is displayed."
+    },
+    {
+      "id": "TC_121",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the page heading is displayed."
+    },
+    {
+      "id": "TC_122",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Find Plans\" CTA is displayed."
+    },
+    {
+      "id": "TC_123",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the introductory content is displayed."
+    },
+    {
+      "id": "TC_124",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Table of Contents\" section is displayed."
+    },
+    {
+      "id": "TC_125",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that all topics are displayed in the Table of Contents."
+    },
+    {
+      "id": "TC_126",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"What is Third-Party Insurance for Car?\" option is clickable."
+    },
+    {
+      "id": "TC_127",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Importance of Third-Party Car Insurance Policy\" option is clickable."
+    },
+    {
+      "id": "TC_128",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How Does Third-Party Car Insurance Work?\" option is clickable."
+    },
+    {
+      "id": "TC_129",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Features of Third-Party Car Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_130",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Benefits of Four-Wheeler Third-Party Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_131",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How are Third-Party Car Insurance Premium Rates Calculated?\" option is clickable."
+    },
+    {
+      "id": "TC_132",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Top Third-Party Car Insurance Plans\" option is clickable."
+    },
+    {
+      "id": "TC_133",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Third-Party Policy for Commercial Vehicles\" option is clickable."
+    },
+    {
+      "id": "TC_134",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Inclusions of Third-Party Car Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_135",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Exclusions of Third-Party Car Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_136",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Third-Party Insurance Premium Rates\" option is clickable."
+    },
+    {
+      "id": "TC_137",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Factors that Affect Third-Party Insurance Premium\" option is clickable."
+    },
+    {
+      "id": "TC_138",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Long-Term Third-Party Cover for Five Years for Car Owners\" option is clickable."
+    },
+    {
+      "id": "TC_139",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Add-ons Under Third-Party Car Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_140",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Third-Party v/s Comprehensive Car Insurance Plans\" option is clickable."
+    },
+    {
+      "id": "TC_141",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Drawbacks of Third-Party Car Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_142",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"When is Third-Party Insurance Better than Comprehensive?\" option is clickable."
+    },
+    {
+      "id": "TC_143",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How to Make Third-Party Car Insurance Claims?\" option is clickable."
+    },
+    {
+      "id": "TC_144",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Points to Note When Raising a Third-Party Car Insurance Claim\" option is clickable."
+    },
+    {
+      "id": "TC_145",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How to Renew Third-Party Car Insurance Plan?\" option is clickable."
+    },
+    {
+      "id": "TC_146",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How to Buy Third-Party Car Insurance Online from Turtlemint?\" option is clickable."
+    },
+    {
+      "id": "TC_147",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"How to Get the Cheapest Third-Party Car Insurance?\" option is clickable."
+    },
+    {
+      "id": "TC_148",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"Why Choose Turtlemint?\" option is clickable."
+    },
+    {
+      "id": "TC_149",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Table of Contents",
+      "testScenario": "Verify that the \"FAQs\" option is clickable."
+    },
+    {
+      "id": "TC_150",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the \"Get Best Insurance Quotes For\" section is displayed."
+    },
+    {
+      "id": "TC_151",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the Health Insurance link is clickable."
+    },
+    {
+      "id": "TC_152",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the Life Insurance link is clickable."
+    },
+    {
+      "id": "TC_153",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the Car Insurance link is clickable."
+    },
+    {
+      "id": "TC_154",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the Bike Insurance link is clickable."
+    },
+    {
+      "id": "TC_155",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Importance of Third-Party Car Insurance Policy\" section is displayed."
+    },
+    {
+      "id": "TC_156",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How Does Third-Party Car Insurance Work?\" section is displayed."
+    },
+    {
+      "id": "TC_157",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Features of Third-Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_158",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Benefits of Four-Wheeler Third-Party Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_159",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How are Third-Party Car Insurance Premium Rates Calculated?\" section is displayed."
+    },
+    {
+      "id": "TC_160",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Top Third-Party Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_161",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Third-Party Policy for Commercial Vehicles\" section is displayed."
+    },
+    {
+      "id": "TC_162",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Inclusions of Third-Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_163",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Exclusions of Third-Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_164",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Third-Party Insurance Premium Rates\" section is displayed."
+    },
+    {
+      "id": "TC_165",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Factors that Affect Third-Party Insurance Premium\" section is displayed."
+    },
+    {
+      "id": "TC_166",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Long-Term Third-Party Cover for Five Years for Car Owners\" section is displayed."
+    },
+    {
+      "id": "TC_167",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Add-ons Under Third-Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_168",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Third-Party v/s Comprehensive Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_169",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Drawbacks of Third-Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_170",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"When is Third-Party Insurance Better than Comprehensive?\" section is displayed."
+    },
+    {
+      "id": "TC_171",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How to Make Third-Party Car Insurance Claims?\" section is displayed."
+    },
+    {
+      "id": "TC_172",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Points to Note When Raising a Third-Party Car Insurance Claim\" section is displayed."
+    },
+    {
+      "id": "TC_173",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How to Renew Third-Party Car Insurance Plan?\" section is displayed."
+    },
+    {
+      "id": "TC_174",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How to Buy Third-Party Car Insurance Online from Turtlemint?\" section is displayed."
+    },
+    {
+      "id": "TC_175",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"How to Get the Cheapest Third-Party Car Insurance?\" section is displayed."
+    },
+    {
+      "id": "TC_176",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the \"Why Choose Turtlemint?\" section is displayed."
+    },
+    {
+      "id": "TC_177",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance",
+      "testScenario": "Verify that the FAQ section is displayed."
+    },
+    {
+      "id": "TC_178",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - FAQs",
+      "testScenario": "Verify that the user is able to click on an FAQ question."
+    },
+    {
+      "id": "TC_179",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - FAQs",
+      "testScenario": "Verify that the user is able to collapse an expanded FAQ."
+    },
+    {
+      "id": "TC_180",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - FAQs",
+      "testScenario": "Verify that only the selected FAQ answer is displayed when an FAQ is expanded."
+    },
+    {
+      "id": "TC_181",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - FAQs",
+      "testScenario": "Verify that the FAQ answer content is displayed correctly."
+    },
+    {
+      "id": "TC_182",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the \"Car Insurance Companies\" section is displayed."
+    },
+    {
+      "id": "TC_183",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that all initially displayed car insurance companies are displayed."
+    },
+    {
+      "id": "TC_184",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the Bajaj car insurance option is clickable."
+    },
+    {
+      "id": "TC_185",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the Cholamandalam car insurance option is clickable."
+    },
+    {
+      "id": "TC_186",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the Generali Central car insurance option is clickable."
+    },
+    {
+      "id": "TC_187",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the HDFC ERGO car insurance option is clickable."
+    },
+    {
+      "id": "TC_188",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the ICICI Lombard car insurance option is clickable."
+    },
+    {
+      "id": "TC_189",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the National car insurance option is clickable."
+    },
+    {
+      "id": "TC_190",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the \"View More\" CTA is displayed."
+    },
+    {
+      "id": "TC_191",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the user is able to click \"View More\"."
+    },
+    {
+      "id": "TC_192",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the additional car insurance companies are displayed after clicking View More."
+    },
+    {
+      "id": "TC_193",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Car Insurance Companies",
+      "testScenario": "Verify that the additional insurer options are clickable."
+    },
+    {
+      "id": "TC_194",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Find Plans",
+      "testScenario": "Verify that the \"Find Plans\" CTA is clickable."
+    },
+    {
+      "id": "TC_195",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Importance",
+      "testScenario": "Verify that the \"car insurance\" renewal link is clickable."
+    },
+    {
+      "id": "TC_196",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Introduction",
+      "testScenario": "Verify that the \"know about third-party car insurance\" link is clickable."
+    },
+    {
+      "id": "TC_197",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Features",
+      "testScenario": "Verify that the \"Ways to check vehicle insurance status\" link is clickable."
+    },
+    {
+      "id": "TC_198",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Comprehensive Comparison",
+      "testScenario": "Verify that the \"Glimpse through our guide on how to renew expired car insurance\" link is clickable."
+    },
+    {
+      "id": "TC_199",
+      "module": "Car",
+      "subModule": "Third Party Car Insurance - Get Best Insurance Quotes",
+      "testScenario": "Verify that the \"Health Insurance\" link is clickable."
+    },
+    {
+      "id": "TC_200",
+      "module": "Health",
+      "subModule": "Health Insurance",
+      "testScenario": "Verify that the Health Insurance page is displayed."
+    },
+    {
+      "id": "TC_201",
+      "module": "Life",
+      "subModule": "Life Insurance - Header Navigation",
+      "testScenario": "Verify that the \"Life Insurance\" option is clickable."
+    },
+    {
+      "id": "TC_202",
+      "module": "Car",
+      "subModule": "Car Insurance - Header",
+      "testScenario": "Verify that the Car Insurance page header is displayed."
+    },
+    {
+      "id": "TC_203",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Quote Section",
+      "testScenario": "Verify that the car registration number field is displayed."
+    },
+    {
+      "id": "TC_204",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Quote Section",
+      "testScenario": "Verify that the user is able to enter the car registration number."
+    },
+    {
+      "id": "TC_205",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Quote Section",
+      "testScenario": "Verify that the \"Get Quote\" CTA is displayed."
+    },
+    {
+      "id": "TC_206",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Quote Section",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" option is displayed."
+    },
+    {
+      "id": "TC_207",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Quote Section",
+      "testScenario": "Verify that the three insurance options are displayed."
+    },
+    {
+      "id": "TC_208",
+      "module": "Car",
+      "subModule": "Car Insurance - Introduction",
+      "testScenario": "Verify that the \"What Is Car Insurance?\" section is displayed."
+    },
+    {
+      "id": "TC_209",
+      "module": "Car",
+      "subModule": "Car Insurance - Introduction",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_210",
+      "module": "Car",
+      "subModule": "Car Insurance - Insurance Experience",
+      "testScenario": "Verify that the \"Trust Our Unmatched Experience In Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_211",
+      "module": "Car",
+      "subModule": "Car Insurance - Insurance Experience",
+      "testScenario": "Verify that the \"Quotes Compared\" statistic is displayed."
+    },
+    {
+      "id": "TC_212",
+      "module": "Car",
+      "subModule": "Car Insurance - Insurance Experience",
+      "testScenario": "Verify that the \"Insurance Partners\" statistic is displayed."
+    },
+    {
+      "id": "TC_213",
+      "module": "Car",
+      "subModule": "Car Insurance - Insurance Experience",
+      "testScenario": "Verify that the \"Claims Processed\" statistic is displayed."
+    },
+    {
+      "id": "TC_214",
+      "module": "Car",
+      "subModule": "Car Insurance - Insurance Experience",
+      "testScenario": "Verify that the \"Policies Sold\" statistic is displayed."
+    },
+    {
+      "id": "TC_215",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the \"Top Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_216",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the insurer plan card information is displayed."
+    },
+    {
+      "id": "TC_217",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the \"Check Premium\" CTA is displayed."
+    },
+    {
+      "id": "TC_218",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the \"Check Premium\" CTA redirects to Profile Journey."
+    },
+    {
+      "id": "TC_219",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that an insurer name/logo is clickable."
+    },
+    {
+      "id": "TC_220",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the insurer-specific Car Insurance page is displayed after clicking the insurer name/logo."
+    },
+    {
+      "id": "TC_221",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the \"See All Plans\" CTA is displayed."
+    },
+    {
+      "id": "TC_222",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans",
+      "testScenario": "Verify that the available car insurance plan categories are displayed."
+    },
+    {
+      "id": "TC_223",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Comprehensive",
+      "testScenario": "Verify that the Comprehensive plans are displayed."
+    },
+    {
+      "id": "TC_224",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Third Party",
+      "testScenario": "Verify that the Third Party plans are displayed."
+    },
+    {
+      "id": "TC_225",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Own Damage",
+      "testScenario": "Verify that the Own Damage plans are displayed."
+    },
+    {
+      "id": "TC_226",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Comprehensive",
+      "testScenario": "Verify that Comprehensive plan cards display the required information."
+    },
+    {
+      "id": "TC_227",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Third Party",
+      "testScenario": "Verify that Third Party plan cards display the required information."
+    },
+    {
+      "id": "TC_228",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Own Damage",
+      "testScenario": "Verify that Own Damage plan cards display the required information."
+    },
+    {
+      "id": "TC_229",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Comprehensive",
+      "testScenario": "Verify that all available insurers are displayed under Comprehensive plans."
+    },
+    {
+      "id": "TC_230",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Comprehensive",
+      "testScenario": "Verify that the SBI Comprehensive Insurance card details are displayed."
+    },
+    {
+      "id": "TC_231",
+      "module": "Car",
+      "subModule": "Car Insurance - Top Car Insurance Plans - Comprehensive",
+      "testScenario": "Verify that the SBI insurer name/logo is clickable."
+    },
+    {
+      "id": "TC_232",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the SBI Comprehensive Car Insurance page top section is displayed."
+    },
+    {
+      "id": "TC_233",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the \"Third Party Car Insurance\" option is displayed."
+    },
+    {
+      "id": "TC_234",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the \"Get Quotes\" CTA is displayed."
+    },
+    {
+      "id": "TC_235",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_236",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the starting premium is displayed."
+    },
+    {
+      "id": "TC_237",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the number of SBI branches is displayed."
+    },
+    {
+      "id": "TC_238",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the cashless garage count is displayed."
+    },
+    {
+      "id": "TC_239",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Top Section",
+      "testScenario": "Verify that the middle-side section navigation menu is displayed."
+    },
+    {
+      "id": "TC_240",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Overview\" menu navigates to the Overview section."
+    },
+    {
+      "id": "TC_241",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Premium Calculator\" menu navigates to the Premium Calculator section."
+    },
+    {
+      "id": "TC_242",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Claims\" menu navigates to the Claims section."
+    },
+    {
+      "id": "TC_243",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Customer Care\" menu navigates to the Customer Care section."
+    },
+    {
+      "id": "TC_244",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Claim Settlement Ratio\" menu navigates to the Claim Settlement Ratio section."
+    },
+    {
+      "id": "TC_245",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Add-ons\" menu navigates to the Add-ons section."
+    },
+    {
+      "id": "TC_246",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Section Navigation",
+      "testScenario": "Verify that the \"Articles\" menu navigates to the Articles section."
+    },
+    {
+      "id": "TC_247",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Overview",
+      "testScenario": "Verify that the \"SBI Comprehensive Car Insurance Overview\" section is displayed."
+    },
+    {
+      "id": "TC_248",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Overview",
+      "testScenario": "Verify that the Comprehensive coverage information is displayed."
+    },
+    {
+      "id": "TC_249",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Overview",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_250",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claim Settlement Ratio",
+      "testScenario": "Verify that the \"SBI Claim Settlement Ratio\" section is displayed."
+    },
+    {
+      "id": "TC_251",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claim Settlement Ratio",
+      "testScenario": "Verify that the SBI claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_252",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claim Settlement Ratio",
+      "testScenario": "Verify that the industry average claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_253",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Premium Calculator",
+      "testScenario": "Verify that the \"SBI Premium Calculator\" section is displayed."
+    },
+    {
+      "id": "TC_254",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Premium Calculator",
+      "testScenario": "Verify that the car registration number field is displayed."
+    },
+    {
+      "id": "TC_255",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Premium Calculator",
+      "testScenario": "Verify that the user is able to enter a car registration number."
+    },
+    {
+      "id": "TC_256",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Premium Calculator",
+      "testScenario": "Verify that the \"Check Premium\" CTA is displayed."
+    },
+    {
+      "id": "TC_257",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Premium Calculator",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_258",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the \"Claims\" section is displayed."
+    },
+    {
+      "id": "TC_259",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the claim process information is displayed."
+    },
+    {
+      "id": "TC_260",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the \"How to Raise a Claim\" information is displayed."
+    },
+    {
+      "id": "TC_261",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the \"Add-ons Available Under SBI Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_262",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Bi-fuel Kit Cover add-on is displayed."
+    },
+    {
+      "id": "TC_263",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Zero Depreciation add-on is displayed."
+    },
+    {
+      "id": "TC_264",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the No Claim Bonus Protection add-on is displayed."
+    },
+    {
+      "id": "TC_265",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Key Replacement add-on is displayed."
+    },
+    {
+      "id": "TC_266",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Personal Belonging Cover add-on is displayed."
+    },
+    {
+      "id": "TC_267",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Inconvenience Allowance add-on is displayed."
+    },
+    {
+      "id": "TC_268",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Return on Invoice add-on is displayed."
+    },
+    {
+      "id": "TC_269",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Engine Guard add-on is displayed."
+    },
+    {
+      "id": "TC_270",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Consumable Cover add-on is displayed."
+    },
+    {
+      "id": "TC_271",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Additional Roadside Assistance add-on is displayed."
+    },
+    {
+      "id": "TC_272",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the EMI Protector add-on is displayed."
+    },
+    {
+      "id": "TC_273",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Tyre and Rim Guard add-on is displayed."
+    },
+    {
+      "id": "TC_274",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the Personal Accident add-on is displayed."
+    },
+    {
+      "id": "TC_275",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Add-ons",
+      "testScenario": "Verify that the \"View More\" option is displayed in the Add-ons section."
+    },
+    {
+      "id": "TC_276",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the \"How To Raise A Claim Under SBI Comprehensive Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_277",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the claim process steps are displayed."
+    },
+    {
+      "id": "TC_278",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the claim intimation and claim reference number information is displayed."
+    },
+    {
+      "id": "TC_279",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the required claim documents are displayed in the claim process."
+    },
+    {
+      "id": "TC_280",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the surveyor and claim assessment information is displayed."
+    },
+    {
+      "id": "TC_281",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the repair and reimbursement information is displayed."
+    },
+    {
+      "id": "TC_282",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Claims",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_283",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Documents Required For Claims",
+      "testScenario": "Verify that the \"Documents Required For Claims\" section is displayed."
+    },
+    {
+      "id": "TC_284",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Documents Required For Claims",
+      "testScenario": "Verify that the Registration Certificate requirement is displayed."
+    },
+    {
+      "id": "TC_285",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Documents Required For Claims",
+      "testScenario": "Verify that the Driving License requirement is displayed."
+    },
+    {
+      "id": "TC_286",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Documents Required For Claims",
+      "testScenario": "Verify that the FIR requirement is displayed."
+    },
+    {
+      "id": "TC_287",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Documents Required For Claims",
+      "testScenario": "Verify that third-party damage details requirement is displayed."
+    },
+    {
+      "id": "TC_288",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Customer Care",
+      "testScenario": "Verify that the \"SBI Customer Care\" section is displayed."
+    },
+    {
+      "id": "TC_289",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Customer Care",
+      "testScenario": "Verify that the SBI Customer Care number is displayed."
+    },
+    {
+      "id": "TC_290",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Customer Care",
+      "testScenario": "Verify that the SBI Customer Care email ID is displayed."
+    },
+    {
+      "id": "TC_291",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Latest Articles",
+      "testScenario": "Verify that the \"Latest Articles On SBI\" section is displayed."
+    },
+    {
+      "id": "TC_292",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Latest Articles",
+      "testScenario": "Verify that the available SBI article cards are displayed."
+    },
+    {
+      "id": "TC_293",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Latest Articles",
+      "testScenario": "Verify that an SBI article is clickable."
+    },
+    {
+      "id": "TC_294",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Common Components",
+      "testScenario": "Verify that the \"Book an Expert Call\" section is displayed."
+    },
+    {
+      "id": "TC_295",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Other Comprehensive Car Insurance Plans",
+      "testScenario": "Verify that the \"Other Comprehensive Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_296",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Other Comprehensive Car Insurance Plans",
+      "testScenario": "Verify that the available comprehensive car insurance insurers are displayed."
+    },
+    {
+      "id": "TC_297",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Other Comprehensive Car Insurance Plans",
+      "testScenario": "Verify that an insurer link redirects to the corresponding page."
+    },
+    {
+      "id": "TC_298",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Other Comprehensive Car Insurance Plans",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed."
+    },
+    {
+      "id": "TC_299",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"Car Insurance Companies Similar To SBI\" section is displayed."
+    },
+    {
+      "id": "TC_300",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed."
+    },
+    {
+      "id": "TC_301",
+      "module": "Car",
+      "subModule": "SBI Comprehensive - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"More Insurers\" option is clickable."
+    },
+    {
+      "id": "TC_302",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the SBI Third Party Car Insurance top section is displayed."
+    },
+    {
+      "id": "TC_303",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the SBI logo and SBI Third Party Car Insurance heading are displayed."
+    },
+    {
+      "id": "TC_304",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the top plan/navigation links are displayed."
+    },
+    {
+      "id": "TC_305",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the \"Get Quotes\" CTA is displayed."
+    },
+    {
+      "id": "TC_306",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that clicking \"Get Quotes\" opens Profile Journey."
+    },
+    {
+      "id": "TC_307",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_308",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that clicking \"Get Quotes Without Car Number\" redirects correctly."
+    },
+    {
+      "id": "TC_309",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the starting premium is displayed."
+    },
+    {
+      "id": "TC_310",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the branch count is displayed."
+    },
+    {
+      "id": "TC_311",
+      "module": "Car",
+      "subModule": "SBI Third Party - Top Section",
+      "testScenario": "Verify that the cashless garage count is displayed."
+    },
+    {
+      "id": "TC_312",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the right-side section navigation menu is displayed."
+    },
+    {
+      "id": "TC_313",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Overview\" menu navigates to the Overview section."
+    },
+    {
+      "id": "TC_314",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Premium Calculator\" menu navigates to the Premium Calculator section."
+    },
+    {
+      "id": "TC_315",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Claims\" menu navigates to the Claims section."
+    },
+    {
+      "id": "TC_316",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Customer Care\" menu navigates to the Customer Care section."
+    },
+    {
+      "id": "TC_317",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Claim Settlement Ratio\" menu navigates to the Claim Settlement Ratio section."
+    },
+    {
+      "id": "TC_318",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Add-ons\" menu navigates to the Add-ons section."
+    },
+    {
+      "id": "TC_319",
+      "module": "Car",
+      "subModule": "SBI Third Party - Section Navigation",
+      "testScenario": "Verify that the \"Articles\" menu navigates to the Articles section."
+    },
+    {
+      "id": "TC_320",
+      "module": "Car",
+      "subModule": "SBI Third Party - Overview",
+      "testScenario": "Verify that the \"SBI Third Party Car Insurance Overview\" section is displayed."
+    },
+    {
+      "id": "TC_321",
+      "module": "Car",
+      "subModule": "SBI Third Party - Overview",
+      "testScenario": "Verify that the Third-Party Liability information is displayed."
+    },
+    {
+      "id": "TC_322",
+      "module": "Car",
+      "subModule": "SBI Third Party - Overview",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_323",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claim Settlement Ratio",
+      "testScenario": "Verify that the Claim Settlement Ratio section is displayed."
+    },
+    {
+      "id": "TC_324",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claim Settlement Ratio",
+      "testScenario": "Verify that SBI's claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_325",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claim Settlement Ratio",
+      "testScenario": "Verify that the industry average claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_326",
+      "module": "Car",
+      "subModule": "SBI Third Party - Premium Calculator",
+      "testScenario": "Verify that the SBI Premium Calculator section is displayed."
+    },
+    {
+      "id": "TC_327",
+      "module": "Car",
+      "subModule": "SBI Third Party - Premium Calculator",
+      "testScenario": "Verify that the car registration number field is displayed."
+    },
+    {
+      "id": "TC_328",
+      "module": "Car",
+      "subModule": "SBI Third Party - Premium Calculator",
+      "testScenario": "Verify that a valid car registration number can be entered."
+    },
+    {
+      "id": "TC_329",
+      "module": "Car",
+      "subModule": "SBI Third Party - Premium Calculator",
+      "testScenario": "Verify that the \"Check Premium\" CTA is displayed."
+    },
+    {
+      "id": "TC_330",
+      "module": "Car",
+      "subModule": "SBI Third Party - Premium Calculator",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_331",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that the Add-ons section is displayed."
+    },
+    {
+      "id": "TC_332",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Bi-fuel Kit Cover is displayed."
+    },
+    {
+      "id": "TC_333",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Zero Depreciation is displayed."
+    },
+    {
+      "id": "TC_334",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that No Claim Bonus Protection is displayed."
+    },
+    {
+      "id": "TC_335",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Key Replacement is displayed."
+    },
+    {
+      "id": "TC_336",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Personal Belonging Cover is displayed."
+    },
+    {
+      "id": "TC_337",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Inconvenience Allowance is displayed."
+    },
+    {
+      "id": "TC_338",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Return on Invoice is displayed."
+    },
+    {
+      "id": "TC_339",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Engine Guard is displayed."
+    },
+    {
+      "id": "TC_340",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Consumable Cover is displayed."
+    },
+    {
+      "id": "TC_341",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that Additional Roadside Assistance, EMI Protector, Tyre and Rim Guard and Personal Accident are displayed."
+    },
+    {
+      "id": "TC_342",
+      "module": "Car",
+      "subModule": "SBI Third Party - Add-ons",
+      "testScenario": "Verify that the \"View More\" option is displayed."
+    },
+    {
+      "id": "TC_343",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that the \"How To Raise A Claim Under SBI Third Party Car Insurance\" section is displayed."
+    },
+    {
+      "id": "TC_344",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that the claim intimation and claim reference number information is displayed."
+    },
+    {
+      "id": "TC_345",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that the claim form and required documents are mentioned."
+    },
+    {
+      "id": "TC_346",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that the surveyor claim assessment information is displayed."
+    },
+    {
+      "id": "TC_347",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that repair monitoring and reimbursement information is displayed."
+    },
+    {
+      "id": "TC_348",
+      "module": "Car",
+      "subModule": "SBI Third Party - Claims",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_349",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that the Documents Required For Claims section is displayed."
+    },
+    {
+      "id": "TC_350",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that the Registration Certificate requirement is displayed."
+    },
+    {
+      "id": "TC_351",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that the Driving License requirement is displayed."
+    },
+    {
+      "id": "TC_352",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that the FIR requirement is displayed."
+    },
+    {
+      "id": "TC_353",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that third-party damage details requirement is displayed."
+    },
+    {
+      "id": "TC_354",
+      "module": "Car",
+      "subModule": "SBI Third Party - Documents Required",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_355",
+      "module": "Car",
+      "subModule": "SBI Third Party - Customer Care",
+      "testScenario": "Verify that the SBI Customer Care section is displayed."
+    },
+    {
+      "id": "TC_356",
+      "module": "Car",
+      "subModule": "SBI Third Party - Customer Care",
+      "testScenario": "Verify that the SBI Customer Care number is displayed."
+    },
+    {
+      "id": "TC_357",
+      "module": "Car",
+      "subModule": "SBI Third Party - Customer Care",
+      "testScenario": "Verify that the SBI Customer Care email ID is displayed."
+    },
+    {
+      "id": "TC_358",
+      "module": "Car",
+      "subModule": "SBI Third Party - Articles",
+      "testScenario": "Verify that the \"Latest Articles On SBI\" section is displayed."
+    },
+    {
+      "id": "TC_359",
+      "module": "Car",
+      "subModule": "SBI Third Party - Articles",
+      "testScenario": "Verify that the available SBI article cards are displayed."
+    },
+    {
+      "id": "TC_360",
+      "module": "Car",
+      "subModule": "SBI Third Party - Articles",
+      "testScenario": "Verify that an SBI article is clickable."
+    },
+    {
+      "id": "TC_361",
+      "module": "Car",
+      "subModule": "SBI Third Party - Common Components",
+      "testScenario": "Verify that the common Book an Expert Call section is displayed."
+    },
+    {
+      "id": "TC_362",
+      "module": "Car",
+      "subModule": "SBI Third Party - Common Components",
+      "testScenario": "Verify that the common \"Manage All Your Policies In One Place\" section is displayed."
+    },
+    {
+      "id": "TC_363",
+      "module": "Car",
+      "subModule": "SBI Third Party - Other Third Party Plans",
+      "testScenario": "Verify that the \"Other Third Party Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_364",
+      "module": "Car",
+      "subModule": "SBI Third Party - Other Third Party Plans",
+      "testScenario": "Verify that the available Third Party insurers are displayed."
+    },
+    {
+      "id": "TC_365",
+      "module": "Car",
+      "subModule": "SBI Third Party - Other Third Party Plans",
+      "testScenario": "Verify that an insurer link redirects to the corresponding Third Party page."
+    },
+    {
+      "id": "TC_366",
+      "module": "Car",
+      "subModule": "SBI Third Party - Other Third Party Plans",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed."
+    },
+    {
+      "id": "TC_367",
+      "module": "Car",
+      "subModule": "SBI Third Party - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"Car Insurance Companies Similar To SBI\" section is displayed."
+    },
+    {
+      "id": "TC_368",
+      "module": "Car",
+      "subModule": "SBI Third Party - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed and clickable."
+    },
+    {
+      "id": "TC_369",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the Royal Sundaram Own Damage Car Insurance top section is displayed."
+    },
+    {
+      "id": "TC_370",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the top plan/navigation links are displayed."
+    },
+    {
+      "id": "TC_371",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the \"Get Quotes\" CTA is displayed."
+    },
+    {
+      "id": "TC_372",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that clicking \"Get Quotes\" opens the Profile Journey."
+    },
+    {
+      "id": "TC_373",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_374",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that clicking \"Get Quotes Without Car Number\" redirects correctly."
+    },
+    {
+      "id": "TC_375",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the starting premium is displayed."
+    },
+    {
+      "id": "TC_376",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the branch count is displayed."
+    },
+    {
+      "id": "TC_377",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Top Section",
+      "testScenario": "Verify that the cashless garage count is displayed."
+    },
+    {
+      "id": "TC_378",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the right-side section navigation menu is displayed."
+    },
+    {
+      "id": "TC_379",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Overview\" menu navigates to the Overview section."
+    },
+    {
+      "id": "TC_380",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Premium Calculator\" menu navigates to the Premium Calculator section."
+    },
+    {
+      "id": "TC_381",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Claims\" menu navigates to the Claims section."
+    },
+    {
+      "id": "TC_382",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Customer Care\" menu navigates to the Customer Care section."
+    },
+    {
+      "id": "TC_383",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Claim Settlement Ratio\" menu navigates to the Claim Settlement Ratio section."
+    },
+    {
+      "id": "TC_384",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Add-ons\" menu navigates to the Add-ons section."
+    },
+    {
+      "id": "TC_385",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Section Navigation",
+      "testScenario": "Verify that the \"Articles\" menu navigates to the Articles section."
+    },
+    {
+      "id": "TC_386",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Overview",
+      "testScenario": "Verify that the \"Royal Sundaram Own Damage Car Insurance Overview\" section is displayed."
+    },
+    {
+      "id": "TC_387",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Overview",
+      "testScenario": "Verify that Own Damage coverage information is displayed."
+    },
+    {
+      "id": "TC_388",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Overview",
+      "testScenario": "Verify that Own Damage exclusions are mentioned in the overview."
+    },
+    {
+      "id": "TC_389",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Overview",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_390",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claim Settlement Ratio",
+      "testScenario": "Verify that the Claim Settlement Ratio section is displayed."
+    },
+    {
+      "id": "TC_391",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claim Settlement Ratio",
+      "testScenario": "Verify that Royal Sundaram's claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_392",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claim Settlement Ratio",
+      "testScenario": "Verify that the industry average claim settlement ratio is displayed."
+    },
+    {
+      "id": "TC_393",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Premium Calculator",
+      "testScenario": "Verify that the Premium Calculator section is displayed."
+    },
+    {
+      "id": "TC_394",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Premium Calculator",
+      "testScenario": "Verify that the car registration number field is displayed."
+    },
+    {
+      "id": "TC_395",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Premium Calculator",
+      "testScenario": "Verify that a valid car registration number can be entered."
+    },
+    {
+      "id": "TC_396",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Premium Calculator",
+      "testScenario": "Verify that the \"Check Premium\" CTA is displayed."
+    },
+    {
+      "id": "TC_397",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Premium Calculator",
+      "testScenario": "Verify that the \"Get Quotes Without Car Number\" CTA is displayed."
+    },
+    {
+      "id": "TC_398",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that the Add-ons section is displayed."
+    },
+    {
+      "id": "TC_399",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Depreciation Waiver Cover is displayed."
+    },
+    {
+      "id": "TC_400",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Windshield Glass Cover is displayed."
+    },
+    {
+      "id": "TC_401",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Voluntary Deductible Cover is displayed."
+    },
+    {
+      "id": "TC_402",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Full Invoice Price Insurance Cover is displayed."
+    },
+    {
+      "id": "TC_403",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Loss of Baggage is displayed."
+    },
+    {
+      "id": "TC_404",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Daily Cash is displayed."
+    },
+    {
+      "id": "TC_405",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that No Claim Bonus Protector is displayed."
+    },
+    {
+      "id": "TC_406",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Key Replacement is displayed."
+    },
+    {
+      "id": "TC_407",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Tyre Cover is displayed."
+    },
+    {
+      "id": "TC_408",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Lifetime Road Tax Clause is displayed."
+    },
+    {
+      "id": "TC_409",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Engine Protection is displayed."
+    },
+    {
+      "id": "TC_410",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that Personal Accident Cover is displayed."
+    },
+    {
+      "id": "TC_411",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Add-ons",
+      "testScenario": "Verify that the \"View More\" option is displayed."
+    },
+    {
+      "id": "TC_412",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the Own Damage Claims section is displayed."
+    },
+    {
+      "id": "TC_413",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the claim intimation information is displayed."
+    },
+    {
+      "id": "TC_414",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the warning against repairing/dismantling the vehicle is displayed."
+    },
+    {
+      "id": "TC_415",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that Cashless Claim and Reimbursement Claim options are displayed."
+    },
+    {
+      "id": "TC_416",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the Cashless Claim process is displayed."
+    },
+    {
+      "id": "TC_417",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the KYC document requirements are displayed."
+    },
+    {
+      "id": "TC_418",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that company-owned vehicle document requirements are displayed."
+    },
+    {
+      "id": "TC_419",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the claim amount above ₹1 lakh document requirement is displayed."
+    },
+    {
+      "id": "TC_420",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the Reimbursement Claim process is displayed."
+    },
+    {
+      "id": "TC_421",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Claims",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_422",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that the Documents Required For Claims section is displayed."
+    },
+    {
+      "id": "TC_423",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that the insurance policy document requirement is displayed."
+    },
+    {
+      "id": "TC_424",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that the signed claim form requirement is displayed."
+    },
+    {
+      "id": "TC_425",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that RC and valid Driving License requirements are displayed."
+    },
+    {
+      "id": "TC_426",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that FIR requirement is displayed."
+    },
+    {
+      "id": "TC_427",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that original invoice/receipts requirement is displayed."
+    },
+    {
+      "id": "TC_428",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Documents Required",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_429",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Customer Care",
+      "testScenario": "Verify that the Royal Sundaram Customer Care section is displayed."
+    },
+    {
+      "id": "TC_430",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Customer Care",
+      "testScenario": "Verify that the Royal Sundaram Customer Care number is displayed."
+    },
+    {
+      "id": "TC_431",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Customer Care",
+      "testScenario": "Verify that the Royal Sundaram Customer Care email ID is displayed."
+    },
+    {
+      "id": "TC_432",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Renewal",
+      "testScenario": "Verify that the Royal Sundaram Car Insurance Renewal Process section is displayed."
+    },
+    {
+      "id": "TC_433",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Renewal",
+      "testScenario": "Verify that the three-step Royal Sundaram renewal process is displayed."
+    },
+    {
+      "id": "TC_434",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Renewal",
+      "testScenario": "Verify that the Turtlemint renewal process is displayed."
+    },
+    {
+      "id": "TC_435",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Renewal",
+      "testScenario": "Verify that the \"Read More\" CTA is displayed."
+    },
+    {
+      "id": "TC_436",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Articles",
+      "testScenario": "Verify that the \"Latest Articles On Royal Sundaram\" section is displayed."
+    },
+    {
+      "id": "TC_437",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Articles",
+      "testScenario": "Verify that the available Royal Sundaram article cards are displayed."
+    },
+    {
+      "id": "TC_438",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Articles",
+      "testScenario": "Verify that a Royal Sundaram article is clickable."
+    },
+    {
+      "id": "TC_439",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Common Components",
+      "testScenario": "Verify that the common Book an Expert Call section is displayed."
+    },
+    {
+      "id": "TC_440",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Common Components",
+      "testScenario": "Verify that the common \"Manage All Your Policies In One Place\" section is displayed."
+    },
+    {
+      "id": "TC_441",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Other Own Damage Plans",
+      "testScenario": "Verify that the \"Other Own Damage Car Insurance Plans\" section is displayed."
+    },
+    {
+      "id": "TC_442",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Other Own Damage Plans",
+      "testScenario": "Verify that the available Own Damage insurers are displayed."
+    },
+    {
+      "id": "TC_443",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Other Own Damage Plans",
+      "testScenario": "Verify that an Own Damage insurer link redirects correctly."
+    },
+    {
+      "id": "TC_444",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Other Own Damage Plans",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed."
+    },
+    {
+      "id": "TC_445",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"Car Insurance Companies Similar To Royal Sundaram\" section is displayed."
+    },
+    {
+      "id": "TC_446",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - Similar Car Insurance Companies",
+      "testScenario": "Verify that the \"More Insurers\" option is displayed and clickable."
+    },
+    {
+      "id": "TC_447",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the FAQ section is displayed."
+    },
+    {
+      "id": "TC_448",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the \"What is depreciation deduction?\" FAQ is displayed."
+    },
+    {
+      "id": "TC_449",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the depreciation deduction table is displayed."
+    },
+    {
+      "id": "TC_450",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the policy cancellation FAQ is displayed."
+    },
+    {
+      "id": "TC_451",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the eligible vehicle types FAQ is displayed."
+    },
+    {
+      "id": "TC_452",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the CNG/LPG kit FAQ is displayed."
+    },
+    {
+      "id": "TC_453",
+      "module": "Car",
+      "subModule": "Royal Sundaram Own Damage - FAQs",
+      "testScenario": "Verify that the \"View More\" option is displayed in FAQs."
+    },
+    {
+      "id": "TC_001",
+      "module": "Health",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select insurance type."
+    },
+    {
+      "id": "TC_002",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user is able to click on Find Advisor CTA."
+    },
+    {
+      "id": "TC_003",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user is able to click on Get a Quote CTA."
+    },
+    {
+      "id": "TC_004",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Get a Quote CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_005",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Find Advisor CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_006",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the User should redirect to Health profile page on clicking Get a Quote CTA."
+    },
+    {
+      "id": "TC_007",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user is able to select Insurer type and click on Find Advisor should land on Find Advisor Popup."
+    },
+    {
+      "id": "TC_008",
+      "module": "Health",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to get Find Advisor Popup."
+    },
+    {
+      "id": "TC_009",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user is able to enter Pincode."
+    },
+    {
+      "id": "TC_010",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that submit CTA is disable for blank Pincode."
+    },
+    {
+      "id": "TC_011",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that once user enters Pincode then Submit CTA should enable."
+    },
+    {
+      "id": "TC_012",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that with invalid Pincode."
+    },
+    {
+      "id": "TC_013",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user should get this \"Pincode not found\" for invalid Pincode."
+    },
+    {
+      "id": "TC_014",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user should not allow to enter alphabets."
+    },
+    {
+      "id": "TC_015",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that after entering valid pincode click on Submit should land on Advisor Listing Page."
+    },
+    {
+      "id": "TC_016",
+      "module": "Health",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Insurer is present on top of the page."
+    },
+    {
+      "id": "TC_017",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the selected Pincode is present on top of the page."
+    },
+    {
+      "id": "TC_018",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the user can select different Insurer from dropdown."
+    },
+    {
+      "id": "TC_019",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that home functionality is redirecting to Homepage or not."
+    },
+    {
+      "id": "TC_020",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that the Advisor list are relevent to selected Insurer or not."
+    },
+    {
+      "id": "TC_021",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that advisor profile picture is visible."
+    },
+    {
+      "id": "TC_022",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that advisor experience count is visible."
+    },
+    {
+      "id": "TC_023",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that advisor policy sold count is visible."
+    },
+    {
+      "id": "TC_024",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that advisor distance is visible."
+    },
+    {
+      "id": "TC_025",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that visit website CTA is visible on all advisor."
+    },
+    {
+      "id": "TC_026",
+      "module": "Health",
+      "subModule": "undefined",
+      "testScenario": "Verify that get In Touch CTA is clickable."
+    },
+    {
+      "id": "TC_027",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select insurance type."
+    },
+    {
+      "id": "TC_028",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Find Advisor CTA."
+    },
+    {
+      "id": "TC_029",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Get a Quote CTA."
+    },
+    {
+      "id": "TC_030",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Get a Quote CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_031",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Find Advisor CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_032",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should redirect to Bike profile page on clicking Get a Quote CTA."
+    },
+    {
+      "id": "TC_033",
+      "module": "Bike",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer type and click on Find Advisor should land on Find Advisor Popup."
+    },
+    {
+      "id": "TC_034",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to get Find Advisor Popup."
+    },
+    {
+      "id": "TC_035",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to enter Pincode."
+    },
+    {
+      "id": "TC_036",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that submit CTA is disable for blank Pincode."
+    },
+    {
+      "id": "TC_037",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that once user enters Pincode then Submit CTA should enable."
+    },
+    {
+      "id": "TC_038",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that with invalid Pincode."
+    },
+    {
+      "id": "TC_039",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should get this \"Pincode not found\" for invalid Pincode."
+    },
+    {
+      "id": "TC_040",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should not allow to enter alphabets."
+    },
+    {
+      "id": "TC_041",
+      "module": "Bike",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that after entering valid pincode click on Submit should land on Advisor Listing Page."
+    },
+    {
+      "id": "TC_042",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Insurer is present on top of the page."
+    },
+    {
+      "id": "TC_043",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Pincode is present on top of the page."
+    },
+    {
+      "id": "TC_044",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the user can select different Insurer from dropdown."
+    },
+    {
+      "id": "TC_045",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that home functionality is redirecting to Homepage or not."
+    },
+    {
+      "id": "TC_046",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the Advisor list are relevent to selected Insurer or not."
+    },
+    {
+      "id": "TC_047",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor profile picture is visible."
+    },
+    {
+      "id": "TC_048",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor experience count is visible."
+    },
+    {
+      "id": "TC_049",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor policy sold count is visible."
+    },
+    {
+      "id": "TC_050",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor distance is visible."
+    },
+    {
+      "id": "TC_051",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that visit website CTA is visible on all advisor."
+    },
+    {
+      "id": "TC_052",
+      "module": "Bike",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that get In Touch CTA is clickable."
+    },
+    {
+      "id": "TC_053",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select insurance type."
+    },
+    {
+      "id": "TC_054",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Find Advisor CTA."
+    },
+    {
+      "id": "TC_055",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Get a Quote CTA."
+    },
+    {
+      "id": "TC_056",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Get a Quote CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_057",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Find Advisor CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_058",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should redirect to Car profile page on clicking Get a Quote CTA."
+    },
+    {
+      "id": "TC_059",
+      "module": "Car",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer type and click on Find Advisor should land on Find Advisor Popup."
+    },
+    {
+      "id": "TC_060",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to get Find Advisor Popup."
+    },
+    {
+      "id": "TC_061",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to enter Pincode."
+    },
+    {
+      "id": "TC_062",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that submit CTA is disable for blank Pincode."
+    },
+    {
+      "id": "TC_063",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that once user enters Pincode then Submit CTA should enable."
+    },
+    {
+      "id": "TC_064",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that with invalid Pincode."
+    },
+    {
+      "id": "TC_065",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should get this \"Pincode not found\" for invalid Pincode."
+    },
+    {
+      "id": "TC_066",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should not allow to enter alphabets."
+    },
+    {
+      "id": "TC_067",
+      "module": "Car",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that after entering valid pincode click on Submit should land on Advisor Listing Page."
+    },
+    {
+      "id": "TC_068",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Insurer is present on top of the page."
+    },
+    {
+      "id": "TC_069",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Pincode is present on top of the page."
+    },
+    {
+      "id": "TC_070",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the user can select different Insurer from dropdown."
+    },
+    {
+      "id": "TC_071",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that home functionality is redirecting to Homepage or not."
+    },
+    {
+      "id": "TC_072",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the Advisor list are relevent to selected Insurer or not."
+    },
+    {
+      "id": "TC_073",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor profile picture is visible."
+    },
+    {
+      "id": "TC_074",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor experience count is visible."
+    },
+    {
+      "id": "TC_075",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor policy sold count is visible."
+    },
+    {
+      "id": "TC_076",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor distance is visible."
+    },
+    {
+      "id": "TC_077",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that visit website CTA is visible on all advisor."
+    },
+    {
+      "id": "TC_078",
+      "module": "Car",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that get In Touch CTA is clickable."
+    },
+    {
+      "id": "TC_079",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select insurance type."
+    },
+    {
+      "id": "TC_080",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Find Advisor CTA."
+    },
+    {
+      "id": "TC_081",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to click on Get a Quote CTA."
+    },
+    {
+      "id": "TC_082",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Get a Quote CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_083",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should get this \"Please select type of insurance to proceed to the next step\" message when user click on Find Advisor CTA without selecting Insurer."
+    },
+    {
+      "id": "TC_084",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer type and click on Find Advisor should land on Find Advisor Popup."
+    },
+    {
+      "id": "TC_085",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to get Find Advisor Popup."
+    },
+    {
+      "id": "TC_086",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user is able to enter Pincode."
+    },
+    {
+      "id": "TC_087",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that submit CTA is disable for blank Pincode."
+    },
+    {
+      "id": "TC_088",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that once user enters Pincode then Submit CTA should enable."
+    },
+    {
+      "id": "TC_089",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that with invalid Pincode."
+    },
+    {
+      "id": "TC_090",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should get this \"Pincode not found\" for invalid Pincode."
+    },
+    {
+      "id": "TC_091",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that the user should not allow to enter alphabets."
+    },
+    {
+      "id": "TC_092",
+      "module": "Life",
+      "subModule": "Find Advisor Popup Flow",
+      "testScenario": "Verify that after entering valid pincode click on Submit should land on Advisor Listing Page."
+    },
+    {
+      "id": "TC_093",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Insurer is present on top of the page."
+    },
+    {
+      "id": "TC_094",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the selected Pincode is present on top of the page."
+    },
+    {
+      "id": "TC_095",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the user can select different Insurer from dropdown."
+    },
+    {
+      "id": "TC_096",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that home functionality is redirecting to Homepage or not."
+    },
+    {
+      "id": "TC_097",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that the Advisor list are relevent to selected Insurer or not."
+    },
+    {
+      "id": "TC_098",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor profile picture is visible."
+    },
+    {
+      "id": "TC_099",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor experience count is visible."
+    },
+    {
+      "id": "TC_100",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor policy sold count is visible."
+    },
+    {
+      "id": "TC_101",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that advisor distance is visible."
+    },
+    {
+      "id": "TC_102",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that visit website CTA is visible on all advisor."
+    },
+    {
+      "id": "TC_103",
+      "module": "Life",
+      "subModule": "Advisor Listing Page Flow",
+      "testScenario": "Verify that get In Touch CTA is clickable."
+    },
+    {
+      "id": "TC_104",
+      "module": "Life",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the User should redirect to Life landing page on clicking Get a Quote CTA."
+    },
+    {
+      "id": "TC_105",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that plans are visible on page."
+    },
+    {
+      "id": "TC_106",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that term Life Plans is clickable."
+    },
+    {
+      "id": "TC_107",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that investment & Tax planning is clickable."
+    },
+    {
+      "id": "TC_108",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that saving For Child is clickable."
+    },
+    {
+      "id": "TC_109",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that pension & retirement is clickable."
+    },
+    {
+      "id": "TC_110",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that clicking on Plans it redirect to life Profile page."
+    },
+    {
+      "id": "TC_111",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that this \"Please enter the pincode\" error message should come if user not enters pincode."
+    },
+    {
+      "id": "TC_112",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that the user is able to enter pincode."
+    },
+    {
+      "id": "TC_113",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Find Advisor CTA."
+    },
+    {
+      "id": "TC_114",
+      "module": "Life",
+      "subModule": "Life Landing Page Flow",
+      "testScenario": "Verify that after clicking Find Advisor user should redirect to Advisor listing page."
+    },
+    {
+      "id": "TC_115",
+      "module": "Our partners (BIKE)",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer from Our partner section.and should and land on Insurer page."
+    },
+    {
+      "id": "TC_116",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to select any Insurer from our Partner sections."
+    },
+    {
+      "id": "TC_117",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user should land on Insurer page after selecting Insurer."
+    },
+    {
+      "id": "TC_118",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the selected Insurer icon is on top of the page."
+    },
+    {
+      "id": "TC_119",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to enter bike number."
+    },
+    {
+      "id": "TC_120",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Get Quotes CTA."
+    },
+    {
+      "id": "TC_121",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Get Quotes Without Bike Number\" CTA."
+    },
+    {
+      "id": "TC_122",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Year of Inception\" should be present on top of the page."
+    },
+    {
+      "id": "TC_123",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"No. of Branches\" should be present on top of the page."
+    },
+    {
+      "id": "TC_124",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Cashless Garages\" should be present on top of the page."
+    },
+    {
+      "id": "TC_125",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"More\" CTA."
+    },
+    {
+      "id": "TC_126",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that once user scroll the page to bottom then the page tabs should be on TOP."
+    },
+    {
+      "id": "TC_127",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that on clicking \"Plans\" tab user should redirect to that particular section on page."
+    },
+    {
+      "id": "TC_128",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to complete the action successfully. click on Read More Dropdown."
+    },
+    {
+      "id": "TC_129",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get \"Book an Expert call\" Section of right side of page."
+    },
+    {
+      "id": "TC_130",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Download now\" CTA. on the right side of the page."
+    },
+    {
+      "id": "TC_131",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on articles on the bottom of the page."
+    },
+    {
+      "id": "TC_132",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Articles."
+    },
+    {
+      "id": "TC_133",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on View all article CTA."
+    },
+    {
+      "id": "TC_134",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get Insurer list on the right side of the page."
+    },
+    {
+      "id": "TC_135",
+      "module": "Our partners (BIKE)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Insurer on the Insurer section."
+    },
+    {
+      "id": "TC_136",
+      "module": "Our partners (CAR)",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer from Our partner section.and should and land on Insurer page."
+    },
+    {
+      "id": "TC_137",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to select any Insurer from our Partner sections."
+    },
+    {
+      "id": "TC_138",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user should land on Insurer page after selecting Insurer."
+    },
+    {
+      "id": "TC_139",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the selected Insurer icon is on top of the page."
+    },
+    {
+      "id": "TC_140",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to enter car number."
+    },
+    {
+      "id": "TC_141",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Get Quotes CTA."
+    },
+    {
+      "id": "TC_142",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Get Quotes Without Car Number\" CTA."
+    },
+    {
+      "id": "TC_143",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Year of Inception\" should be present on top of the page."
+    },
+    {
+      "id": "TC_144",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"No. of Branches\" should be present on top of the page."
+    },
+    {
+      "id": "TC_145",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Cashless Garages\" should be present on top of the page."
+    },
+    {
+      "id": "TC_146",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Read More\" CTA."
+    },
+    {
+      "id": "TC_147",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that once user scroll the page to bottom then the page tabs should be on TOP."
+    },
+    {
+      "id": "TC_148",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that on clicking \"Plans\" tab user should redirect to that particular section on page."
+    },
+    {
+      "id": "TC_149",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to complete the action successfully. click on More Dropdown."
+    },
+    {
+      "id": "TC_150",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get \"Book a free Consultation\" CTA of right side of page."
+    },
+    {
+      "id": "TC_151",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Download now\" CTA. on the right side of the page."
+    },
+    {
+      "id": "TC_152",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on articles on the bottom of the page."
+    },
+    {
+      "id": "TC_153",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Articles."
+    },
+    {
+      "id": "TC_154",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on View all article CTA."
+    },
+    {
+      "id": "TC_155",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get Insurer list on the right side of the page."
+    },
+    {
+      "id": "TC_156",
+      "module": "Our partners (CAR)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Insurer on the Insurer section."
+    },
+    {
+      "id": "TC_157",
+      "module": "Our partners (Health)",
+      "subModule": "Home Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer from Our partner section.and should and land on Insurer page."
+    },
+    {
+      "id": "TC_158",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to select any Insurer from our Partner sections."
+    },
+    {
+      "id": "TC_159",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user should land on Insurer page after selecting Insurer."
+    },
+    {
+      "id": "TC_160",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the selected Insurer icon is on top of the page."
+    },
+    {
+      "id": "TC_162",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Policies Issued\" should be present on top of the page."
+    },
+    {
+      "id": "TC_163",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"No. of Branches\" should be present on top of the page."
+    },
+    {
+      "id": "TC_164",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Network Hospitals\" should be present on top of the page."
+    },
+    {
+      "id": "TC_165",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that \"Year of Inception\" should be present on top of the page."
+    },
+    {
+      "id": "TC_166",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Read More\" CTA."
+    },
+    {
+      "id": "TC_167",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that once user scroll the page to bottom then the page tabs should be on TOP."
+    },
+    {
+      "id": "TC_168",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that on clicking \"Plans\" tab user should redirect to that particular section on page."
+    },
+    {
+      "id": "TC_169",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to complete the action successfully. click on More Dropdown."
+    },
+    {
+      "id": "TC_170",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get \"Book a free Consultation\" CTA of right side of page."
+    },
+    {
+      "id": "TC_171",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on \"Download now\" CTA. on the right side of the page."
+    },
+    {
+      "id": "TC_172",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on articles on the bottom of the page."
+    },
+    {
+      "id": "TC_173",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Articles."
+    },
+    {
+      "id": "TC_174",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on View all article CTA."
+    },
+    {
+      "id": "TC_175",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to get Insurer list on the right side of the page."
+    },
+    {
+      "id": "TC_176",
+      "module": "Our partners (Health)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to click on Insurer on the Insurer section."
+    },
+    {
+      "id": "TC_177",
+      "module": "Our partners (Life)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to select Insurer from Our partner section.and should and land on Insurer page."
+    },
+    {
+      "id": "TC_178",
+      "module": "Our partners (Life)",
+      "subModule": "Insurer Landing Page Flow",
+      "testScenario": "Verify that the user is able to select any Insurer from our Partner sections."
+    }
+  ]
+}

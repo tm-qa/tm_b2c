@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TurtlemintAutomationSuite" verbose="1">
+
+    <test name="HomepageSmokeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.HomePageTests"/>
+        </classes>
+    </test>
+
+    <test name="NavigationTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.NavigationTests"/>
+        </classes>
+    </test>
+
+    <test name="BikeInsuranceFunnelTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.BikeInsuranceFlowTests"/>
+        </classes>
+    </test>
+
+    <test name="HealthInsuranceFlowTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.HealthInsuranceFlowTests"/>
+        </classes>
+    </test>
+
+    <test name="CarInsuranceFlowTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.CarInsuranceFlowTests"/>
+        </classes>
+    </test>
+
+    <test name="BikeInsuranceAdvancedTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.BikeInsuranceAdvancedTests"/>
+        </classes>
+    </test>
+
+    <test name="LifeInsuranceFlowTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.turtlemint.tests.LifeInsuranceFlowTests"/>
+        </classes>
+    </test>
+
+</suite>

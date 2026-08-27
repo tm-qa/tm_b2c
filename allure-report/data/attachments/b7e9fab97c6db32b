@@ -1,0 +1,787 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generated/life-landing.test.ts >> Life Landing Page - @regression @landing >> Verify that pension retirement is clickable - TC_109
+- Location: src/tests/generated/life-landing.test.ts:32:7
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="life-hero"], .hero-section') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://www.turtlemintinsurance.com/
+          - img "Turtlemint Insurance" [ref=e8]
+        - generic [ref=e9]:
+          - navigation "Primary Header Menu" [ref=e11]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "Car" [ref=e14] [cursor=pointer]:
+                  - /url: /car-insurance/
+                - button "Car submenu" [ref=e15] [cursor=pointer]
+              - listitem [ref=e17]:
+                - link "Bike" [ref=e18] [cursor=pointer]:
+                  - /url: /bike-insurance/
+                - button "Bike submenu" [ref=e19] [cursor=pointer]
+              - listitem [ref=e21]:
+                - link "Health" [ref=e22] [cursor=pointer]:
+                  - /url: /health-insurance/
+                - button "Health submenu" [ref=e23] [cursor=pointer]
+              - listitem [ref=e25]:
+                - link "Life" [ref=e26] [cursor=pointer]:
+                  - /url: /life-insurance/
+                - button "Life submenu" [ref=e27] [cursor=pointer]
+          - navigation "Navigation" [ref=e30]:
+            - list [ref=e31]:
+              - listitem [ref=e32]:
+                - link "Raise A Claim" [ref=e33] [cursor=pointer]:
+                  - /url: /raise-claim/
+            - link "Become A PoSP With Us" [ref=e36] [cursor=pointer]:
+              - /url: https://turtlemintpro.onelink.me/vFlk/1aae1fe7
+    - generic [ref=e38]:
+      - link "Home" [ref=e40] [cursor=pointer]:
+        - /url: https://www.turtlemintinsurance.com/
+      - text: "> Life Insurance"
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - heading [level=1] [ref=e44]:
+          - text: Get The Right Plan
+          - strong [ref=e45]:
+            - mark [ref=e46]: For A Stress-free Life
+        - generic [ref=e47]:
+          - link [ref=e48] [cursor=pointer]:
+            - /url: https://app.turtlemintinsurance.com/life-insurance/profile/term/about-insured?_gl=1*i5egr*_ga*NDIyNzM3ODcuMTY5MTY3MDI5OQ..*_ga_RKQFLJSGZQ*MTY5MTY3MDI5OC4xLjEuMTY5MTY3MDQ5NC41NC4wLjA.
+          - link [ref=e51] [cursor=pointer]:
+            - /url: https://app.turtlemintinsurance.com/life-insurance/profile/saving-for-child/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+          - link [ref=e54] [cursor=pointer]:
+            - /url: https://app.turtlemintinsurance.com/life-insurance/profile/investment-planning/about-insured?_gl=1*t05nbk*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+          - link [ref=e57] [cursor=pointer]:
+            - /url: https://app.turtlemintinsurance.com/life-insurance/profile/retirement/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+      - generic [ref=e61]:
+        - heading [level=2] [ref=e62]:
+          - text: What Is
+          - mark [ref=e63]: Life Insurance?
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - paragraph [ref=e66]: Life insurance plans are characterized by the fact that they pay a benefit on death of the insured. The most popular plans have a fixed period of time for which the policy is in force, and death benefit will be paid. Term Life, Endowment, ULIPs, Pension Plans, and Child Plans all have fixed terms. On the other hand, Whole Life Plans offer cover for the entire lifetime. Read on to know more about each of these.
+            - paragraph [ref=e67]: "Term Life: Term Insurance plans provide a death benefit for a fixed tenure. This is the most basic and also the most important type of life insurance policy available in the market. There are certain sub-types of term life plans like level term plans, increasing term plans, decreasing term plans & term plan with return of premium."
+            - paragraph [ref=e68]: "Endowment plans: Endowment plans are savings-oriented life insurance plans. These plans have both death benefit as well as maturity benefit. Death Benefit is paid to the nominee if the life insured dies within the policy tenure and Maturity Benefit is paid to the policyholder if he survives the entire policy tenure."
+            - paragraph [ref=e69]: "ULIPS: Unit Linked insurance plans (ULIPs) are investment oriented insurance plans. Under these plans, the premiums paid are invested in the capital market. There are different types of investment funds and the policyholder can choose the fund in which the premium should be invested. ULIPs allow a fund option to choose from equity, debt, balanced, liquid etc."
+            - paragraph [ref=e70]: "Child Insurance plans: Child plans are life insurance plans created specifically for providing financial stability to the child. The parent or the child is the life insured under the plan. Usually, the parent is covered in a child plan."
+            - paragraph [ref=e71]: "There are 2 types of child insurance plans: One being the traditional child insurance plans with maturity, bonus (if applicable) and death benefit, if the parent dies. Unit-linked child plans with maturity (investment premium + growth) and a death benefit if the parent dies"
+            - paragraph [ref=e72]: "Whole life plan: Whole Life Plans are unlimited Term Plans. These plans cover individuals till 99 or 100 years of age."
+            - paragraph [ref=e73]: "Pension plans: Pension plans are retirement-oriented life insurance plans. Under these plans, the policyholder creates a corpus from which regular annuity payouts are given till the insured is alive. Pension plans come in two variants – Deferred pension plans and Immediate annuity plans."
+          - paragraph [ref=e75]:
+            - generic "Read More About Car Insurance" [ref=e76] [cursor=pointer]: Read More
+      - generic [ref=e79]:
+        - heading [level=2] [ref=e80]:
+          - text: Trust Our
+          - mark [ref=e81]: Unmatched Experience
+          - text: In Insurance
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - paragraph [ref=e85]: 3.5 Lakh+
+            - paragraph [ref=e86]: QUOTES COMPARED
+          - generic [ref=e87]:
+            - paragraph [ref=e89]: 45+
+            - paragraph [ref=e90]: INSURANCE PARTNERS
+          - generic [ref=e91]:
+            - paragraph [ref=e93]: 30 Crore+
+            - paragraph [ref=e94]: CLAIMS PROCESSED
+          - generic [ref=e95]:
+            - paragraph [ref=e97]: 1 Crore+
+            - paragraph [ref=e98]: POLICIES SOLD
+      - generic [ref=e99]:
+        - heading "Our Partners" [level=2] [ref=e100]
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - link [ref=e105] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/aviva-life-insurance/
+              - img "Aviva Life Insurance Logo" [ref=e106]
+            - link [ref=e109] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/bajaj-allianz-life-insurance/
+              - img "Bajaj Allianz Life Insurance Logo" [ref=e110]
+            - link [ref=e113] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/birla-sun-life-insurance/
+              - img "Birla Sun Life Insurance Logo" [ref=e114]
+            - link [ref=e117] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/canara-hsbc-obc-life-insurance/
+              - img "Canara HSBC OBC Life Insurance Logo" [ref=e118]
+            - link [ref=e121] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/edelweiss-tokio-life-insurance/
+              - img "Edelweiss Tokio Life Insurance Logo" [ref=e122]
+            - link [ref=e125] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/exide-life-insurance/
+              - img "Exide Life Insurance Logo" [ref=e126]
+            - link [ref=e129] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/future-generali-life-insurance/
+              - img "Future Generali Life Insurance Logo" [ref=e130]
+            - link [ref=e133] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/hdfc-life-insurance/
+              - img "HDFC Life Insurance Logo" [ref=e134]
+            - link [ref=e137] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/icici-prudential-life-insurance/
+              - img "ICICI Prudential Life Insurance Logo" [ref=e138]
+            - link [ref=e141] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance-companies/idbi-federal-life-insurance/
+              - img "IDBI Federal Life Insurance Logo" [ref=e142]
+          - button "View More" [ref=e144]
+      - generic [ref=e147]:
+        - heading [level=2] [ref=e149]:
+          - text: Get
+          - mark [ref=e150]: Free Advice
+          - text: From Our
+          - mark [ref=e151]: Certified Insurance Advisors
+        - generic [ref=e155]:
+          - generic [ref=e158]:
+            - generic "Life Insurance" [ref=e159]: Life
+            - generic "Car Insurance" [ref=e163]: Car
+            - generic "Bike Insurance" [ref=e167]: Bike
+            - generic "Health Insurance" [ref=e171]: Health
+          - button "Find Nearby Advisor" [ref=e176] [cursor=pointer]
+      - generic [ref=e178]:
+        - heading "Insurance Blogs" [level=2] [ref=e179]
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - link "Top Life Insurance Companies in India (Updated List 2024) Top Life Insurance Companies in India (Updated List 2024) Table of Contents Introduction to Life Insurance What Does Life Insurance Cover? Common Types of Life Insurance Policies Offered Common Types of Life Insurance Policy Riders… Ankita Sejpal | Feb 05, 2024" [ref=e183] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance/articles/top-insurance-companies-in-india/
+              - img "Top Life Insurance Companies in India (Updated List 2024)" [ref=e185]
+              - paragraph [ref=e186]: Top Life Insurance Companies in India (Updated List 2024)
+              - paragraph [ref=e187]: Table of Contents Introduction to Life Insurance What Does Life Insurance Cover? Common Types of Life Insurance Policies Offered Common Types of Life Insurance Policy Riders…
+              - generic [ref=e188]:
+                - paragraph [ref=e189]: Ankita Sejpal
+                - generic [ref=e190]: "|"
+                - paragraph [ref=e191]: Feb 05, 2024
+            - link "What is Mobile Insurance? Compare Mobile Phone Insurance – A Detailed Guide, 2024 What is Mobile Insurance? Compare Mobile Phone Insurance – A Detailed Guide, 2024 Mobiles have become the part and parcel of the modern generation. It is no longer just a means to talk with people, mobiles today have become multifaceted which allow you to click pictures, chat… Ankita Sejpal | Dec 28, 2023" [ref=e193] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance/articles/mobile-phone-insurance/
+              - img "What is Mobile Insurance? Compare Mobile Phone Insurance – A Detailed Guide, 2024" [ref=e195]
+              - paragraph [ref=e196]: What is Mobile Insurance? Compare Mobile Phone Insurance – A Detailed Guide, 2024
+              - paragraph [ref=e197]: Mobiles have become the part and parcel of the modern generation. It is no longer just a means to talk with people, mobiles today have become multifaceted which allow you to click pictures, chat…
+              - generic [ref=e198]:
+                - paragraph [ref=e199]: Ankita Sejpal
+                - generic [ref=e200]: "|"
+                - paragraph [ref=e201]: Dec 28, 2023
+            - link "Difference Between Annuity & Life Insurance Difference Between Annuity & Life Insurance Life is full of surprises. Understanding and planning before any unforeseen events give you the benefit of financial stability. Knowing your financial requirements and retirement plans can give you… Rupanjali Mitra Basu | Dec 27, 2023" [ref=e203] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance/articles/annuity-vs-life-insurance/
+              - img "Difference Between Annuity & Life Insurance" [ref=e205]
+              - paragraph [ref=e206]: Difference Between Annuity & Life Insurance
+              - paragraph [ref=e207]: Life is full of surprises. Understanding and planning before any unforeseen events give you the benefit of financial stability. Knowing your financial requirements and retirement plans can give you…
+              - generic [ref=e208]:
+                - paragraph [ref=e209]: Rupanjali Mitra Basu
+                - generic [ref=e210]: "|"
+                - paragraph [ref=e211]: Dec 27, 2023
+            - link "Employees’ State Insurance Scheme – All you need to know about ESIS Employees’ State Insurance Scheme – All you need to know about ESIS Table of Contents What is the ESIS? What is the Employees’ State Insurance Corporation? Employees’ State Insurance Corporation Composition Eligibility for ESIS Features of ESIS How does… Ankita Sejpal | Dec 27, 2023" [ref=e213] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance/articles/all-about-employees-state-insurance-scheme/
+              - img "Employees’ State Insurance Scheme – All you need to know about ESIS" [ref=e215]
+              - paragraph [ref=e216]: Employees’ State Insurance Scheme – All you need to know about ESIS
+              - paragraph [ref=e217]: Table of Contents What is the ESIS? What is the Employees’ State Insurance Corporation? Employees’ State Insurance Corporation Composition Eligibility for ESIS Features of ESIS How does…
+              - generic [ref=e218]:
+                - paragraph [ref=e219]: Ankita Sejpal
+                - generic [ref=e220]: "|"
+                - paragraph [ref=e221]: Dec 27, 2023
+          - button [ref=e222]:
+            - link "View More" [ref=e223] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/category/life-insurance/
+      - generic [ref=e224]:
+        - heading [level=2] [ref=e225]:
+          - text: Types Of
+          - mark [ref=e226]: Life Insurance
+          - text: Products
+        - generic [ref=e228]:
+          - link "Term" [ref=e229] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/term-insurance-plans/
+          - link "ULIPs" [ref=e232] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/ulip-plans/
+          - link "Savings" [ref=e235] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/endowment-policy/
+          - link "Pension Plans" [ref=e238] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/pension-plans/
+          - link "Child Insurance" [ref=e241] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/articles/child-investment-plans-insurance-policies-india/
+          - link "Money Back" [ref=e244] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/money-back-policy/
+      - generic [ref=e247]:
+        - heading [level=2] [ref=e248]:
+          - text: Our
+          - mark [ref=e249]: Customers
+          - text: Love Us
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - tabpanel [ref=e253]:
+              - paragraph [ref=e254]:
+                - emphasis [ref=e255]:
+                  - strong [ref=e256]: Turtlemint’s
+                  - text: partnership with some of the best life insurance companies helped me find the best rate for my term insurance policy.
+              - paragraph [ref=e257]: Upasana
+            - tabpanel [ref=e258]:
+              - paragraph [ref=e259]:
+                - emphasis [ref=e260]:
+                  - text: I was wondering about the right coverage when
+                  - strong [ref=e261]: Turtlemint
+                  - text: recommended the ideal amount based on my details. Thanks to
+                  - strong [ref=e262]: Turtlemint
+                  - text: ", I got insured optimally."
+              - paragraph [ref=e263]: Surinder
+            - tabpanel [ref=e264]:
+              - paragraph [ref=e265]:
+                - emphasis [ref=e266]:
+                  - strong [ref=e267]: Turtlemint
+                  - text: made the whole process of buying life insurance simple. I compared and bought the best policy, all thanks to
+                  - strong [ref=e268]: Turtlemint’s
+                  - text: help.
+              - paragraph [ref=e269]: Nilam
+            - tabpanel [ref=e270]:
+              - paragraph [ref=e271]:
+                - emphasis [ref=e272]:
+                  - text: Who knew making a life insurance claim was so easy through
+                  - strong [ref=e273]: Turtlemint
+                  - text: "? Thank you"
+                  - strong [ref=e274]: Turtlemint
+                  - text: for helping me with my claim.
+              - paragraph [ref=e275]: Rashmi
+          - tablist [ref=e276]:
+            - tab "1 of 4" [selected] [ref=e277] [cursor=pointer]: "1"
+            - tab "2 of 4" [ref=e278] [cursor=pointer]: "2"
+            - tab "3 of 4" [ref=e279] [cursor=pointer]: "3"
+            - tab "4 of 4" [ref=e280] [cursor=pointer]: "4"
+      - generic [ref=e282]:
+        - heading "Types of life insurance we offer" [level=2] [ref=e283]
+        - paragraph [ref=e284]:
+          - text: "Life insurance plans are characterized by the fact that they pay a benefit on death of the insured. The most popular plans have a fixed period of time for which the policy is in force, and death benefit will be paid. Term Life, Endowment, ULIPs, Pension Plans, and Child Plans all have fixed terms. On the other hand, Whole Life Plans offer cover for the entire lifetime. Read on to know more about each of these.Term Life:Term Insurance plans provide a death benefit for a fixed tenure. This is the most basic and also the most important type of life insurance policy available in the market. There are certain sub-types of term life plans like level term plans, increasing term plans, decreasing term plans & term plan with return of premium.Endowment plans:"
+          - link "Endowment plans" [ref=e285] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/endowment-policy/
+          - text: "are savings-oriented life insurance plans. These plans have both death benefit as well as maturity benefit.Death Benefit is paid to the nominee if the life insured dies within the policy tenure and Maturity Benefit is paid to the policyholder if he survives the entire policy tenure.ULIPS:"
+          - link "Unit Linked insurance plans (ULIPs)" [ref=e286] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/ulip-plans/
+          - text: "are investment oriented insurance plans. Under these plans, the premiums paid are invested in the capital market. There are different types of investment funds and the policyholder can choose the fund in which the premium should be invested. ULIPs allow a fund option to choose from equity, debt, balanced, liquid etc.Child Insurance plans:"
+          - link "Child plans" [ref=e287] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/life-insurance/articles/child-investment-plans-insurance-policies-india/
+          - text: are life insurance plans created specifically for providing financial stability to the child. The parent or the child is the life insured under the plan. Usually, the parent is covered in a child plan.
+        - paragraph [ref=e288]: "There are 2 types of child insurance plans:"
+        - list [ref=e289]:
+          - listitem [ref=e290]: One being the traditional child insurance plans with maturity, bonus (if applicable) and death benefit, if the parent dies.
+          - listitem [ref=e291]: Unit-linked child plans with maturity (investment premium + growth) and a death benefit if the parent dies
+        - paragraph [ref=e292]:
+          - strong [ref=e293]: "Whole life plan::"
+          - text: Whole Life Plans are unlimited Term Plans. These plans cover individuals till 99 or 100 years of age.
+        - paragraph [ref=e294]:
+          - strong [ref=e295]: "Pension plans:"
+          - text: Pension plans are retirement-oriented life insurance plans. Under these plans, the policyholder creates a corpus from which regular annuity payouts are given till the insured is alive. Pension plans come in two variants – Deferred pension plans and Immediate annuity plans.
+        - heading "Summary table of benefits" [level=2] [ref=e296]
+        - paragraph [ref=e297]: Here is a summary table for you to understand the main differences between the different types of life insurance plans easily-
+        - figure [ref=e298]:
+          - table [ref=e299]:
+            - rowgroup [ref=e300]:
+              - row [ref=e301]:
+                - columnheader [ref=e302]:
+                  - strong [ref=e303]: Type of life insurance
+                - columnheader [ref=e304]:
+                  - strong [ref=e305]: Death benefit
+                - columnheader [ref=e306]:
+                  - strong [ref=e307]: Maturity benefit
+                - columnheader [ref=e308]:
+                  - strong [ref=e309]: Term of Cover
+                - columnheader [ref=e310]:
+                  - strong [ref=e311]: Tax saving
+                - columnheader [ref=e312]:
+                  - strong [ref=e313]: Primary purpose
+            - rowgroup [ref=e314]:
+              - row [ref=e315]:
+                - cell "Term Life" [ref=e316]
+                - cell "Yes" [ref=e317]
+                - cell "No" [ref=e318]
+                - cell "Fixed" [ref=e319]
+                - cell "Yes, Premium paid is tax-free till Rs 1.5 lakhs p.a. U/S 80C and Death Benefit is tax-free in the hands of the nominee" [ref=e320]
+                - cell "Protect family against the loss of income so that living expenses can be taken care of after your death" [ref=e321]
+              - row [ref=e322]:
+                - cell "Endowment plan" [ref=e323]
+                - cell "Yes" [ref=e324]
+                - cell "Yes" [ref=e325]
+                - cell "Fixed" [ref=e326]
+                - cell "Yes, Premium paid is tax-free till Rs 1.5 lakhs p.a. U/S 80C Death Benefit is tax-free in the hands of the nominee Maturity benefit is tax-free U/S 10(10)D" [ref=e327]
+                - cell "Create a saving corpus" [ref=e328]
+              - row [ref=e329]:
+                - cell "ULIP" [ref=e330]
+                - cell "Yes" [ref=e331]
+                - cell "Yes, market linked" [ref=e332]
+                - cell "Fixed" [ref=e333]
+                - cell "Yes, Premium paid is tax free till Rs 1.5 lakhs p.a. U/S 80C Death Benefit is tax-free in the hands of the nominee Maturity benefit is tax-free U/S 10(10)D" [ref=e334]
+                - cell "Create a saving corpus while investing in capital markets" [ref=e335]
+              - row [ref=e336]:
+                - cell "Child Plan" [ref=e337]
+                - cell "Yes" [ref=e338]
+                - cell "Yes" [ref=e339]
+                - cell "Fixed" [ref=e340]
+                - cell "Yes, Premium paid is tax free till Rs 1.5 lakhs p.a. U/S 80C Death Benefit is tax-free in the hands of the nominee Maturity benefit is tax-free U/S 10(10)D" [ref=e341]
+                - cell "Cover child’s education or major expenses" [ref=e342]
+              - row [ref=e343]:
+                - cell "Pension Plan" [ref=e344]
+                - cell "Yes" [ref=e345]
+                - cell "Yes" [ref=e346]
+                - cell "Fixed" [ref=e347]
+                - cell "Yes, Premium paid is tax free till Rs 1.5 lakhs p.a. U/S 80C Annuity is taxable in the hands of the annuitant but 1/3rd of the corpus can be withdrawn tax-free at the time of vesting U/S 10(10)A." [ref=e348]
+                - cell "Saving for regular income post retirement" [ref=e349]
+              - row [ref=e350]:
+                - cell "Whole life plan" [ref=e351]
+                - cell "Yes" [ref=e352]
+                - cell "Yes" [ref=e353]
+                - cell "Until death (up to 100 years)" [ref=e354]
+                - cell "Yes, Premium paid is tax free till Rs 1.5 lakhs p.a. U/S 80C Death Benefit is tax-free in the hands of the nominee Maturity benefit is tax-free U/S 10(10)D" [ref=e355]
+                - cell "Create a legacy benefit for heirs" [ref=e356]
+        - heading "Life insurance premium calculator" [level=2] [ref=e357]
+        - paragraph [ref=e358]: "Every life insurance policy is different and so are their premiums. The reason why no two insurance premiums are the same is because there are a lot of factors that are considered while calculating an insurance premium. Some of the factors responsible for this are the age of the policyholder, policy duration, type of policy, policyholders debts, if any, etc.Many companies provide life insurance premium calculators on their websites wherein a policy aspirant can calculate his premium amount. These premium calculators are free, handy, and easy to use.Steps to using a life insurance premium calculator:"
+        - list [ref=e359]:
+          - listitem [ref=e360]:
+            - text: Visit the
+            - link "Life insurance premium calculator page" [ref=e361] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/life-insurance/articles/life-insurance-premium-calculator/
+            - text: on Turtlemint
+          - listitem [ref=e362]: Next, enter the required details like your gender, date of birth, tobacco habits and annual income
+          - listitem [ref=e363]: Select your desired sum assured
+          - listitem [ref=e364]: Fill in your name and contact details to view quotes of different insurers.
+        - paragraph [ref=e365]: There are many reasons why you should consider using a life insurance premium calculator before buying an insurance policy. First of all, it’s free of cost and takes the least amount of time. Next, it helps any policy aspirant in comparing different types of plans and selecting the one under their budget. Moreover, it tells the exact amount to be spent on premiums which is very helpful for a policy aspirant.
+        - heading "How to buy life insurance with turtlemint?" [level=2] [ref=e366]
+        - paragraph [ref=e367]: When you are buying insurance online you need to be double sure about everything. Turtlemint is a reputed insurance aggregator that offers you the best quotes on life insurance plans from the most popular insurance companies. At Turtlemint you can read about the features and benefits of a plan, compare it with other plans and apply for the same in the easiest way possible.Turtlemint is connected with a number of life insurance companies and thus brings you the best of their plans. If you are someone planning to go for a life insurance plan then you can start by logging into Turtlemint’s official website and navigating to the life insurance section. The website will present all the necessary information related to life insurance policies and will also showcase the best plans of the year. You can go through the page, compare plans as per your requirements and apply for the same within minutes.
+        - heading "7 things to know about life insurance" [level=2] [ref=e368]
+        - paragraph [ref=e369]:
+          - text: According to Maslow’s Hierarchy of needs, Life Insurance or Protection should be one’s primary importance. Theoretically, everyone knows about it, but rarely do we understand the real importance of the same. Life insurance is a safeguard against financial deficiency at the time of insured Individual’s death. Practically, life insurance grants you and your family the financial security. It also provides you assurance to deal with any unforeseen events. Life insurance is preferred according to the needs and goals of the insured. So, buying a life insurance policy is important. Read more about
+          - link "Reason to buy life insurance now" [ref=e370] [cursor=pointer]:
+            - /url: https://www.turtlemintinsurance.com/term-life-insurance/articles/reasons-to-buy-a-life-insurance-now?utm_source=turtlemint-blog&utm_medium=organic-blog&utm_campaign=Term-Life-Blog
+        - paragraph [ref=e371]: However, before you invest in a life insurance plan, here are 7 things that you absolutely need to know –
+        - list [ref=e372]:
+          - listitem [ref=e373]: Insurance is NOT an investmentThis is the first thing you need to acknowledge and accept that insurance should never be considered as an investment. Insurance is a vital part of financial planning. But a lot of people consider it as an investment.This is primarily because there are some life insurance plans in India that double up as investments. For example, Endowment Policies have a lump-sum maturity benefit, Money Back Plans have regular payments during the entire policy tenure as pre-defined schedule and Unit Linked Insurance Plans have an opportunity to choose your investments even in equity! But what you need to keep in mind while choosing your Life Insurance Policy is the coverage amount you wish to purchase for your family. Insurance is synonymous to protection and that is the primary and most important objective of ANY life insurance product. They should not be evaluated on the basis of their return, bonus, etc.
+          - listitem [ref=e374]: Required Coverage amountThe required coverage amount for your insurance policy is the most important aspect of choosing a plan. It depends on your lifestyle and priorities. You have to consider your standard of living, inflation, needs, liabilities etc. Then, accordingly, decide your coverage amount which would be sufficient for your family.For instance, if your family’s monthly expenses are say ₹50,000. You need to opt for a Life Insurance coverage of at least ₹ 1 crore so that a post-tax interest earning is enough to provide for the family’s regular monthly expenses! So, ensure that your coverage amount is sufficient to meet the monthly expense of your family in your absence.
+          - listitem [ref=e375]: Policy TenureThe tenure of Life insurance policies depends on the type of plan you opt for. You can choose any tenure that you think is necessary for you and your family. However, the best way to select an apt tenure for your insurance policy is as long as you are earning and providing for your family. This is typically till the age of 60 or 65 years post which your children will definitely start earning and so your financial dependence will gradually reduce!
+          - listitem [ref=e376]:
+            - text: "Type of Life Insurance best suited for youThere are varieties of plans offered and available in the market. It all depends on your needs as to which plan you opt for. Some of the insurance plans are:"
+            - list [ref=e377]:
+              - listitem [ref=e378]: Term InsuranceWhole life insurance plansEndowment Assurance PlansMoney-Back PlansChild PlansPension PlansUnit Linked Insurance Plan
+            - text: Out of the above-stated plans,
+            - link "Term Plan" [ref=e379] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/term-life-insurance?utm_source=turtlemint-blog&utm_medium=organic-blog&utm_campaign=Term-Life-Blog
+            - text: is the basic and the purest form of life Insurance. It is the cheapest plan. This plan covers only the death risk and has no maturity benefit. The payment is made in lump-sum amount if the insured person dies during the tenure of the plan.Read more about
+            - link "Why is term insurance is an absolute buy" [ref=e380] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/term-life-insurance/articles/why-is-term-insurance-an-absolute-buy?utm_source=turtlemint-blog&utm_medium=organic-blog&utm_campaign=Term-Life-Blog
+            - text: So, if you need a high coverage at a low cost, term plan is the best choice!
+          - listitem [ref=e381]: Claim Procedure:You and your nominee should be completely aware of the claim procedure so as to expedite the claim as and when the requirement occurs.
+          - listitem [ref=e382]:
+            - text: "Benefit Offered: Death and Maturity BenefitThere are two types of benefits in life insurance plans."
+            - list [ref=e383]:
+              - listitem [ref=e384]: One is Death Benefit, where the beneficiaries will receive a lump-sum amount if the life insured dies within the policy tenure.
+              - listitem [ref=e385]: The other one is Maturity Benefit, where the claim arises when the policy is matured. It is paid only when all premiums are paid on time.Maturity Benefit is payable to all life insurance policies except term plans. Endowment Plans are a type of Life Insurance with maturity benefit. Even ULIPs have maturity benefits. These kinds of policies are relatively quite expensive compared to term insurance, but it protects your family with a coverage amount in case the insured dies within the policy tenure. Alongside, these policies have a maturity benefit payable to the policyholder, if you happen to outlive the entire tenure. Hence, the money is not completely foregone in case you survive past the policy term; as is the case with term plans!
+          - listitem [ref=e386]:
+            - text: Tax AdvantagesLife Insurance plans, apart from providing funds, also save taxes. Under
+            - link "Section 80C" [ref=e387] [cursor=pointer]:
+              - /url: https://cleartax.in/s/80c-80-deductions
+            - text: of
+            - link "Income Tax Act, 1961" [ref=e388] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/The_Income-tax_Act,_1961
+            - text: ", premium amount contributed to life insurance plans are eligible for tax rebate. The limit for premium contribution is up to ₹1,50,000. Also, under"
+            - link "Section 10(10D)" [ref=e389] [cursor=pointer]:
+              - /url: http://profit.ndtv.com/news/your-money/article-how-to-avail-tax-benefits-under-section-10-377826
+            - text: of Income Tax Act, 1961, amount of sum insured paid on maturity or death or surrender of policy is completely tax-free. So, life insurance is preferred by many as it protects your family and is also tax efficient.
+        - paragraph [ref=e390]: Know these important aspects of life insurance and then choose the right plan.
+      - generic [ref=e392]:
+        - paragraph [ref=e393]: FAQ
+        - generic [ref=e395]:
+          - generic [ref=e396]:
+            - paragraph [ref=e397]: Basics of life insurance in India
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - paragraph [ref=e400]:
+                  - button "What is life insurance?" [ref=e401] [cursor=pointer]
+                - generic "What is life insurance?" [ref=e402]:
+                  - generic [ref=e404]:
+                    - paragraph [ref=e405]: A life insurance plan pays your family a certain sum of money as death benefit (as mentioned in the policy) in event of your death while the policy is in force and/or provides returns as maturity proceeds after a set period (called policy term) when the policy terminates; in exchange of a premium.
+                    - paragraph [ref=e406]: There are different types of life insurance plans broadly the pure protection or term-life plans and investment plans.
+                    - paragraph [ref=e407]: In comparison to investment-type life insurance plans, term life plans only get you a death benefit and not any other return. However, the death benefits you get is substantial in comparison, typically 500-1000 times your annual premium. It would take an investment earning 10% interest for more than 65 years – a lifetime – to get a 500X return!
+                    - paragraph [ref=e408]: Term insurance is also quite cheap, e.g. for a 30-year-old, a cover of 50 lakhs, costs about Rs. 4,000 per year.
+              - paragraph [ref=e410]:
+                - button "What are the types of life insurance?" [ref=e411] [cursor=pointer]
+              - paragraph [ref=e413]:
+                - button "Why should I buy a life insurance plan?" [ref=e414] [cursor=pointer]
+              - paragraph [ref=e416]:
+                - button "How much life insurance should I buy?" [ref=e417] [cursor=pointer]
+              - paragraph [ref=e419]:
+                - button "What are the tax benefits for life insurance?" [ref=e420] [cursor=pointer]
+              - paragraph [ref=e422]:
+                - button "Can I cancel my life insurance policy?" [ref=e423] [cursor=pointer]
+              - paragraph [ref=e425]:
+                - button "How does insurance work?" [ref=e426] [cursor=pointer]
+          - generic [ref=e427]:
+            - paragraph [ref=e428]: How to save money on your life insurance
+            - generic [ref=e429]:
+              - generic [ref=e430]:
+                - paragraph [ref=e431]:
+                  - button "Can I get a lower price elsewhere?" [ref=e432] [cursor=pointer]
+                - generic "Can I get a lower price elsewhere?" [ref=e433]:
+                  - paragraph [ref=e436]: The prices on Turtlemint are the lowest you can find anywhere, including insurance company websites. In addition, with us you get the benefit of smart choices, personalised recommendations, and life-long claims support.
+              - paragraph [ref=e438]:
+                - button "What determines the price or premium I pay?" [ref=e439] [cursor=pointer]
+              - paragraph [ref=e441]:
+                - button "How do I choose the right policy" [ref=e442] [cursor=pointer]
+          - generic [ref=e443]:
+            - paragraph [ref=e444]: How to make claims for your life insurance policy
+            - generic [ref=e445]:
+              - generic [ref=e446]:
+                - paragraph [ref=e447]:
+                  - button "How can your nominee claim the amount in the event of your death?" [ref=e448] [cursor=pointer]
+                - generic "How can your nominee claim the amount in the event of your death?" [ref=e449]:
+                  - paragraph [ref=e452]: Once you buy a Life Plan, keep your nominee aware of the latest policy copy. To make the claim, your nominee has to intimate the insurance company and provide necessary documents which will include copy of death certificate, hospital records, if any, identity and bank account proofs.
+              - paragraph [ref=e454]:
+                - button "Can the claim be denied for any reason?" [ref=e455] [cursor=pointer]
+          - generic [ref=e456]:
+            - paragraph [ref=e457]: Other FAQs
+            - generic [ref=e458]:
+              - generic [ref=e459]:
+                - paragraph [ref=e460]:
+                  - button "What are the types of claims in life insurance policies?" [ref=e461] [cursor=pointer]
+                - generic "What are the types of claims in life insurance policies?" [ref=e462]:
+                  - generic [ref=e464]:
+                    - paragraph [ref=e465]: Life insurance policies have the following types of claims –
+                    - list [ref=e466]:
+                      - listitem [ref=e467]: Maturity claim which is paid when the term of the plan comes to an end
+                      - listitem [ref=e468]: Death claim which is paid if the insured dies during the term of the plan
+                      - listitem [ref=e469]: Money back claims which are payable during the term of the plan if the insured is alive in a money back policy
+                      - listitem [ref=e470]: Surrender value claim which is payable if the policy is surrendered by the policyholder before the term completes
+              - paragraph [ref=e472]:
+                - button "How should I buy life insurance plans?" [ref=e473] [cursor=pointer]
+              - paragraph [ref=e475]:
+                - button "How should life insurance plans be compared?" [ref=e476] [cursor=pointer]
+              - paragraph [ref=e478]:
+                - button "What are riders in life insurance?" [ref=e479] [cursor=pointer]
+              - paragraph [ref=e481]:
+                - button "What are the available riders?" [ref=e482] [cursor=pointer]
+              - paragraph [ref=e484]:
+                - button "Do riders pay any benefit on maturity?" [ref=e485] [cursor=pointer]
+              - paragraph [ref=e487]:
+                - button "What is surrendering the policy?" [ref=e488] [cursor=pointer]
+              - paragraph [ref=e490]:
+                - button "What is not covered under life insurance plans?" [ref=e491] [cursor=pointer]
+              - paragraph [ref=e493]:
+                - button "What is lapse of a policy?" [ref=e494] [cursor=pointer]
+              - paragraph [ref=e496]:
+                - button "What is grace period?" [ref=e497] [cursor=pointer]
+              - paragraph [ref=e499]:
+                - button "Are no benefits payable if the policy lapses?" [ref=e500] [cursor=pointer]
+              - paragraph [ref=e502]:
+                - button "What is revival?" [ref=e503] [cursor=pointer]
+              - paragraph [ref=e505]:
+                - button "What is required to revive the policy?" [ref=e506] [cursor=pointer]
+              - paragraph [ref=e508]:
+                - button "What is free-look period?" [ref=e509] [cursor=pointer]
+              - paragraph [ref=e511]:
+                - button "What is the premium paying mode and frequency allowed in life insurance plans?" [ref=e512] [cursor=pointer]
+              - paragraph [ref=e514]:
+                - button "How do life insurance premium calculators work?" [ref=e515] [cursor=pointer]
+              - paragraph [ref=e517]:
+                - button "Are there any discounts available in life insurance plans?" [ref=e518] [cursor=pointer]
+              - paragraph [ref=e520]:
+                - button "Is the premium loaded for any additional cost?" [ref=e521] [cursor=pointer]
+              - paragraph [ref=e523]:
+                - button "What benefit is paid in case of suicide?" [ref=e524] [cursor=pointer]
+              - paragraph [ref=e526]:
+                - button "Do life insurance policies provide loans?" [ref=e527] [cursor=pointer]
+              - paragraph [ref=e529]:
+                - button "What is foreclosure?" [ref=e530] [cursor=pointer]
+              - paragraph [ref=e532]:
+                - button "Who is a nominee under a life insurance policy?" [ref=e533] [cursor=pointer]
+              - paragraph [ref=e535]:
+                - button "What is assignment?" [ref=e536] [cursor=pointer]
+              - paragraph [ref=e538]:
+                - button "What is endorsement?" [ref=e539] [cursor=pointer]
+              - paragraph [ref=e541]:
+                - button "What changes are allowed in life insurance plans?" [ref=e542] [cursor=pointer]
+              - paragraph [ref=e544]:
+                - button "Is it necessary to fill the proposal form correctly?" [ref=e545] [cursor=pointer]
+              - paragraph [ref=e547]:
+                - button "What is the process of making a death claim?" [ref=e548] [cursor=pointer]
+              - paragraph [ref=e550]:
+                - button "What are Money back plans?" [ref=e551] [cursor=pointer]
+              - paragraph [ref=e553]:
+                - button "What are the types of pension plans?" [ref=e554] [cursor=pointer]
+          - paragraph
+          - paragraph [ref=e555]: "*Prices will vary on the basis of your individual profile"
+          - paragraph
+    - contentinfo [ref=e556]:
+      - generic [ref=e558]:
+        - generic [ref=e559]:
+          - generic [ref=e560]:
+            - link [ref=e562] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/
+              - img "Turtlemint Insurance" [ref=e563]
+            - list [ref=e564]:
+              - listitem [ref=e565]:
+                - link "Twitter" [ref=e566] [cursor=pointer]:
+                  - /url: https://twitter.com/helloturtlemint
+              - listitem [ref=e568]:
+                - link "Instagram" [ref=e569] [cursor=pointer]:
+                  - /url: https://www.instagram.com/turtlemint.insurance/
+              - listitem [ref=e571]:
+                - link "Facebook" [ref=e572] [cursor=pointer]:
+                  - /url: https://www.facebook.com/turtlemint.insurance/
+              - listitem [ref=e574]:
+                - link "Linkedin" [ref=e575] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/turtlemint
+              - listitem [ref=e577]:
+                - link "Youtube" [ref=e578] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/InsuranceGyan
+          - generic [ref=e580]:
+            - paragraph [ref=e581]: Get Insured
+            - generic [ref=e582]:
+              - paragraph [ref=e583]:
+                - link "Car Insurance" [ref=e584] [cursor=pointer]:
+                  - /url: /car-insurance/
+              - paragraph [ref=e585]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Bike Insurance" [ref=e586] [cursor=pointer]:
+                  - /url: /bike-insurance/
+              - paragraph [ref=e587]:
+                - link:
+                  - /url: /car-insurance
+                - link "Health Insurance" [ref=e588] [cursor=pointer]:
+                  - /url: /health-insurance/
+              - paragraph [ref=e589]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Life Insurance" [ref=e590] [cursor=pointer]:
+                  - /url: /life-insurance/
+          - generic [ref=e591]:
+            - paragraph [ref=e592]: Quick Links
+            - generic [ref=e593]:
+              - paragraph [ref=e594]:
+                - link "About Us" [ref=e595] [cursor=pointer]:
+                  - /url: /about-us/
+              - paragraph [ref=e596]:
+                - link "Blog" [ref=e597] [cursor=pointer]:
+                  - /url: /blog/
+              - paragraph [ref=e598]:
+                - link "Claim" [ref=e599] [cursor=pointer]:
+                  - /url: /raise-claim/
+              - paragraph [ref=e600]: Policy Cancellation & Refund
+              - paragraph [ref=e601]:
+                - link "Careers" [ref=e602] [cursor=pointer]:
+                  - /url: https://careers.turtlemint.com/jobs
+              - paragraph [ref=e603]:
+                - link "PoSP Agreement" [ref=e604] [cursor=pointer]:
+                  - /url: /service-agreement-cum-appointment-letter-with-posp/
+              - paragraph [ref=e605]:
+                - link "Annual Returns" [ref=e606] [cursor=pointer]:
+                  - /url: /annual-return/
+              - paragraph [ref=e607]:
+                - link "Grievance Policy" [ref=e608] [cursor=pointer]:
+                  - /url: /grievance-redressal/
+              - paragraph [ref=e609]:
+                - link "CSR Policy" [ref=e610] [cursor=pointer]:
+                  - /url: /corporate-social-responsibility-policy/
+              - paragraph [ref=e611]:
+                - link "ISNP TAT" [ref=e612] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/ISNP-TAT-TIB.pdf
+              - paragraph [ref=e613]:
+                - link "Branch List" [ref=e614] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/BranchList.pdf
+          - generic [ref=e615]:
+            - paragraph [ref=e616]: Contact
+            - generic [ref=e617]:
+              - paragraph [ref=e618]: "Registered & Corporate Office :"
+              - paragraph [ref=e619]: The ORB – Sahar, 4B, 1st Floor, A Wing, Marol Village, Andheri (East), Mumbai – 400099, Maharashtra, India
+              - paragraph [ref=e620]: For Customers
+              - paragraph [ref=e621]:
+                - link "1800 267 6010" [ref=e622] [cursor=pointer]:
+                  - /url: tel:18002676010
+              - paragraph [ref=e623]:
+                - link "support@turtlemint.com" [ref=e624] [cursor=pointer]:
+                  - /url: mailto:support@turtlemint.com
+              - paragraph [ref=e625]: For Partners
+              - paragraph [ref=e626]:
+                - link "1800 266 0101" [ref=e627] [cursor=pointer]:
+                  - /url: tel:18002660101
+              - paragraph [ref=e628]:
+                - link "pospsupport@turtlemint.com" [ref=e629] [cursor=pointer]:
+                  - /url: mailto:pospsupport@turtlemint.com
+              - paragraph [ref=e630]
+          - generic [ref=e632]:
+            - paragraph [ref=e633]: Turtlemint Insurance Broking Services Pvt Ltd
+            - paragraph [ref=e634]:
+              - link "IRDAI License No. 487" [ref=e635] [cursor=pointer]:
+                - /url: /irda-license/
+              - text: ",CIN: U66000MH2013PTC249565Composite Broker"
+            - paragraph [ref=e636]: "Principal Officer: Vilas Gandre"
+            - paragraph [ref=e637]:
+              - link "8828802996" [ref=e638] [cursor=pointer]:
+                - /url: tel:+918828802996
+            - paragraph [ref=e639]: "Secured by:"
+            - paragraph [ref=e640]
+        - paragraph [ref=e643]: Insurance is the subject matter of the solicitation. For more details on policy terms, conditions, exclusions, limitations, please refer/read policy brochure carefully before concluding sale.
+        - separator [ref=e644]
+        - generic [ref=e645]:
+          - paragraph [ref=e646]: ©2026 Turtlemint, All Rights Reserved.
+          - generic [ref=e647]:
+            - paragraph [ref=e648]:
+              - link "Policy Statements" [ref=e649] [cursor=pointer]:
+                - /url: /privacy/
+            - paragraph [ref=e650]:
+              - link "Terms & Conditions" [ref=e651] [cursor=pointer]:
+                - /url: /terms/
+      - generic [ref=e653]:
+        - figure [ref=e654]:
+          - img "Turtlemint Logo" [ref=e655]
+        - paragraph [ref=e656]:
+          - text: Turtlemint Insurance is a part of the
+          - mark [ref=e657]:
+            - strong [ref=e658]: Turtlemint Fintech Solutions Ltd.
+            - text: (
+            - link [ref=e659] [cursor=pointer]:
+              - /url: https://www.turtlemint.com/
+              - strong [ref=e660]: Turtlemint.com
+            - text: )
+  - img [ref=e666] [cursor=pointer]
+  - iframe [ref=e669]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, expect } from '@playwright/test';
+  2   | import { TIMEOUTS } from '@config/constants';
+  3   | 
+  4   | export class BasePage {
+  5   |   readonly page: Page;
+  6   | 
+  7   |   constructor(page: Page) {
+  8   |     this.page = page;
+  9   |   }
+  10  | 
+  11  |   async goto(path: string = '') {
+  12  |     await this.page.goto(path, { waitUntil: 'domcontentloaded', timeout: TIMEOUTS.LONG });
+  13  |     await this.waitForLoad();
+  14  |   }
+  15  | 
+  16  |   async waitForLoad(timeout: number = TIMEOUTS.MEDIUM) {
+  17  |     await this.page.waitForLoadState('networkidle', { timeout });
+  18  |   }
+  19  | 
+  20  |   async waitForElement(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+> 21  |     await locator.waitFor({ state: 'visible', timeout });
+      |                   ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  22  |   }
+  23  | 
+  24  |   async click(locator: Locator, options?: { force?: boolean; timeout?: number }) {
+  25  |     await locator.click({ force: options?.force, timeout: options?.timeout || TIMEOUTS.MEDIUM });
+  26  |   }
+  27  | 
+  28  |   async hover(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  29  |     await locator.hover({ timeout });
+  30  |   }
+  31  | 
+  32  |   async fill(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  33  |     await locator.fill(value, { timeout });
+  34  |   }
+  35  | 
+  36  |   async selectOption(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  37  |     await locator.selectOption(value, { timeout });
+  38  |   }
+  39  | 
+  40  |   async getText(locator: Locator, timeout: number = TIMEOUTS.MEDIUM): Promise<string> {
+  41  |     await this.waitForElement(locator, timeout);
+  42  |     return (await locator.textContent())?.trim() || '';
+  43  |   }
+  44  | 
+  45  |   async getAttribute(locator: Locator, attribute: string, timeout: number = TIMEOUTS.MEDIUM): Promise<string | null> {
+  46  |     await this.waitForElement(locator, timeout);
+  47  |     return await locator.getAttribute(attribute);
+  48  |   }
+  49  | 
+  50  |   async isVisible(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  51  |     try {
+  52  |       await locator.waitFor({ state: 'visible', timeout });
+  53  |       return true;
+  54  |     } catch {
+  55  |       return false;
+  56  |     }
+  57  |   }
+  58  | 
+  59  |   async isHidden(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  60  |     try {
+  61  |       await locator.waitFor({ state: 'hidden', timeout });
+  62  |       return true;
+  63  |     } catch {
+  64  |       return false;
+  65  |     }
+  66  |   }
+  67  | 
+  68  |   async expectVisible(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  69  |     await expect(locator).toBeVisible({ timeout });
+  70  |   }
+  71  | 
+  72  |   async expectHidden(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  73  |     await expect(locator).toBeHidden({ timeout });
+  74  |   }
+  75  | 
+  76  |   async expectText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  77  |     await expect(locator).toHaveText(expectedText, { timeout });
+  78  |   }
+  79  | 
+  80  |   async expectContainText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  81  |     await expect(locator).toContainText(expectedText, { timeout });
+  82  |   }
+  83  | 
+  84  |   async expectURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  85  |     await expect(this.page).toHaveURL(urlPattern, { timeout });
+  86  |   }
+  87  | 
+  88  |   async expectTitle(titlePattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  89  |     await expect(this.page).toHaveTitle(titlePattern, { timeout });
+  90  |   }
+  91  | 
+  92  |   async waitForURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  93  |     await this.page.waitForURL(urlPattern, { timeout });
+  94  |   }
+  95  | 
+  96  |   async scrollIntoView(locator: Locator) {
+  97  |     await locator.scrollIntoViewIfNeeded();
+  98  |   }
+  99  | 
+  100 |   async takeScreenshot(name: string) {
+  101 |     return await this.page.screenshot({ path: `test-results/screenshots/${name}.png`, fullPage: true });
+  102 |   }
+  103 | 
+  104 |   async getAllTexts(locator: Locator): Promise<string[]> {
+  105 |     const elements = await locator.all();
+  106 |     const texts: string[] = [];
+  107 |     for (const element of elements) {
+  108 |       const text = (await element.textContent())?.trim();
+  109 |       if (text) texts.push(text);
+  110 |     }
+  111 |     return texts;
+  112 |   }
+  113 | 
+  114 |   async getAllHrefs(locator: Locator): Promise<string[]> {
+  115 |     const elements = await locator.all();
+  116 |     const hrefs: string[] = [];
+  117 |     for (const element of elements) {
+  118 |       const href = await element.getAttribute('href');
+  119 |       if (href) hrefs.push(href);
+  120 |     }
+  121 |     return hrefs;
+```

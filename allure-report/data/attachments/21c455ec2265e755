@@ -1,0 +1,573 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generated/shared-flows.test.ts >> Life - Shared Flows - @regression @advisor >> Advisor Listing Page Flow >> Verify that get In Touch CTA is clickable - TC_103
+- Location: src/tests/generated/shared-flows.test.ts:612:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="insurance-type-select"], select[name="insuranceType"]') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://www.turtlemintinsurance.com/
+          - img "Turtlemint Insurance" [ref=e8]
+        - generic [ref=e9]:
+          - navigation "Primary Header Menu" [ref=e11]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "Car" [ref=e14] [cursor=pointer]:
+                  - /url: /car-insurance/
+                - button "Car submenu" [ref=e15] [cursor=pointer]
+              - listitem [ref=e17]:
+                - link "Bike" [ref=e18] [cursor=pointer]:
+                  - /url: /bike-insurance/
+                - button "Bike submenu" [ref=e19] [cursor=pointer]
+              - listitem [ref=e21]:
+                - link "Health" [ref=e22] [cursor=pointer]:
+                  - /url: /health-insurance/
+                - button "Health submenu" [ref=e23] [cursor=pointer]
+              - listitem [ref=e25]:
+                - link "Life" [ref=e26] [cursor=pointer]:
+                  - /url: /life-insurance/
+                - button "Life submenu" [ref=e27] [cursor=pointer]
+          - navigation "Navigation" [ref=e30]:
+            - list [ref=e31]:
+              - listitem [ref=e32]:
+                - link "Raise A Claim" [ref=e33] [cursor=pointer]:
+                  - /url: /raise-claim/
+            - link "Become A PoSP With Us" [ref=e36] [cursor=pointer]:
+              - /url: https://turtlemintpro.onelink.me/vFlk/1aae1fe7
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Insurance made simple with right experts and smart tech" [level=1] [ref=e40]:
+          - text: Insurance
+          - strong [ref=e41]:
+            - mark [ref=e42]: made simple
+          - generic [ref=e43]: with right experts and smart tech
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: Get a quote or compare
+          - generic [ref=e46]:
+            - link [ref=e47] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/two-wheeler-insurance/two-wheeler-profile/tw-registration-info
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/car-insurance/car-profile/car-registration-info
+            - link [ref=e53] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/health-insurance/health-profile/profile-gender
+            - link [ref=e56] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/term/about-insured?_gl=1*i5egr*_ga*NDIyNzM3ODcuMTY5MTY3MDI5OQ..*_ga_RKQFLJSGZQ*MTY5MTY3MDI5OC4xLjEuMTY5MTY3MDQ5NC41NC4wLjA.
+            - link [ref=e59] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/investment-planning/about-insured?_gl=1*t05nbk*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+            - link [ref=e62] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/saving-for-child/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+            - link [ref=e65] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/retirement/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+      - generic [ref=e68]:
+        - heading [level=2] [ref=e69]:
+          - text: Why
+          - mark [ref=e70]: Turtlemint Insurance?
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - paragraph [ref=e74]: 4.3 Lakh+
+            - paragraph [ref=e75]: TRAINED INSURANCE ADVISORS
+          - generic [ref=e76]:
+            - paragraph [ref=e78]: 1.2 Crore+
+            - paragraph [ref=e79]: HAPPY CUSTOMERS
+          - generic [ref=e80]:
+            - paragraph [ref=e82]: 42+
+            - paragraph [ref=e83]: INSURANCE PARTNERS
+          - generic [ref=e84]:
+            - paragraph [ref=e86]: 1 Crore+
+            - paragraph [ref=e87]: POLICIES SOLD
+      - generic [ref=e88]:
+        - heading [level=2] [ref=e89]:
+          - mark [ref=e90]: Turtlemint
+          - mark [ref=e91]: Insurance
+          - text: With You On Every Step
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: "1"
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: Choosing Right Policy
+            - paragraph [ref=e98]: Compare Quotes From 45+ Insurers
+            - link "Compare Quotes" [ref=e100] [cursor=pointer]:
+              - /url: "#get-quote"
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: "2"
+            - paragraph [ref=e103]:
+              - strong [ref=e104]: Filling The Application
+            - paragraph [ref=e106]: Get Free Advise And Application Assistance
+            - generic [ref=e107]: Connect With Our Experts
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: "3"
+            - paragraph [ref=e111]:
+              - strong [ref=e112]: Claims And Renewals
+            - paragraph [ref=e114]: Hassle-free Claim Assistance
+            - link "Download App" [ref=e116] [cursor=pointer]:
+              - /url: https://turtlemint.onelink.me/b9Hg/0hkazw9s
+      - generic [ref=e117]:
+        - heading [level=2] [ref=e118]:
+          - text: Types Of
+          - mark [ref=e119]: Insurance
+          - text: Products
+        - generic [ref=e120]:
+          - tablist [ref=e121]:
+            - tab "Bike" [selected] [ref=e122] [cursor=pointer]
+            - tab "Car" [ref=e123] [cursor=pointer]
+            - tab "Health" [ref=e124] [cursor=pointer]
+            - tab "Life" [ref=e125] [cursor=pointer]
+          - tabpanel "Bike" [ref=e127]:
+            - generic [ref=e128]:
+              - link "Third Party" [ref=e129] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/third-party-bike-insurance/
+              - link "Comprehensive" [ref=e132] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/comprehensive-bike-insurance/
+              - link "Own Damage" [ref=e135] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/standalone-own-damage-bike-insurance/
+            - paragraph [ref=e138]:
+              - link "Learn More About Bike" [ref=e139] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/
+      - generic [ref=e142]:
+        - heading "Our Partners" [level=2] [ref=e143]
+        - generic [ref=e144]:
+          - tablist [ref=e145]:
+            - tab "Bike" [selected] [ref=e146] [cursor=pointer]
+            - tab "Car" [ref=e147] [cursor=pointer]
+            - tab "Health" [ref=e148] [cursor=pointer]
+            - tab "Life" [ref=e149] [cursor=pointer]
+          - tabpanel "Bike" [ref=e151]:
+            - generic [ref=e152]:
+              - link [ref=e155] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/bajaj-allianz-two-wheeler-insurance/
+                - img "Bajaj Bike Insurance Logo" [ref=e156]
+              - link [ref=e159] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/hdfc-ergo-two-wheeler-insurance/
+                - img "HDFC ERGO Bike Insurance Logo" [ref=e160]
+              - link [ref=e163] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/icici-lombard-two-wheeler-insurance/
+                - img "ICICI Lombard Bike Insurance Logo" [ref=e164]
+              - link [ref=e167] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/iffco-tokio-two-wheeler-insurance/
+                - img "IFFCO Tokio Bike Insurance Logo" [ref=e168]
+              - link [ref=e171] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/indusind-two-wheeler-insurance/
+                - img "IndusInd Bike Insurance Logo" [ref=e172]
+              - link [ref=e175] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/national-two-wheeler-insurance/
+                - img "National Bike Insurance Logo" [ref=e176]
+              - link [ref=e179] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/new-india-assurance-two-wheeler-insurance/
+                - img "New India Assurance Bike Insurance Logo" [ref=e180]
+              - link [ref=e183] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/oriental-two-wheeler-insurance/
+                - img "Oriental Bike Insurance Logo" [ref=e184]
+              - link [ref=e187] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/tata-aig-two-wheeler-insurance/
+                - img "TATA AIG Bike Insurance Logo" [ref=e188]
+              - link [ref=e191] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/united-india-two-wheeler-insurance/
+                - img "United India Bike Insurance Logo" [ref=e192]
+      - generic [ref=e194]:
+        - heading [level=2] [ref=e196]:
+          - text: Get
+          - mark [ref=e197]: Free Advice
+          - text: From Our
+          - mark [ref=e198]: Certified Insurance Advisors
+        - generic [ref=e202]:
+          - generic [ref=e205]:
+            - generic "Life Insurance" [ref=e206]: Life
+            - generic "Car Insurance" [ref=e210]: Car
+            - generic "Bike Insurance" [ref=e214]: Bike
+            - generic "Health Insurance" [ref=e218]: Health
+          - button "Find Nearby Advisor" [ref=e223] [cursor=pointer]
+      - generic [ref=e224]:
+        - heading [level=2] [ref=e225]:
+          - text: Manage All Policies In
+          - mark [ref=e226]: One Place!
+        - figure [ref=e227]
+        - figure [ref=e228]:
+          - link [ref=e229] [cursor=pointer]:
+            - /url: https://turtlemint.onelink.me/b9Hg/5g3sm4zf
+      - generic [ref=e230]:
+        - heading [level=2] [ref=e231]:
+          - text: Our
+          - mark [ref=e232]: Customers
+          - text: Love Us
+        - generic [ref=e233]:
+          - generic [ref=e235]:
+            - tabpanel [ref=e236]:
+              - paragraph [ref=e237]:
+                - emphasis [ref=e238]:
+                  - text: Thanks to
+                  - strong [ref=e239]: Turtlemint’s
+                  - text: online platform buying insurance has become simple. I bought and renewed my policies hassle-free through
+                  - strong [ref=e240]: Turtlemint
+                  - text: within minutes!
+              - paragraph [ref=e241]: Ajay
+            - tabpanel [ref=e242]:
+              - paragraph [ref=e243]:
+                - emphasis [ref=e244]:
+                  - text: I never knew making insurance claims would be so simple. I thank the
+                  - strong [ref=e245]: Turtlemint
+                  - text: team for their excellent assistance in claim settlement
+                - text: .
+              - paragraph [ref=e246]: Abdul
+            - tabpanel [ref=e247]:
+              - paragraph [ref=e248]:
+                - emphasis [ref=e249]:
+                  - strong [ref=e250]: Turtlemint’s
+                  - text: personalised assistance helped me solve my doubts and find the most suitable policy. Thank you
+                  - strong [ref=e251]: Turtlemint
+                  - text: for simplifying insurance
+                - text: .
+              - paragraph [ref=e252]: Mihir
+            - tabpanel [ref=e253]:
+              - paragraph [ref=e254]:
+                - emphasis [ref=e255]:
+                  - text: One platform, multiple insurers. Thank you
+                  - strong [ref=e256]: Turtlemint
+                  - text: for allowing me to compare the best plans to buy the most suitable policy with ease
+                - text: .
+              - paragraph [ref=e257]: Anupama
+          - tablist [ref=e258]:
+            - tab "1 of 4" [selected] [ref=e259] [cursor=pointer]: "1"
+            - tab "2 of 4" [ref=e260] [cursor=pointer]: "2"
+            - tab "3 of 4" [ref=e261] [cursor=pointer]: "3"
+            - tab "4 of 4" [ref=e262] [cursor=pointer]: "4"
+      - generic [ref=e264]:
+        - heading "Insurance Blogs" [level=2] [ref=e265]
+        - generic [ref=e266]:
+          - tablist [ref=e267]:
+            - tab "Bike" [selected] [ref=e268] [cursor=pointer]
+            - tab "Car" [ref=e269] [cursor=pointer]
+            - tab "Health" [ref=e270] [cursor=pointer]
+            - tab "Life" [ref=e271] [cursor=pointer]
+          - tabpanel "Bike" [ref=e273]:
+            - generic [ref=e274]:
+              - link "Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do! Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do! Two-wheelers are the most convenient modes of transport, especially in a country like India where traffic jams are the norm and the roads are not in the best shape. If you have not renewed your… Rupanjali Mitra Basu | Sep 28, 2021" [ref=e276] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/two-wheeler-renewal-is-not-only-easy-but-is-also-the-right-thing-to-do/
+                - img "Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do!" [ref=e278]
+                - paragraph [ref=e279]: Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do!
+                - paragraph [ref=e280]: Two-wheelers are the most convenient modes of transport, especially in a country like India where traffic jams are the norm and the roads are not in the best shape. If you have not renewed your…
+                - generic [ref=e281]:
+                  - paragraph [ref=e282]: Rupanjali Mitra Basu
+                  - generic [ref=e283]: "|"
+                  - paragraph [ref=e284]: Sep 28, 2021
+              - link "What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV? What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV? What’s Inside IDV in Two Wheeler Insurance Understanding the Rate of Depreciation on Two Wheeler 4 Factors affecting the Two Wheeler IDV 1. Age of the Two Wheeler 2. The Make, Model… Rupanjali Mitra Basu | May 10, 2021" [ref=e286] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/what-factors-affect-your-bike-insurance-idv/
+                - img "What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV?" [ref=e288]
+                - paragraph [ref=e289]: What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV?
+                - paragraph [ref=e290]: What’s Inside IDV in Two Wheeler Insurance Understanding the Rate of Depreciation on Two Wheeler 4 Factors affecting the Two Wheeler IDV 1. Age of the Two Wheeler 2. The Make, Model…
+                - generic [ref=e291]:
+                  - paragraph [ref=e292]: Rupanjali Mitra Basu
+                  - generic [ref=e293]: "|"
+                  - paragraph [ref=e294]: May 10, 2021
+              - link "How to Re-Register a Vehicle in India? How to Re-Register a Vehicle in India? Registration is a process of registering the vehicle in some specific person’s name. This is done at the time of purchase of the vehicle. Without a valid vehicle registration, it is illegal to ply… Ankita Sejpal | Oct 28, 2020" [ref=e296] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/how-to-re-register-a-vehicle-in-india/
+                - img "How to Re-Register a Vehicle in India?" [ref=e298]
+                - paragraph [ref=e299]: How to Re-Register a Vehicle in India?
+                - paragraph [ref=e300]: Registration is a process of registering the vehicle in some specific person’s name. This is done at the time of purchase of the vehicle. Without a valid vehicle registration, it is illegal to ply…
+                - generic [ref=e301]:
+                  - paragraph [ref=e302]: Ankita Sejpal
+                  - generic [ref=e303]: "|"
+                  - paragraph [ref=e304]: Oct 28, 2020
+              - link "Complete Information on How to Transfer Two-Wheeler Ownership Complete Information on How to Transfer Two-Wheeler Ownership Buying a second-hand bike is quite common in today’s age. A second-hand bike is more affordable and it also fulfils your conveyance needs. That is why the used vehicle market is growing as… Ankita Sejpal | Oct 09, 2020" [ref=e306] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/complete-information-on-how-to-transfer-two-wheeler-ownership/
+                - img "Complete Information on How to Transfer Two-Wheeler Ownership" [ref=e308]
+                - paragraph [ref=e309]: Complete Information on How to Transfer Two-Wheeler Ownership
+                - paragraph [ref=e310]: Buying a second-hand bike is quite common in today’s age. A second-hand bike is more affordable and it also fulfils your conveyance needs. That is why the used vehicle market is growing as…
+                - generic [ref=e311]:
+                  - paragraph [ref=e312]: Ankita Sejpal
+                  - generic [ref=e313]: "|"
+                  - paragraph [ref=e314]: Oct 09, 2020
+            - button [ref=e315]:
+              - link "View More" [ref=e316] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/category/two-wheeler-insurance/
+      - generic [ref=e318]:
+        - heading [level=2] [ref=e319]:
+          - text: Join India’s
+          - mark [ref=e320]: Largest Advisor Network
+        - link "Become A POSP With Us" [ref=e323] [cursor=pointer]:
+          - /url: https://turtlemintpro.onelink.me/vFlk/1aae1fe7
+    - contentinfo [ref=e324]:
+      - generic [ref=e326]:
+        - generic [ref=e327]:
+          - generic [ref=e328]:
+            - link [ref=e330] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/
+              - img "Turtlemint Insurance" [ref=e331]
+            - list [ref=e332]:
+              - listitem [ref=e333]:
+                - link "Twitter" [ref=e334] [cursor=pointer]:
+                  - /url: https://twitter.com/helloturtlemint
+              - listitem [ref=e336]:
+                - link "Instagram" [ref=e337] [cursor=pointer]:
+                  - /url: https://www.instagram.com/turtlemint.insurance/
+              - listitem [ref=e339]:
+                - link "Facebook" [ref=e340] [cursor=pointer]:
+                  - /url: https://www.facebook.com/turtlemint.insurance/
+              - listitem [ref=e342]:
+                - link "Linkedin" [ref=e343] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/turtlemint
+              - listitem [ref=e345]:
+                - link "Youtube" [ref=e346] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/InsuranceGyan
+          - generic [ref=e348]:
+            - paragraph [ref=e349]: Get Insured
+            - generic [ref=e350]:
+              - paragraph [ref=e351]:
+                - link "Car Insurance" [ref=e352] [cursor=pointer]:
+                  - /url: /car-insurance/
+              - paragraph [ref=e353]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Bike Insurance" [ref=e354] [cursor=pointer]:
+                  - /url: /bike-insurance/
+              - paragraph [ref=e355]:
+                - link:
+                  - /url: /car-insurance
+                - link "Health Insurance" [ref=e356] [cursor=pointer]:
+                  - /url: /health-insurance/
+              - paragraph [ref=e357]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Life Insurance" [ref=e358] [cursor=pointer]:
+                  - /url: /life-insurance/
+          - generic [ref=e359]:
+            - paragraph [ref=e360]: Quick Links
+            - generic [ref=e361]:
+              - paragraph [ref=e362]:
+                - link "About Us" [ref=e363] [cursor=pointer]:
+                  - /url: /about-us/
+              - paragraph [ref=e364]:
+                - link "Blog" [ref=e365] [cursor=pointer]:
+                  - /url: /blog/
+              - paragraph [ref=e366]:
+                - link "Claim" [ref=e367] [cursor=pointer]:
+                  - /url: /raise-claim/
+              - paragraph [ref=e368]: Policy Cancellation & Refund
+              - paragraph [ref=e369]:
+                - link "Careers" [ref=e370] [cursor=pointer]:
+                  - /url: https://careers.turtlemint.com/jobs
+              - paragraph [ref=e371]:
+                - link "PoSP Agreement" [ref=e372] [cursor=pointer]:
+                  - /url: /service-agreement-cum-appointment-letter-with-posp/
+              - paragraph [ref=e373]:
+                - link "Annual Returns" [ref=e374] [cursor=pointer]:
+                  - /url: /annual-return/
+              - paragraph [ref=e375]:
+                - link "Grievance Policy" [ref=e376] [cursor=pointer]:
+                  - /url: /grievance-redressal/
+              - paragraph [ref=e377]:
+                - link "CSR Policy" [ref=e378] [cursor=pointer]:
+                  - /url: /corporate-social-responsibility-policy/
+              - paragraph [ref=e379]:
+                - link "ISNP TAT" [ref=e380] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/ISNP-TAT-TIB.pdf
+              - paragraph [ref=e381]:
+                - link "Branch List" [ref=e382] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/BranchList.pdf
+          - generic [ref=e383]:
+            - paragraph [ref=e384]: Contact
+            - generic [ref=e385]:
+              - paragraph [ref=e386]: "Registered & Corporate Office :"
+              - paragraph [ref=e387]: The ORB – Sahar, 4B, 1st Floor, A Wing, Marol Village, Andheri (East), Mumbai – 400099, Maharashtra, India
+              - paragraph [ref=e388]: For Customers
+              - paragraph [ref=e389]:
+                - link "1800 267 6010" [ref=e390] [cursor=pointer]:
+                  - /url: tel:18002676010
+              - paragraph [ref=e391]:
+                - link "support@turtlemint.com" [ref=e392] [cursor=pointer]:
+                  - /url: mailto:support@turtlemint.com
+              - paragraph [ref=e393]: For Partners
+              - paragraph [ref=e394]:
+                - link "1800 266 0101" [ref=e395] [cursor=pointer]:
+                  - /url: tel:18002660101
+              - paragraph [ref=e396]:
+                - link "pospsupport@turtlemint.com" [ref=e397] [cursor=pointer]:
+                  - /url: mailto:pospsupport@turtlemint.com
+              - paragraph [ref=e398]
+          - generic [ref=e400]:
+            - paragraph [ref=e401]: Turtlemint Insurance Broking Services Pvt Ltd
+            - paragraph [ref=e402]:
+              - link "IRDAI License No. 487" [ref=e403] [cursor=pointer]:
+                - /url: /irda-license/
+              - text: ",CIN: U66000MH2013PTC249565Composite Broker"
+            - paragraph [ref=e404]: "Principal Officer: Vilas Gandre"
+            - paragraph [ref=e405]:
+              - link "8828802996" [ref=e406] [cursor=pointer]:
+                - /url: tel:+918828802996
+            - paragraph [ref=e407]: "Secured by:"
+            - paragraph [ref=e408]
+        - paragraph [ref=e411]: Insurance is the subject matter of the solicitation. For more details on policy terms, conditions, exclusions, limitations, please refer/read policy brochure carefully before concluding sale.
+        - separator [ref=e412]
+        - generic [ref=e413]:
+          - paragraph [ref=e414]: ©2026 Turtlemint, All Rights Reserved.
+          - generic [ref=e415]:
+            - paragraph [ref=e416]:
+              - link "Policy Statements" [ref=e417] [cursor=pointer]:
+                - /url: /privacy/
+            - paragraph [ref=e418]:
+              - link "Terms & Conditions" [ref=e419] [cursor=pointer]:
+                - /url: /terms/
+      - generic [ref=e421]:
+        - figure [ref=e422]:
+          - img "Turtlemint Logo" [ref=e423]
+        - paragraph [ref=e424]:
+          - text: Turtlemint Insurance is a part of the
+          - mark [ref=e425]:
+            - strong [ref=e426]: Turtlemint Fintech Solutions Ltd.
+            - text: (
+            - link [ref=e427] [cursor=pointer]:
+              - /url: https://www.turtlemint.com/
+              - strong [ref=e428]: Turtlemint.com
+            - text: )
+  - img [ref=e434] [cursor=pointer]
+  - iframe [ref=e437]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, expect } from '@playwright/test';
+  2   | import { TIMEOUTS } from '@config/constants';
+  3   | 
+  4   | export class BasePage {
+  5   |   readonly page: Page;
+  6   | 
+  7   |   constructor(page: Page) {
+  8   |     this.page = page;
+  9   |   }
+  10  | 
+  11  |   async goto(path: string = '') {
+  12  |     await this.page.goto(path, { waitUntil: 'domcontentloaded', timeout: TIMEOUTS.LONG });
+  13  |     await this.waitForLoad();
+  14  |   }
+  15  | 
+  16  |   async waitForLoad(timeout: number = TIMEOUTS.MEDIUM) {
+  17  |     await this.page.waitForLoadState('networkidle', { timeout });
+  18  |   }
+  19  | 
+  20  |   async waitForElement(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+> 21  |     await locator.waitFor({ state: 'visible', timeout });
+      |                   ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  22  |   }
+  23  | 
+  24  |   async click(locator: Locator, options?: { force?: boolean; timeout?: number }) {
+  25  |     await locator.click({ force: options?.force, timeout: options?.timeout || TIMEOUTS.MEDIUM });
+  26  |   }
+  27  | 
+  28  |   async hover(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  29  |     await locator.hover({ timeout });
+  30  |   }
+  31  | 
+  32  |   async fill(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  33  |     await locator.fill(value, { timeout });
+  34  |   }
+  35  | 
+  36  |   async selectOption(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  37  |     await locator.selectOption(value, { timeout });
+  38  |   }
+  39  | 
+  40  |   async getText(locator: Locator, timeout: number = TIMEOUTS.MEDIUM): Promise<string> {
+  41  |     await this.waitForElement(locator, timeout);
+  42  |     return (await locator.textContent())?.trim() || '';
+  43  |   }
+  44  | 
+  45  |   async getAttribute(locator: Locator, attribute: string, timeout: number = TIMEOUTS.MEDIUM): Promise<string | null> {
+  46  |     await this.waitForElement(locator, timeout);
+  47  |     return await locator.getAttribute(attribute);
+  48  |   }
+  49  | 
+  50  |   async isVisible(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  51  |     try {
+  52  |       await locator.waitFor({ state: 'visible', timeout });
+  53  |       return true;
+  54  |     } catch {
+  55  |       return false;
+  56  |     }
+  57  |   }
+  58  | 
+  59  |   async isHidden(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  60  |     try {
+  61  |       await locator.waitFor({ state: 'hidden', timeout });
+  62  |       return true;
+  63  |     } catch {
+  64  |       return false;
+  65  |     }
+  66  |   }
+  67  | 
+  68  |   async expectVisible(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  69  |     await expect(locator).toBeVisible({ timeout });
+  70  |   }
+  71  | 
+  72  |   async expectHidden(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  73  |     await expect(locator).toBeHidden({ timeout });
+  74  |   }
+  75  | 
+  76  |   async expectText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  77  |     await expect(locator).toHaveText(expectedText, { timeout });
+  78  |   }
+  79  | 
+  80  |   async expectContainText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  81  |     await expect(locator).toContainText(expectedText, { timeout });
+  82  |   }
+  83  | 
+  84  |   async expectURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  85  |     await expect(this.page).toHaveURL(urlPattern, { timeout });
+  86  |   }
+  87  | 
+  88  |   async expectTitle(titlePattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  89  |     await expect(this.page).toHaveTitle(titlePattern, { timeout });
+  90  |   }
+  91  | 
+  92  |   async waitForURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  93  |     await this.page.waitForURL(urlPattern, { timeout });
+  94  |   }
+  95  | 
+  96  |   async scrollIntoView(locator: Locator) {
+  97  |     await locator.scrollIntoViewIfNeeded();
+  98  |   }
+  99  | 
+  100 |   async takeScreenshot(name: string) {
+  101 |     return await this.page.screenshot({ path: `test-results/screenshots/${name}.png`, fullPage: true });
+  102 |   }
+  103 | 
+  104 |   async getAllTexts(locator: Locator): Promise<string[]> {
+  105 |     const elements = await locator.all();
+  106 |     const texts: string[] = [];
+  107 |     for (const element of elements) {
+  108 |       const text = (await element.textContent())?.trim();
+  109 |       if (text) texts.push(text);
+  110 |     }
+  111 |     return texts;
+  112 |   }
+  113 | 
+  114 |   async getAllHrefs(locator: Locator): Promise<string[]> {
+  115 |     const elements = await locator.all();
+  116 |     const hrefs: string[] = [];
+  117 |     for (const element of elements) {
+  118 |       const href = await element.getAttribute('href');
+  119 |       if (href) hrefs.push(href);
+  120 |     }
+  121 |     return hrefs;
+```

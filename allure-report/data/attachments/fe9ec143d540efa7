@@ -1,0 +1,146 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generated/car-module.test.ts >> SBI Third Party - Add-ons - @regression >> Verify that Personal Belonging Cover is displayed - TC_336
+- Location: src/tests/generated/car-module.test.ts:1230:7
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('h1, .page-title, [data-testid="page-title"]').first() to be visible
+
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, expect } from '@playwright/test';
+  2   | import { TIMEOUTS } from '@config/constants';
+  3   | 
+  4   | export class BasePage {
+  5   |   readonly page: Page;
+  6   | 
+  7   |   constructor(page: Page) {
+  8   |     this.page = page;
+  9   |   }
+  10  | 
+  11  |   async goto(path: string = '') {
+  12  |     await this.page.goto(path, { waitUntil: 'domcontentloaded', timeout: TIMEOUTS.LONG });
+  13  |     await this.waitForLoad();
+  14  |   }
+  15  | 
+  16  |   async waitForLoad(timeout: number = TIMEOUTS.MEDIUM) {
+  17  |     await this.page.waitForLoadState('networkidle', { timeout });
+  18  |   }
+  19  | 
+  20  |   async waitForElement(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+> 21  |     await locator.waitFor({ state: 'visible', timeout });
+      |                   ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  22  |   }
+  23  | 
+  24  |   async click(locator: Locator, options?: { force?: boolean; timeout?: number }) {
+  25  |     await locator.click({ force: options?.force, timeout: options?.timeout || TIMEOUTS.MEDIUM });
+  26  |   }
+  27  | 
+  28  |   async hover(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  29  |     await locator.hover({ timeout });
+  30  |   }
+  31  | 
+  32  |   async fill(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  33  |     await locator.fill(value, { timeout });
+  34  |   }
+  35  | 
+  36  |   async selectOption(locator: Locator, value: string, timeout: number = TIMEOUTS.MEDIUM) {
+  37  |     await locator.selectOption(value, { timeout });
+  38  |   }
+  39  | 
+  40  |   async getText(locator: Locator, timeout: number = TIMEOUTS.MEDIUM): Promise<string> {
+  41  |     await this.waitForElement(locator, timeout);
+  42  |     return (await locator.textContent())?.trim() || '';
+  43  |   }
+  44  | 
+  45  |   async getAttribute(locator: Locator, attribute: string, timeout: number = TIMEOUTS.MEDIUM): Promise<string | null> {
+  46  |     await this.waitForElement(locator, timeout);
+  47  |     return await locator.getAttribute(attribute);
+  48  |   }
+  49  | 
+  50  |   async isVisible(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  51  |     try {
+  52  |       await locator.waitFor({ state: 'visible', timeout });
+  53  |       return true;
+  54  |     } catch {
+  55  |       return false;
+  56  |     }
+  57  |   }
+  58  | 
+  59  |   async isHidden(locator: Locator, timeout: number = TIMEOUTS.SHORT): Promise<boolean> {
+  60  |     try {
+  61  |       await locator.waitFor({ state: 'hidden', timeout });
+  62  |       return true;
+  63  |     } catch {
+  64  |       return false;
+  65  |     }
+  66  |   }
+  67  | 
+  68  |   async expectVisible(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  69  |     await expect(locator).toBeVisible({ timeout });
+  70  |   }
+  71  | 
+  72  |   async expectHidden(locator: Locator, timeout: number = TIMEOUTS.MEDIUM) {
+  73  |     await expect(locator).toBeHidden({ timeout });
+  74  |   }
+  75  | 
+  76  |   async expectText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  77  |     await expect(locator).toHaveText(expectedText, { timeout });
+  78  |   }
+  79  | 
+  80  |   async expectContainText(locator: Locator, expectedText: string, timeout: number = TIMEOUTS.MEDIUM) {
+  81  |     await expect(locator).toContainText(expectedText, { timeout });
+  82  |   }
+  83  | 
+  84  |   async expectURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  85  |     await expect(this.page).toHaveURL(urlPattern, { timeout });
+  86  |   }
+  87  | 
+  88  |   async expectTitle(titlePattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  89  |     await expect(this.page).toHaveTitle(titlePattern, { timeout });
+  90  |   }
+  91  | 
+  92  |   async waitForURL(urlPattern: string | RegExp, timeout: number = TIMEOUTS.MEDIUM) {
+  93  |     await this.page.waitForURL(urlPattern, { timeout });
+  94  |   }
+  95  | 
+  96  |   async scrollIntoView(locator: Locator) {
+  97  |     await locator.scrollIntoViewIfNeeded();
+  98  |   }
+  99  | 
+  100 |   async takeScreenshot(name: string) {
+  101 |     return await this.page.screenshot({ path: `test-results/screenshots/${name}.png`, fullPage: true });
+  102 |   }
+  103 | 
+  104 |   async getAllTexts(locator: Locator): Promise<string[]> {
+  105 |     const elements = await locator.all();
+  106 |     const texts: string[] = [];
+  107 |     for (const element of elements) {
+  108 |       const text = (await element.textContent())?.trim();
+  109 |       if (text) texts.push(text);
+  110 |     }
+  111 |     return texts;
+  112 |   }
+  113 | 
+  114 |   async getAllHrefs(locator: Locator): Promise<string[]> {
+  115 |     const elements = await locator.all();
+  116 |     const hrefs: string[] = [];
+  117 |     for (const element of elements) {
+  118 |       const href = await element.getAttribute('href');
+  119 |       if (href) hrefs.push(href);
+  120 |     }
+  121 |     return hrefs;
+```

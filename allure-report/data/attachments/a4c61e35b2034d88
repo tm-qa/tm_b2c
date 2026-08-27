@@ -1,0 +1,670 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generated/dropdown-navigation.test.ts >> Life Dropdown & Navigation - @smoke @regression >> Life Dropdown >> Verify that the Life dropdown is displayed - TC_017
+- Location: src/tests/generated/dropdown-navigation.test.ts:144:9
+
+# Error details
+
+```
+Error: toBeVisible can be only used with Locator object, was called with undefined
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://www.turtlemintinsurance.com/
+          - img "Turtlemint Insurance" [ref=e8]
+        - generic [ref=e9]:
+          - navigation "Primary Header Menu" [ref=e11]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "Car" [ref=e14] [cursor=pointer]:
+                  - /url: /car-insurance/
+                - button "Car submenu" [ref=e15] [cursor=pointer]
+              - listitem [ref=e17]:
+                - link "Bike" [ref=e18] [cursor=pointer]:
+                  - /url: /bike-insurance/
+                - button "Bike submenu" [ref=e19] [cursor=pointer]
+              - listitem [ref=e21]:
+                - link "Health" [ref=e22] [cursor=pointer]:
+                  - /url: /health-insurance/
+                - button "Health submenu" [ref=e23] [cursor=pointer]
+              - listitem [ref=e25]:
+                - link "Life" [ref=e26] [cursor=pointer]:
+                  - /url: /life-insurance/
+                - button "Life submenu" [expanded] [ref=e27] [cursor=pointer]
+                - list [ref=e29]:
+                  - listitem [ref=e30]:
+                    - list [ref=e31]:
+                      - listitem [ref=e32]:
+                        - link "Term Insurance" [ref=e33] [cursor=pointer]:
+                          - /url: /life-insurance/term-insurance-plans/
+                      - listitem [ref=e34]:
+                        - link "Money Back Insurance" [ref=e35] [cursor=pointer]:
+                          - /url: /life-insurance/money-back-policy/
+                      - listitem [ref=e36]:
+                        - link "Endowment Insurance" [ref=e37] [cursor=pointer]:
+                          - /url: /life-insurance/endowment-policy/
+                      - listitem [ref=e38]:
+                        - link "ULIPs" [ref=e39] [cursor=pointer]:
+                          - /url: /life-insurance/ulip-plans/
+                      - listitem [ref=e40]:
+                        - link "Life Insurance Companies" [ref=e41] [cursor=pointer]:
+                          - /url: /life-insurance-companies/
+                        - button "Life Insurance Companies submenu" [ref=e42] [cursor=pointer]
+                      - listitem [ref=e44]:
+                        - link "Life Insurance Premium Calculator" [ref=e45] [cursor=pointer]:
+                          - /url: /life-insurance/articles/life-insurance-premium-calculator/
+                      - listitem [ref=e46]:
+                        - link "Compare Life Insurance" [ref=e47] [cursor=pointer]:
+                          - /url: /life-insurance/
+                      - listitem [ref=e48]:
+                        - link "Blogs" [ref=e49] [cursor=pointer]:
+                          - /url: https://www.turtlemintinsurance.com/category/life-insurance/
+          - navigation "Navigation" [ref=e51]:
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link "Raise A Claim" [ref=e54] [cursor=pointer]:
+                  - /url: /raise-claim/
+            - link "Become A PoSP With Us" [ref=e57] [cursor=pointer]:
+              - /url: https://turtlemintpro.onelink.me/vFlk/1aae1fe7
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - heading "Insurance made simple with right experts and smart tech" [level=1] [ref=e61]:
+          - text: Insurance
+          - strong [ref=e62]:
+            - mark [ref=e63]: made simple
+          - generic [ref=e64]: with right experts and smart tech
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Get a quote or compare
+          - generic [ref=e67]:
+            - link [ref=e68] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/two-wheeler-insurance/two-wheeler-profile/tw-registration-info
+            - link [ref=e71] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/car-insurance/car-profile/car-registration-info
+            - link [ref=e74] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/health-insurance/health-profile/profile-gender
+            - link [ref=e77] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/term/about-insured?_gl=1*i5egr*_ga*NDIyNzM3ODcuMTY5MTY3MDI5OQ..*_ga_RKQFLJSGZQ*MTY5MTY3MDI5OC4xLjEuMTY5MTY3MDQ5NC41NC4wLjA.
+            - link [ref=e80] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/investment-planning/about-insured?_gl=1*t05nbk*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+            - link [ref=e83] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/saving-for-child/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+            - link [ref=e86] [cursor=pointer]:
+              - /url: https://app.turtlemintinsurance.com/life-insurance/profile/retirement/about-insured?_gl=1*umig96*_ga*MTc4MTQ0NTMzNi4xNjkxMTMwMTU4*_ga_RKQFLJSGZQ*MTY5MTE0NzI5Mi42LjEuMTY5MTE0Nzg0MC41MS4wLjA.
+      - generic [ref=e89]:
+        - heading [level=2] [ref=e90]:
+          - text: Why
+          - mark [ref=e91]: Turtlemint Insurance?
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - paragraph [ref=e95]: 4.3 Lakh+
+            - paragraph [ref=e96]: TRAINED INSURANCE ADVISORS
+          - generic [ref=e97]:
+            - paragraph [ref=e99]: 1.2 Crore+
+            - paragraph [ref=e100]: HAPPY CUSTOMERS
+          - generic [ref=e101]:
+            - paragraph [ref=e103]: 42+
+            - paragraph [ref=e104]: INSURANCE PARTNERS
+          - generic [ref=e105]:
+            - paragraph [ref=e107]: 1 Crore+
+            - paragraph [ref=e108]: POLICIES SOLD
+      - generic [ref=e109]:
+        - heading [level=2] [ref=e110]:
+          - mark [ref=e111]: Turtlemint
+          - mark [ref=e112]: Insurance
+          - text: With You On Every Step
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: "1"
+            - paragraph [ref=e116]:
+              - strong [ref=e117]: Choosing Right Policy
+            - paragraph [ref=e119]: Compare Quotes From 45+ Insurers
+            - link "Compare Quotes" [ref=e121] [cursor=pointer]:
+              - /url: "#get-quote"
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: "2"
+            - paragraph [ref=e124]:
+              - strong [ref=e125]: Filling The Application
+            - paragraph [ref=e127]: Get Free Advise And Application Assistance
+            - generic [ref=e128]: Connect With Our Experts
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: "3"
+            - paragraph [ref=e132]:
+              - strong [ref=e133]: Claims And Renewals
+            - paragraph [ref=e135]: Hassle-free Claim Assistance
+            - link "Download App" [ref=e137] [cursor=pointer]:
+              - /url: https://turtlemint.onelink.me/b9Hg/0hkazw9s
+      - generic [ref=e138]:
+        - heading [level=2] [ref=e139]:
+          - text: Types Of
+          - mark [ref=e140]: Insurance
+          - text: Products
+        - generic [ref=e141]:
+          - tablist [ref=e142]:
+            - tab "Bike" [selected] [ref=e143] [cursor=pointer]
+            - tab "Car" [ref=e144] [cursor=pointer]
+            - tab "Health" [ref=e145] [cursor=pointer]
+            - tab "Life" [ref=e146] [cursor=pointer]
+          - tabpanel "Bike" [ref=e148]:
+            - generic [ref=e149]:
+              - link "Third Party" [ref=e150] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/third-party-bike-insurance/
+              - link "Comprehensive" [ref=e153] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/comprehensive-bike-insurance/
+              - link "Own Damage" [ref=e156] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/standalone-own-damage-bike-insurance/
+            - paragraph [ref=e159]:
+              - link "Learn More About Bike" [ref=e160] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/
+      - generic [ref=e163]:
+        - heading "Our Partners" [level=2] [ref=e164]
+        - generic [ref=e165]:
+          - tablist [ref=e166]:
+            - tab "Bike" [selected] [ref=e167] [cursor=pointer]
+            - tab "Car" [ref=e168] [cursor=pointer]
+            - tab "Health" [ref=e169] [cursor=pointer]
+            - tab "Life" [ref=e170] [cursor=pointer]
+          - tabpanel "Bike" [ref=e172]:
+            - generic [ref=e173]:
+              - link [ref=e176] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/bajaj-allianz-two-wheeler-insurance/
+                - img "Bajaj Bike Insurance Logo" [ref=e177]
+              - link [ref=e180] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/hdfc-ergo-two-wheeler-insurance/
+                - img "HDFC ERGO Bike Insurance Logo" [ref=e181]
+              - link [ref=e184] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/icici-lombard-two-wheeler-insurance/
+                - img "ICICI Lombard Bike Insurance Logo" [ref=e185]
+              - link [ref=e188] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/iffco-tokio-two-wheeler-insurance/
+                - img "IFFCO Tokio Bike Insurance Logo" [ref=e189]
+              - link [ref=e192] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/indusind-two-wheeler-insurance/
+                - img "IndusInd Bike Insurance Logo" [ref=e193]
+              - link [ref=e196] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/national-two-wheeler-insurance/
+                - img "National Bike Insurance Logo" [ref=e197]
+              - link [ref=e200] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/new-india-assurance-two-wheeler-insurance/
+                - img "New India Assurance Bike Insurance Logo" [ref=e201]
+              - link [ref=e204] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/oriental-two-wheeler-insurance/
+                - img "Oriental Bike Insurance Logo" [ref=e205]
+              - link [ref=e208] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/tata-aig-two-wheeler-insurance/
+                - img "TATA AIG Bike Insurance Logo" [ref=e209]
+              - link [ref=e212] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/bike-insurance/united-india-two-wheeler-insurance/
+                - img "United India Bike Insurance Logo" [ref=e213]
+      - generic [ref=e215]:
+        - heading [level=2] [ref=e217]:
+          - text: Get
+          - mark [ref=e218]: Free Advice
+          - text: From Our
+          - mark [ref=e219]: Certified Insurance Advisors
+        - generic [ref=e223]:
+          - generic [ref=e226]:
+            - generic "Life Insurance" [ref=e227]: Life
+            - generic "Car Insurance" [ref=e231]: Car
+            - generic "Bike Insurance" [ref=e235]: Bike
+            - generic "Health Insurance" [ref=e239]: Health
+          - button "Find Nearby Advisor" [ref=e244] [cursor=pointer]
+      - generic [ref=e245]:
+        - heading [level=2] [ref=e246]:
+          - text: Manage All Policies In
+          - mark [ref=e247]: One Place!
+        - figure [ref=e248]
+        - figure [ref=e249]:
+          - link [ref=e250] [cursor=pointer]:
+            - /url: https://turtlemint.onelink.me/b9Hg/5g3sm4zf
+      - generic [ref=e251]:
+        - heading [level=2] [ref=e252]:
+          - text: Our
+          - mark [ref=e253]: Customers
+          - text: Love Us
+        - generic [ref=e254]:
+          - generic [ref=e256]:
+            - tabpanel [ref=e257]:
+              - paragraph [ref=e258]:
+                - emphasis [ref=e259]:
+                  - text: Thanks to
+                  - strong [ref=e260]: Turtlemint’s
+                  - text: online platform buying insurance has become simple. I bought and renewed my policies hassle-free through
+                  - strong [ref=e261]: Turtlemint
+                  - text: within minutes!
+              - paragraph [ref=e262]: Ajay
+            - tabpanel [ref=e263]:
+              - paragraph [ref=e264]:
+                - emphasis [ref=e265]:
+                  - text: I never knew making insurance claims would be so simple. I thank the
+                  - strong [ref=e266]: Turtlemint
+                  - text: team for their excellent assistance in claim settlement
+                - text: .
+              - paragraph [ref=e267]: Abdul
+            - tabpanel [ref=e268]:
+              - paragraph [ref=e269]:
+                - emphasis [ref=e270]:
+                  - strong [ref=e271]: Turtlemint’s
+                  - text: personalised assistance helped me solve my doubts and find the most suitable policy. Thank you
+                  - strong [ref=e272]: Turtlemint
+                  - text: for simplifying insurance
+                - text: .
+              - paragraph [ref=e273]: Mihir
+            - tabpanel [ref=e274]:
+              - paragraph [ref=e275]:
+                - emphasis [ref=e276]:
+                  - text: One platform, multiple insurers. Thank you
+                  - strong [ref=e277]: Turtlemint
+                  - text: for allowing me to compare the best plans to buy the most suitable policy with ease
+                - text: .
+              - paragraph [ref=e278]: Anupama
+          - tablist [ref=e279]:
+            - tab "1 of 4" [selected] [ref=e280] [cursor=pointer]: "1"
+            - tab "2 of 4" [ref=e281] [cursor=pointer]: "2"
+            - tab "3 of 4" [ref=e282] [cursor=pointer]: "3"
+            - tab "4 of 4" [ref=e283] [cursor=pointer]: "4"
+      - generic [ref=e285]:
+        - heading "Insurance Blogs" [level=2] [ref=e286]
+        - generic [ref=e287]:
+          - tablist [ref=e288]:
+            - tab "Bike" [selected] [ref=e289] [cursor=pointer]
+            - tab "Car" [ref=e290] [cursor=pointer]
+            - tab "Health" [ref=e291] [cursor=pointer]
+            - tab "Life" [ref=e292] [cursor=pointer]
+          - tabpanel "Bike" [ref=e294]:
+            - generic [ref=e295]:
+              - link "Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do! Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do! Two-wheelers are the most convenient modes of transport, especially in a country like India where traffic jams are the norm and the roads are not in the best shape. If you have not renewed your… Rupanjali Mitra Basu | Sep 28, 2021" [ref=e297] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/two-wheeler-renewal-is-not-only-easy-but-is-also-the-right-thing-to-do/
+                - img "Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do!" [ref=e299]
+                - paragraph [ref=e300]: Two-Wheeler Renewal is Not only Easy but is also the Right Thing to Do!
+                - paragraph [ref=e301]: Two-wheelers are the most convenient modes of transport, especially in a country like India where traffic jams are the norm and the roads are not in the best shape. If you have not renewed your…
+                - generic [ref=e302]:
+                  - paragraph [ref=e303]: Rupanjali Mitra Basu
+                  - generic [ref=e304]: "|"
+                  - paragraph [ref=e305]: Sep 28, 2021
+              - link "What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV? What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV? What’s Inside IDV in Two Wheeler Insurance Understanding the Rate of Depreciation on Two Wheeler 4 Factors affecting the Two Wheeler IDV 1. Age of the Two Wheeler 2. The Make, Model… Rupanjali Mitra Basu | May 10, 2021" [ref=e307] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/what-factors-affect-your-bike-insurance-idv/
+                - img "What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV?" [ref=e309]
+                - paragraph [ref=e310]: What is IDV in Bike Insurance & Factors Affecting your Bike Insurance IDV?
+                - paragraph [ref=e311]: What’s Inside IDV in Two Wheeler Insurance Understanding the Rate of Depreciation on Two Wheeler 4 Factors affecting the Two Wheeler IDV 1. Age of the Two Wheeler 2. The Make, Model…
+                - generic [ref=e312]:
+                  - paragraph [ref=e313]: Rupanjali Mitra Basu
+                  - generic [ref=e314]: "|"
+                  - paragraph [ref=e315]: May 10, 2021
+              - link "How to Re-Register a Vehicle in India? How to Re-Register a Vehicle in India? Registration is a process of registering the vehicle in some specific person’s name. This is done at the time of purchase of the vehicle. Without a valid vehicle registration, it is illegal to ply… Ankita Sejpal | Oct 28, 2020" [ref=e317] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/how-to-re-register-a-vehicle-in-india/
+                - img "How to Re-Register a Vehicle in India?" [ref=e319]
+                - paragraph [ref=e320]: How to Re-Register a Vehicle in India?
+                - paragraph [ref=e321]: Registration is a process of registering the vehicle in some specific person’s name. This is done at the time of purchase of the vehicle. Without a valid vehicle registration, it is illegal to ply…
+                - generic [ref=e322]:
+                  - paragraph [ref=e323]: Ankita Sejpal
+                  - generic [ref=e324]: "|"
+                  - paragraph [ref=e325]: Oct 28, 2020
+              - link "Complete Information on How to Transfer Two-Wheeler Ownership Complete Information on How to Transfer Two-Wheeler Ownership Buying a second-hand bike is quite common in today’s age. A second-hand bike is more affordable and it also fulfils your conveyance needs. That is why the used vehicle market is growing as… Ankita Sejpal | Oct 09, 2020" [ref=e327] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/two-wheeler-insurance/articles/complete-information-on-how-to-transfer-two-wheeler-ownership/
+                - img "Complete Information on How to Transfer Two-Wheeler Ownership" [ref=e329]
+                - paragraph [ref=e330]: Complete Information on How to Transfer Two-Wheeler Ownership
+                - paragraph [ref=e331]: Buying a second-hand bike is quite common in today’s age. A second-hand bike is more affordable and it also fulfils your conveyance needs. That is why the used vehicle market is growing as…
+                - generic [ref=e332]:
+                  - paragraph [ref=e333]: Ankita Sejpal
+                  - generic [ref=e334]: "|"
+                  - paragraph [ref=e335]: Oct 09, 2020
+            - button [ref=e336]:
+              - link "View More" [ref=e337] [cursor=pointer]:
+                - /url: https://www.turtlemintinsurance.com/category/two-wheeler-insurance/
+      - generic [ref=e339]:
+        - heading [level=2] [ref=e340]:
+          - text: Join India’s
+          - mark [ref=e341]: Largest Advisor Network
+        - link "Become A POSP With Us" [ref=e344] [cursor=pointer]:
+          - /url: https://turtlemintpro.onelink.me/vFlk/1aae1fe7
+    - contentinfo [ref=e345]:
+      - generic [ref=e347]:
+        - generic [ref=e348]:
+          - generic [ref=e349]:
+            - link [ref=e351] [cursor=pointer]:
+              - /url: https://www.turtlemintinsurance.com/
+              - img "Turtlemint Insurance" [ref=e352]
+            - list [ref=e353]:
+              - listitem [ref=e354]:
+                - link "Twitter" [ref=e355] [cursor=pointer]:
+                  - /url: https://twitter.com/helloturtlemint
+              - listitem [ref=e357]:
+                - link "Instagram" [ref=e358] [cursor=pointer]:
+                  - /url: https://www.instagram.com/turtlemint.insurance/
+              - listitem [ref=e360]:
+                - link "Facebook" [ref=e361] [cursor=pointer]:
+                  - /url: https://www.facebook.com/turtlemint.insurance/
+              - listitem [ref=e363]:
+                - link "Linkedin" [ref=e364] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/turtlemint
+              - listitem [ref=e366]:
+                - link "Youtube" [ref=e367] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/InsuranceGyan
+          - generic [ref=e369]:
+            - paragraph [ref=e370]: Get Insured
+            - generic [ref=e371]:
+              - paragraph [ref=e372]:
+                - link "Car Insurance" [ref=e373] [cursor=pointer]:
+                  - /url: /car-insurance/
+              - paragraph [ref=e374]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Bike Insurance" [ref=e375] [cursor=pointer]:
+                  - /url: /bike-insurance/
+              - paragraph [ref=e376]:
+                - link:
+                  - /url: /car-insurance
+                - link "Health Insurance" [ref=e377] [cursor=pointer]:
+                  - /url: /health-insurance/
+              - paragraph [ref=e378]:
+                - link:
+                  - /url: /two-wheeler-insurance
+                - link "Life Insurance" [ref=e379] [cursor=pointer]:
+                  - /url: /life-insurance/
+          - generic [ref=e380]:
+            - paragraph [ref=e381]: Quick Links
+            - generic [ref=e382]:
+              - paragraph [ref=e383]:
+                - link "About Us" [ref=e384] [cursor=pointer]:
+                  - /url: /about-us/
+              - paragraph [ref=e385]:
+                - link "Blog" [ref=e386] [cursor=pointer]:
+                  - /url: /blog/
+              - paragraph [ref=e387]:
+                - link "Claim" [ref=e388] [cursor=pointer]:
+                  - /url: /raise-claim/
+              - paragraph [ref=e389]: Policy Cancellation & Refund
+              - paragraph [ref=e390]:
+                - link "Careers" [ref=e391] [cursor=pointer]:
+                  - /url: https://careers.turtlemint.com/jobs
+              - paragraph [ref=e392]:
+                - link "PoSP Agreement" [ref=e393] [cursor=pointer]:
+                  - /url: /service-agreement-cum-appointment-letter-with-posp/
+              - paragraph [ref=e394]:
+                - link "Annual Returns" [ref=e395] [cursor=pointer]:
+                  - /url: /annual-return/
+              - paragraph [ref=e396]:
+                - link "Grievance Policy" [ref=e397] [cursor=pointer]:
+                  - /url: /grievance-redressal/
+              - paragraph [ref=e398]:
+                - link "CSR Policy" [ref=e399] [cursor=pointer]:
+                  - /url: /corporate-social-responsibility-policy/
+              - paragraph [ref=e400]:
+                - link "ISNP TAT" [ref=e401] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/ISNP-TAT-TIB.pdf
+              - paragraph [ref=e402]:
+                - link "Branch List" [ref=e403] [cursor=pointer]:
+                  - /url: https://cdn.turtlemintinsurance.com/wp-content/uploads/BranchList.pdf
+          - generic [ref=e404]:
+            - paragraph [ref=e405]: Contact
+            - generic [ref=e406]:
+              - paragraph [ref=e407]: "Registered & Corporate Office :"
+              - paragraph [ref=e408]: The ORB – Sahar, 4B, 1st Floor, A Wing, Marol Village, Andheri (East), Mumbai – 400099, Maharashtra, India
+              - paragraph [ref=e409]: For Customers
+              - paragraph [ref=e410]:
+                - link "1800 267 6010" [ref=e411] [cursor=pointer]:
+                  - /url: tel:18002676010
+              - paragraph [ref=e412]:
+                - link "support@turtlemint.com" [ref=e413] [cursor=pointer]:
+                  - /url: mailto:support@turtlemint.com
+              - paragraph [ref=e414]: For Partners
+              - paragraph [ref=e415]:
+                - link "1800 266 0101" [ref=e416] [cursor=pointer]:
+                  - /url: tel:18002660101
+              - paragraph [ref=e417]:
+                - link "pospsupport@turtlemint.com" [ref=e418] [cursor=pointer]:
+                  - /url: mailto:pospsupport@turtlemint.com
+              - paragraph [ref=e419]
+          - generic [ref=e421]:
+            - paragraph [ref=e422]: Turtlemint Insurance Broking Services Pvt Ltd
+            - paragraph [ref=e423]:
+              - link "IRDAI License No. 487" [ref=e424] [cursor=pointer]:
+                - /url: /irda-license/
+              - text: ",CIN: U66000MH2013PTC249565Composite Broker"
+            - paragraph [ref=e425]: "Principal Officer: Vilas Gandre"
+            - paragraph [ref=e426]:
+              - link "8828802996" [ref=e427] [cursor=pointer]:
+                - /url: tel:+918828802996
+            - paragraph [ref=e428]: "Secured by:"
+            - paragraph [ref=e429]
+        - paragraph [ref=e432]: Insurance is the subject matter of the solicitation. For more details on policy terms, conditions, exclusions, limitations, please refer/read policy brochure carefully before concluding sale.
+        - separator [ref=e433]
+        - generic [ref=e434]:
+          - paragraph [ref=e435]: ©2026 Turtlemint, All Rights Reserved.
+          - generic [ref=e436]:
+            - paragraph [ref=e437]:
+              - link "Policy Statements" [ref=e438] [cursor=pointer]:
+                - /url: /privacy/
+            - paragraph [ref=e439]:
+              - link "Terms & Conditions" [ref=e440] [cursor=pointer]:
+                - /url: /terms/
+      - generic [ref=e442]:
+        - figure [ref=e443]:
+          - img "Turtlemint Logo" [ref=e444]
+        - paragraph [ref=e445]:
+          - text: Turtlemint Insurance is a part of the
+          - mark [ref=e446]:
+            - strong [ref=e447]: Turtlemint Fintech Solutions Ltd.
+            - text: (
+            - link [ref=e448] [cursor=pointer]:
+              - /url: https://www.turtlemint.com/
+              - strong [ref=e449]: Turtlemint.com
+            - text: )
+  - generic [ref=e450]:
+    - paragraph [ref=e453]: Hello, I am Vijay. I am your expert advisor. How can I help you?
+    - img [ref=e458] [cursor=pointer]
+  - iframe [ref=e461]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA
+```
+
+# Test source
+
+```ts
+  47  |       await header.openInsurerCompanies('Bike');
+  48  |       const insurers = await header.getInsurerLinks('Bike');
+  49  |       const expectedInsurers = INSURERS.BIKE.COMPANIES;
+  50  |       for (const expected of expectedInsurers) {
+  51  |         expect(insurers.some(i => i.toLowerCase().includes(expected.toLowerCase()))).toBeTruthy();
+  52  |       }
+  53  |     });
+  54  | 
+  55  |   });
+  56  | 
+  57  | });
+  58  | 
+  59  | test.describe('Health Dropdown & Navigation - ' + TEST_TAGS.SMOKE + ' ' + TEST_TAGS.REGRESSION, () => {
+  60  |   let header: Header;
+  61  | 
+  62  |   test.beforeEach(async ({ page }) => {
+  63  |     header = new Header(page);
+  64  |     await page.goto('/');
+  65  |     await header.waitForLoad();
+  66  |   });
+  67  | 
+  68  |   test.describe('Health Dropdown', () => {
+  69  |     test('Verify that the Health dropdown is displayed - TC_011', async ({ page }) => {
+  70  |       const header = new Header(page);
+  71  |       await header.openDropdown('Health');
+  72  |       await expect(header.dropdownMenu).toBeVisible();
+  73  |     });
+  74  | 
+  75  |     test('Verify that all sections are displayed in the Health dropdown - TC_012', async ({ page }) => {
+  76  |       const header = new Header(page);
+  77  |       await header.openDropdown('Health');
+  78  |       await expect(header.dropdownMenu).toBeVisible();
+  79  |     });
+  80  | 
+  81  |   });
+  82  | 
+  83  |   test.describe('Health Insurance Companies', () => {
+  84  |     test('Verify that all insurer options are displayed under Health Insurance Companies - TC_013', async ({ page }) => {
+  85  |       const header = new Header(page);
+  86  |       await header.openDropdown('Health');
+  87  |       await header.openInsurerCompanies('Health');
+  88  |       const insurers = await header.getInsurerLinks('Health');
+  89  |       const expectedInsurers = INSURERS.HEALTH.COMPANIES;
+  90  |       for (const expected of expectedInsurers) {
+  91  |         expect(insurers.some(i => i.toLowerCase().includes(expected.toLowerCase()))).toBeTruthy();
+  92  |       }
+  93  |     });
+  94  | 
+  95  |     test('Verify that an insurer link is clickable - TC_014', async ({ page }) => {
+  96  |       const header = new Header(page);
+  97  |       await header.openDropdown('Health');
+  98  |       await header.openInsurerCompanies('Health');
+  99  |       const insurers = await header.getInsurerLinks('Health');
+  100 |       const expectedInsurers = INSURERS.HEALTH.COMPANIES;
+  101 |       for (const expected of expectedInsurers) {
+  102 |         expect(insurers.some(i => i.toLowerCase().includes(expected.toLowerCase()))).toBeTruthy();
+  103 |       }
+  104 |     });
+  105 | 
+  106 |   });
+  107 | 
+  108 |   test.describe('Network Hospitals', () => {
+  109 |     test('Verify that all network hospital options are displayed under Network Hospitals - TC_015', async ({ page }) => {
+  110 |       const header = new Header(page);
+  111 |       await header.openDropdown('Health');
+  112 |       const hospitals = await header.getNetworkHospitalLinks();
+  113 |       // Verify hospitals displayed
+  114 |     });
+  115 | 
+  116 |     test('Verify that a network hospital link is clickable - TC_016', async ({ page }) => {
+  117 |       const header = new Header(page);
+  118 |       await header.openDropdown('Health');
+  119 |       const hospitals = await header.getNetworkHospitalLinks();
+  120 |       // Verify hospitals displayed
+  121 |     });
+  122 | 
+  123 |   });
+  124 | 
+  125 |   test.describe('Health Insurance', () => {
+  126 |     test('Verify that the Health Insurance page is displayed - TC_200', async ({ page }) => {
+  127 |       const header = new Header(page);
+  128 |     });
+  129 | 
+  130 |   });
+  131 | 
+  132 | });
+  133 | 
+  134 | test.describe('Life Dropdown & Navigation - ' + TEST_TAGS.SMOKE + ' ' + TEST_TAGS.REGRESSION, () => {
+  135 |   let header: Header;
+  136 | 
+  137 |   test.beforeEach(async ({ page }) => {
+  138 |     header = new Header(page);
+  139 |     await page.goto('/');
+  140 |     await header.waitForLoad();
+  141 |   });
+  142 | 
+  143 |   test.describe('Life Dropdown', () => {
+  144 |     test('Verify that the Life dropdown is displayed - TC_017', async ({ page }) => {
+  145 |       const header = new Header(page);
+  146 |       await header.openDropdown('Life');
+> 147 |       await expect(header.dropdownMenu).toBeVisible();
+      |                                         ^ Error: toBeVisible can be only used with Locator object, was called with undefined
+  148 |     });
+  149 | 
+  150 |     test('Verify that all sections are displayed in the Life dropdown - TC_018', async ({ page }) => {
+  151 |       const header = new Header(page);
+  152 |       await header.openDropdown('Life');
+  153 |       await expect(header.dropdownMenu).toBeVisible();
+  154 |     });
+  155 | 
+  156 |   });
+  157 | 
+  158 |   test.describe('Life Insurance Companies', () => {
+  159 |     test('Verify that all insurer options are displayed under Life Insurance Companies - TC_019', async ({ page }) => {
+  160 |       const header = new Header(page);
+  161 |       await header.openDropdown('Life');
+  162 |       await header.openInsurerCompanies('Life');
+  163 |       const insurers = await header.getInsurerLinks('Life');
+  164 |       const expectedInsurers = INSURERS.LIFE.COMPANIES;
+  165 |       for (const expected of expectedInsurers) {
+  166 |         expect(insurers.some(i => i.toLowerCase().includes(expected.toLowerCase()))).toBeTruthy();
+  167 |       }
+  168 |     });
+  169 | 
+  170 |     test('Verify that an insurer link is clickable - TC_020', async ({ page }) => {
+  171 |       const header = new Header(page);
+  172 |       await header.openDropdown('Life');
+  173 |       await header.openInsurerCompanies('Life');
+  174 |       const insurers = await header.getInsurerLinks('Life');
+  175 |       const expectedInsurers = INSURERS.LIFE.COMPANIES;
+  176 |       for (const expected of expectedInsurers) {
+  177 |         expect(insurers.some(i => i.toLowerCase().includes(expected.toLowerCase()))).toBeTruthy();
+  178 |       }
+  179 |     });
+  180 | 
+  181 |   });
+  182 | 
+  183 |   test.describe('Life Insurance - Header Navigation', () => {
+  184 |     test('Verify that the Life Insurance option is clickable - TC_201', async ({ page }) => {
+  185 |       const header = new Header(page);
+  186 |       await header.clickLifeInsuranceHeader();
+  187 |       await expect(page).toHaveURL(/life-insurance/);
+  188 |     });
+  189 | 
+  190 |   });
+  191 | 
+  192 |   test.describe('Life Landing Page Flow', () => {
+  193 |     test('Verify that plans are visible on page - TC_105', async ({ page }) => {
+  194 |       const header = new Header(page);
+  195 |     });
+  196 | 
+  197 |     test('Verify that term Life Plans is clickable - TC_106', async ({ page }) => {
+  198 |       const header = new Header(page);
+  199 |     });
+  200 | 
+  201 |     test('Verify that investment Tax planning is clickable - TC_107', async ({ page }) => {
+  202 |       const header = new Header(page);
+  203 |     });
+  204 | 
+  205 |     test('Verify that saving For Child is clickable - TC_108', async ({ page }) => {
+  206 |       const header = new Header(page);
+  207 |     });
+  208 | 
+  209 |     test('Verify that pension retirement is clickable - TC_109', async ({ page }) => {
+  210 |       const header = new Header(page);
+  211 |     });
+  212 | 
+  213 |     test('Verify that clicking on Plans it redirect to life Profile page - TC_110', async ({ page }) => {
+  214 |       const header = new Header(page);
+  215 |     });
+  216 | 
+  217 |     test('Verify that this Please enter the pincode error message should come if user not enters pincode - TC_111', async ({ page }) => {
+  218 |       const header = new Header(page);
+  219 |     });
+  220 | 
+  221 |     test('Verify that the user is able to enter pincode - TC_112', async ({ page }) => {
+  222 |       const header = new Header(page);
+  223 |     });
+  224 | 
+  225 |     test('Verify that the user is able to click on Find Advisor CTA - TC_113', async ({ page }) => {
+  226 |       const header = new Header(page);
+  227 |     });
+  228 | 
+  229 |     test('Verify that after clicking Find Advisor user should redirect to Advisor listing page - TC_114', async ({ page }) => {
+  230 |       const header = new Header(page);
+  231 |     });
+  232 | 
+  233 |   });
+  234 | 
+  235 | });
+  236 | 
+  237 | 
+```
