@@ -177,6 +177,10 @@ export class NationalCarInsurancePage extends InsurerLandingPage {
   constructor(page: Page) {
     super(page, 'National Car Insurance');
   }
+
+  async goto() {
+    await super.goto('/car-insurance/national/');
+  }
 }
 
 export class SBICarInsurancePage extends InsurerLandingPage {

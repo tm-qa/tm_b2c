@@ -162,6 +162,7 @@ test.describe('National Car Insurance - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -236,6 +237,7 @@ test.describe('National Car Insurance Navigation - ' + TEST_TAGS.REGRESSION, () 
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -294,6 +296,7 @@ test.describe('National Car Insurance Plans - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -332,6 +335,7 @@ test.describe('National Premium Calculator - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -366,6 +370,7 @@ test.describe('National Cashless Garages - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -388,6 +393,7 @@ test.describe('National Car Insurance Add-ons - ' + TEST_TAGS.REGRESSION, () => 
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -410,6 +416,7 @@ test.describe('National Car Insurance Features - ' + TEST_TAGS.REGRESSION, () =>
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -432,6 +439,7 @@ test.describe('National Car Insurance Exclusions - ' + TEST_TAGS.REGRESSION, () 
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -454,6 +462,7 @@ test.describe('National Car Insurance Renewal - ' + TEST_TAGS.REGRESSION, () => 
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -476,6 +485,7 @@ test.describe('National Car Insurance Claims - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -502,6 +512,7 @@ test.describe('National Car Insurance Documents - ' + TEST_TAGS.REGRESSION, () =
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -524,6 +535,7 @@ test.describe('National Car Insurance Customer Care - ' + TEST_TAGS.REGRESSION, 
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -546,6 +558,7 @@ test.describe('National Car Insurance - More - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -576,6 +589,7 @@ test.describe('National Car Insurance FAQs - ' + TEST_TAGS.REGRESSION, () => {
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
@@ -602,6 +616,7 @@ test.describe('National Car Insurance Articles - ' + TEST_TAGS.REGRESSION, () =>
 
   test.beforeEach(async ({ page }) => {
     insurerPage = new NationalCarInsurancePage(page);
+    await insurerPage.goto();
     await insurerPage.waitForLoad();
   });
 
