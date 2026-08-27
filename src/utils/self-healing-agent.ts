@@ -15,10 +15,13 @@ export interface HealingResult {
   error?: string;
 }
 
+type ActionOptions = { force?: boolean; timeout?: number };
+
 export class SelfHealingAgent {
   private page: Page;
   private strategies: Map<string, SelectorStrategy[]> = new Map();
   private healingStats: Map<string, { success: number; failed: number; strategiesUsed: Map<string, number> }> = new Map();
+  private learnedStrategies: Map<string, string> = new Map();
 
   constructor(page: Page) {
     this.page = page;
@@ -184,7 +187,7 @@ export class SelfHealingAgent {
   }
 
   async findElement(elementKey: string, context?: Page | FrameLocator, options?: { timeout?: number; required?: boolean }): Promise<HealingResult> {
-    const strategies = this.strategies.get(elementKey);
+    const strategies = this.getStrategies(elementKey);
     const target = context || this.page;
     const timeout = options?.timeout || TIMEOUTS.MEDIUM;
     const startTime = Date.now();
@@ -203,6 +206,7 @@ export class SelfHealingAgent {
           await locator.first().waitFor({ state: 'visible', timeout: Math.min(timeout, 5000) });
           
           this.recordSuccess(elementKey, strategy.name);
+          this.learnedStrategies.set(elementKey, strategy.name);
           return {
             success: true,
             locator: locator.first(),
@@ -226,7 +230,7 @@ export class SelfHealingAgent {
   }
 
   async findAllElements(elementKey: string, context?: Page | FrameLocator): Promise<Locator[]> {
-    const strategies = this.strategies.get(elementKey);
+    const strategies = this.getStrategies(elementKey);
     const target = context || this.page;
 
     if (!strategies) return [];
@@ -253,33 +257,15 @@ export class SelfHealingAgent {
   }
 
   async clickWithHealing(elementKey: string, options?: { force?: boolean; timeout?: number }): Promise<boolean> {
-    const result = await this.findElement(elementKey, undefined, { required: false });
-    
-    if (result.success && result.locator) {
-      try {
-        await result.locator.click({ force: options?.force, timeout: options?.timeout || TIMEOUTS.MEDIUM });
-        return true;
-      } catch {
-        return false;
-      }
-    }
-    
-    return false;
+    return this.runActionWithHealing(elementKey, async locator => {
+      await locator.click({ force: options?.force, timeout: options?.timeout || TIMEOUTS.MEDIUM });
+    }, options);
   }
 
   async fillWithHealing(elementKey: string, value: string, options?: { timeout?: number }): Promise<boolean> {
-    const result = await this.findElement(elementKey, undefined, { required: false });
-    
-    if (result.success && result.locator) {
-      try {
-        await result.locator.fill(value, { timeout: options?.timeout || TIMEOUTS.MEDIUM });
-        return true;
-      } catch {
-        return false;
-      }
-    }
-    
-    return false;
+    return this.runActionWithHealing(elementKey, async locator => {
+      await locator.fill(value, { timeout: options?.timeout || TIMEOUTS.MEDIUM });
+    }, options);
   }
 
   async waitForWithHealing(elementKey: string, state: 'visible' | 'hidden' | 'attached' | 'detached' = 'visible', timeout?: number): Promise<boolean> {
@@ -321,6 +307,52 @@ export class SelfHealingAgent {
     this.healingStats.get(elementKey)!.failed++;
   }
 
+  private getStrategies(elementKey: string): SelectorStrategy[] {
+    const registered = this.strategies.get(elementKey) || [];
+    const learnedName = this.learnedStrategies.get(elementKey);
+    const learned = learnedName ? registered.find(strategy => strategy.name === learnedName) : undefined;
+    const generic = this.genericStrategies(elementKey);
+    return [...(learned ? [learned] : []), ...registered.filter(strategy => strategy.name !== learnedName), ...generic];
+  }
+
+  private genericStrategies(elementKey: string): SelectorStrategy[] {
+    const label = elementKey.replace(/[-_]+/g, ' ').trim();
+    if (!label) return [];
+
+    const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return [
+      { name: 'aria-label', selector: `[aria-label*="${label}" i]`, priority: 90 },
+      { name: 'text-content', selector: `text=${label}`, priority: 91 },
+      { name: 'label-text', selector: `label:has-text("${label}")`, priority: 92 },
+      { name: 'data-testid', selector: `[data-testid*="${escaped}" i]`, priority: 93 },
+    ];
+  }
+
+  private async runActionWithHealing(
+    elementKey: string,
+    action: (locator: Locator) => Promise<void>,
+    options?: ActionOptions,
+  ): Promise<boolean> {
+    const strategies = this.getStrategies(elementKey);
+    const timeout = options?.timeout || TIMEOUTS.MEDIUM;
+    if (strategies.length === 0) return false;
+
+    this.recordAttempt(elementKey);
+    for (const strategy of strategies) {
+      try {
+        const locator = this.page.locator(strategy.selector).first();
+        await locator.waitFor({ state: 'visible', timeout: Math.min(timeout, 5000) });
+        await action(locator);
+        this.recordSuccess(elementKey, strategy.name);
+        this.learnedStrategies.set(elementKey, strategy.name);
+        return true;
+      } catch {
+        // A stale or changed locator is expected to fail here; the next strategy is the healing path.
+      }
+    }
+    this.recordFailure(elementKey);
+    return false;
+  }
   getHealingStats(): Record<string, { successRate: number; totalAttempts: number; strategiesUsed: Record<string, number> }> {
     const stats: Record<string, any> = {};
     
@@ -354,6 +386,7 @@ export class SelfHealingAgent {
 
   resetStats(): void {
     this.healingStats.clear();
+    this.learnedStrategies.clear();
   }
 }
 

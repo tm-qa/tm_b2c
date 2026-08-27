@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { ParsedTestData, TestCaseData } from './excel-reader';
+import { deduplicateTestCases } from './dedupe';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -105,13 +106,12 @@ test.describe.configure({ retries: 0 });
 function generateSharedFlowTests(data: ParsedTestData): string {
   const modules = ['Bike', 'Health', 'Life'] as const;
   const flowTypes = ['Home Page Flow', 'Find Advisor Popup Flow', 'Advisor Listing Page Flow'];
-  const pincodes = ['400001', '110001', '560001'];
 
   let output = `import { test, expect } from '@playwright/test';
 import { HomePage } from '@pages/HomePage';
 import { AdvisorPopup } from '@pages/AdvisorPopup';
 import { AdvisorListing } from '@pages/AdvisorListing';
-import { VALIDATION_MESSAGES, TEST_PINCODES } from '@config/test-data';
+import { VALIDATION_MESSAGES, TEST_DATA } from '@config/test-data';
 import { TEST_TAGS } from '@config/constants';
 
 test.describe.configure({ retries: 0 });
@@ -151,11 +151,11 @@ test.describe.configure({ retries: 0 });
           } else if (tc.testScenario.includes('validation') || tc.testScenario.includes('Please select')) {
             output += `      await homePage.verifyValidationMessage(VALIDATION_MESSAGES.NO_INSURANCE_SELECTED);\n`;
           } else if (tc.testScenario.includes('select Insurer') && tc.testScenario.includes('Find Advisor')) {
-            output += `      await homePage.selectInsurerAndFindAdvisor('Bajaj');\n`;
+            output += `      await homePage.selectInsurerAndFindAdvisor(TEST_DATA.advisor.insurer);\n`;
             output += `      await advisorPopup.waitForVisible();\n`;
           } else if (tc.testScenario.includes('redirect to')) {
             output += `      await homePage.clickFindAdvisor();\n`;
-            output += `      await advisorPopup.enterPincode('400001');\n`;
+            output += `      await advisorPopup.enterPincode(TEST_DATA.advisor.validPincode);\n`;
             output += `      await advisorPopup.clickSubmit();\n`;
             output += `      await advisorPopup.waitForAdvisorListing();\n`;
           }
@@ -165,17 +165,17 @@ test.describe.configure({ retries: 0 });
             output += `      await advisorPopup.waitForVisible();\n`;
           } else if (tc.testScenario.includes('enter Pincode')) {
             output += `      await homePage.clickFindAdvisor();\n`;
-            output += `      await advisorPopup.enterPincode('400001');\n`;
+            output += `      await advisorPopup.enterPincode(TEST_DATA.advisor.validPincode);\n`;
           } else if (tc.testScenario.includes('disable for blank')) {
             output += `      await homePage.clickFindAdvisor();\n`;
             output += `      await advisorPopup.verifySubmitDisabled();\n`;
           } else if (tc.testScenario.includes('Submit CTA should enable')) {
             output += `      await homePage.clickFindAdvisor();\n`;
-            output += `      await advisorPopup.enterPincode('400001');\n`;
+            output += `      await advisorPopup.enterPincode(TEST_DATA.advisor.validPincode);\n`;
             output += `      await advisorPopup.verifySubmitEnabled();\n`;
           } else if (tc.testScenario.includes('Submit') && tc.testScenario.includes('navigate')) {
             output += `      await homePage.clickFindAdvisor();\n`;
-            output += `      await advisorPopup.enterPincode('400001');\n`;
+            output += `      await advisorPopup.enterPincode(TEST_DATA.advisor.validPincode);\n`;
             output += `      await advisorPopup.clickSubmit();\n`;
             output += `      await advisorPopup.waitForAdvisorListing();\n`;
           } else if (tc.testScenario.includes('Close') || tc.testScenario.includes('close')) {
@@ -185,7 +185,7 @@ test.describe.configure({ retries: 0 });
           }
         } else if (flowType === 'Advisor Listing Page Flow') {
           output += `      await homePage.clickFindAdvisor();\n`;
-          output += `      await advisorPopup.enterPincode('400001');\n`;
+          output += `      await advisorPopup.enterPincode(TEST_DATA.advisor.validPincode);\n`;
           output += `      await advisorPopup.clickSubmit();\n`;
           output += `      await advisorListing.waitForVisible();\n`;
           
@@ -273,9 +273,22 @@ export function generateTestFiles(data: ParsedTestData, outputDir: string = 'src
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const dropdownTests = generateDropdownTests(data);
-  const sharedFlowTests = generateSharedFlowTests(data);
-  const lifeLandingTests = generateLifeLandingTests(data);
+  // Generate from one canonical case per scenario so repeated Excel rows do not
+  // become repeated browser tests. Keep the original grouping for generation.
+  const { unique } = deduplicateTestCases(data.allTests);
+  const uniqueIds = new Set(unique.map(testCase => testCase.srNo));
+  const deduplicatedData: ParsedTestData = {
+    ...data,
+    dropdownTests: data.dropdownTests.filter(testCase => uniqueIds.has(testCase.srNo)),
+    sharedFlowTests: data.sharedFlowTests.filter(testCase => uniqueIds.has(testCase.srNo)),
+    lifeLandingTests: data.lifeLandingTests.filter(testCase => uniqueIds.has(testCase.srNo)),
+    allTests: unique,
+    duplicates: data.allTests.filter(testCase => !uniqueIds.has(testCase.srNo)),
+  };
+
+  const dropdownTests = generateDropdownTests(deduplicatedData);
+  const sharedFlowTests = generateSharedFlowTests(deduplicatedData);
+  const lifeLandingTests = generateLifeLandingTests(deduplicatedData);
 
   fs.writeFileSync(path.join(outputDir, 'dropdown-navigation.test.ts'), dropdownTests);
   fs.writeFileSync(path.join(outputDir, 'shared-flows.test.ts'), sharedFlowTests);
@@ -285,6 +298,7 @@ export function generateTestFiles(data: ParsedTestData, outputDir: string = 'src
   }
 
   console.log(`��� Generated test files in ${outputDir}/`);
+  console.log(`  Canonical test cases: ${unique.length} (removed ${data.allTests.length - unique.length} duplicates)`);
   console.log(`  - dropdown-navigation.test.ts`);
   console.log(`  - shared-flows.test.ts`);
   if (lifeLandingTests) {

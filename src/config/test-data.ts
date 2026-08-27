@@ -164,6 +164,21 @@ export const TEST_PINCODES = [
   '110002',
 ] as const;
 
+export const TEST_DATA = {
+  advisor: {
+    validPincode: TEST_PINCODES[0],
+    invalidPincode: '000000',
+    alphabeticPincode: 'ABC123',
+    insurer: 'Bajaj',
+  },
+  vehicle: {
+    make: 'Honda',
+    model: 'Activa 6G',
+    variant: 'Standard',
+    manufactureYear: '2023',
+  },
+} as const;
+
 export const LIFE_LANDING_PLANS = [
   'Term Insurance',
   'Money Back Insurance',

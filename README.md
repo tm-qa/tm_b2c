@@ -24,3 +24,16 @@ disabled bike funnel test can be enabled only in a safe staging environment.
 - `src/fixtures` – typed Playwright fixtures
 - `src/tests` – migrated and existing Playwright tests
 - `playwright.config.ts` – browser projects, timeouts, and reporters
+
+## Healing and test data
+
+Page objects inherit locator healing through `BasePage`. Actions such as
+`clickWithHealing` and `fillWithHealing` try registered selectors, then
+accessible-label/text/test-id fallbacks, and remember the selector that worked
+for the current page object. Use `printHealingReport()` after a flow when
+diagnosing UI changes.
+
+Keep reusable values in `src/config/test-data.ts` (`TEST_DATA`, `TEST_PINCODES`,
+and the domain-specific constants). The test generator deduplicates Excel cases
+before writing browser tests, so repeated scenario rows produce one canonical
+test while remaining listed in the duplicate report.
