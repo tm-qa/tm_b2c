@@ -1,8 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 import { ParsedTestData, TestCaseData } from './excel-reader';
 
-const __dirname = path.resolve(__dirname);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function toCamelCase(str: string): string {
   return str

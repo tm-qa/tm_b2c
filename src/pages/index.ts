@@ -10,3 +10,7 @@ export * from './modules/health/HealthDashboard';
 export * from './modules/life/LifeLandingPage';
 export * from './modules/car/CarDashboard';
 export * from './modules/car/InsurerLandingPages';
+export * from './NavigationComponent';
+export * from './BikeInsuranceProfilePage';
+export * from './VehicleDetailsPage';
+export * from './PersonalDetailsPage';

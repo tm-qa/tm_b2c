@@ -49,4 +49,29 @@ export class Footer extends BasePage {
     }
     return links;
   }
+
+  async isLinkPresent(name: string) {
+    await this.waitForVisible();
+    return this.container.getByRole('link', { name: new RegExp(name, 'i') }).first().isVisible().catch(() => false);
+  }
+
+  async getLinkHref(name: string) {
+    await this.waitForVisible();
+    return this.container.getByRole('link', { name: new RegExp(name, 'i') }).first().getAttribute('href');
+  }
+
+  async getSocialLinkCount() {
+    await this.waitForVisible();
+    return this.container.locator('a[href*="twitter.com"], a[href*="instagram.com"], a[href*="facebook.com"], a[href*="linkedin.com"], a[href*="youtube.com"]').count();
+  }
+
+  async getCustomerSupportPhoneHref() {
+    await this.waitForVisible();
+    return this.container.locator('a[href^="tel:1800"]').first().getAttribute('href');
+  }
+
+  async getCustomerSupportEmailHref() {
+    await this.waitForVisible();
+    return this.container.locator('a[href^="mailto:support@turtlemint.com"]').first().getAttribute('href');
+  }
 }

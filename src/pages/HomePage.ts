@@ -82,4 +82,37 @@ export class HomePage extends BasePage {
     await this.advisorPopup.waitForVisible();
     return this.advisorPopup.isPopupVisible();
   }
+
+  async isLogoDisplayed() {
+    return this.page.locator('img[alt*="Turtlemint" i], header img').first().isVisible().catch(() => false);
+  }
+
+  async getPageTitle() { return this.page.title(); }
+  async getCurrentUrl() { return this.page.url(); }
+  async isFindAdvisorSectionPresent() {
+    return this.page.getByText(/find nearby advisor/i).first().isVisible().catch(() => false);
+  }
+  async getStatsBlockCount() {
+    return this.page.getByText(/trained insurance advisors|happy customers|policies sold/i).count();
+  }
+  async getDownloadAppLinkHref() {
+    return this.page.locator('a[href*="onelink.me" i], a').filter({ hasText: /download turtlemint app/i }).first().getAttribute('href');
+  }
+  async clickRaiseClaim() {
+    await this.page.getByRole('link', { name: /raise a claim/i }).first().click();
+  }
+
+  private async clickQuote(selector: string): Promise<Page> {
+    const link = this.page.locator(selector).first();
+    const popupPromise = this.page.waitForEvent('popup', { timeout: 3000 }).catch(() => null);
+    await link.click();
+    const popup = await popupPromise;
+    const targetPage = popup ?? this.page;
+    await targetPage.waitForLoadState('domcontentloaded').catch(() => undefined);
+    return targetPage;
+  }
+  async clickBikeQuoteCta() { return this.clickQuote('a[href*="two-wheeler-insurance/two-wheeler-profile"]'); }
+  async clickCarQuoteCta() { return this.clickQuote('a[href*="car-insurance/car-profile"]'); }
+  async clickHealthQuoteCta() { return this.clickQuote('a[href*="health-insurance/health-profile"]'); }
+  async clickTermQuoteCta() { return this.clickQuote('a[href*="life-insurance/profile/term"]'); }
 }

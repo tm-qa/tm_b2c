@@ -5,6 +5,7 @@ dotenv.config();
 
 const envSchema = z.object({
   BASE_URL: z.string().url().default('https://www.turtlemintinsurance.com/'),
+  APP_BASE_URL: z.string().url().default('https://app.turtlemintinsurance.com/'),
   PINCODES: z.string().default('400001,110001,560001'),
   CI: z.string().transform(v => v === 'true').default('false'),
   HEADLESS: z.string().transform(v => v === 'true').default('true'),
@@ -25,6 +26,7 @@ if (!parsed.success) {
 export const env = parsed.data;
 
 export const baseURL = env.BASE_URL;
+export const appBaseURL = env.APP_BASE_URL;
 export const pincodes = env.PINCODES.split(',').map(p => p.trim());
 export const isCI = env.CI;
 export const headless = env.HEADLESS;

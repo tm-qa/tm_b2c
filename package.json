@@ -1,6 +1,7 @@
 {
   "name": "turtlemint-automation",
   "version": "1.0.0",
+  "type": "module",
   "description": "Playwright + TypeScript automation framework for Turtlemint Insurance",
   "main": "index.js",
   "scripts": {
